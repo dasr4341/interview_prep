@@ -1,11 +1,13 @@
 import { Route, Routes } from "react-router";
 import Home from "../components/Home";
 import route from "./route";
+import LifeCycle from "../components/LifeCycle/LifeCycle";
 
 function AppRouter() {
   return (
     <Routes>
-      <Route index path={route.home.path} element={<Home />} />
+      <Route index path={route.home.path} element={<LifeCycle />} />
+      <Route path={route.lifeCycle.path} element={<LifeCycle />} />
       {/* <Route index path="about" element={<About />} /> */}
 
       {/* <Route element={<AuthLayout />}>

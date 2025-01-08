@@ -1,5 +1,8 @@
 export default {
-    home: {
-        path: '/'
-    }
-}
+  home: {
+    path: "/",
+  },
+  lifeCycle: {
+    path: "/lifeCycle",
+  },
+};
