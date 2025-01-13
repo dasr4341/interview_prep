@@ -5,4 +5,7 @@ export default {
   lifeCycle: {
     path: "/lifeCycle",
   },
+  login: {
+    path: "/login",
+  },
 };
