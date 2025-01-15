@@ -1,0 +1,9 @@
+@mixin appTheme($lightTheme) {
+    @if $lightTheme {
+        background-color: $backGround-light;
+        color: $color;
+    } @else {
+        background-color: $backGround-dark;
+        color: lighten($color, 100);
+    }
+}

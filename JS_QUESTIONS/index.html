@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <input type="text" id="throttle_input">
-    <script src="./throtelling.js"></script>
-</body>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <div class="second">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+    </div>
+    <input type="checkbox" onchange="myFunction()" id="myCheck" />
+    <script>
+      function myFunction() {
+        let checkBox = document.getElementById("myCheck");
+
+        if (checkBox.checked == true) {
+            document.documentElement.setAttribute("data-theme", "dark");
+        } else {
+            document.documentElement.setAttribute("data-theme", "light");
+        }
+      }
+     
+    </script>
+    <!-- <input type="text" id="throttle_input">
+    <script src="./throtelling.js"></script> -->
+  </body>
 </html>

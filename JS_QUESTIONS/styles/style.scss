@@ -1,0 +1,43 @@
+@import './variables.scss';
+@import './apptheme.scss';
+@import './flex.scss';
+
+@function weight($weight) {
+    @return  map-get($font-weight, $weight);
+}
+
+.parent {
+    @include flex(row);
+    @include appTheme(false);
+    height: 800px;
+    div {
+        // justify-items: center;
+        // align-content: center;
+        // align-self: center;
+        font-weight:weight(bold);
+        width: 300px;
+        height: 100px;
+        border: 1px solid black;
+    }
+}
+
+[data-theme='dark']{
+    .parent {
+        @include appTheme(false); 
+    }
+}
+[data-theme="dark"] {
+    .parent {
+        @include appTheme(true); 
+    }
+}
+
+.second {
+    @extend .parent;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+}

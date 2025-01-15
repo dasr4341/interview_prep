@@ -1,26 +1,22 @@
 :root {
-    --background: rgb(221, 131, 131);
-    --text-color: white;
-    --formBg: rgb(233, 84, 84);
+  --background: rgb(221, 131, 131);
+  --text-color: white;
+  --formBg: rgb(233, 84, 84);
 }
 
-
-
-[data-theme="dark"] {
+[data-theme=dark] {
   --background: rgb(44, 37, 37);
   --text-color: white;
   --formBg: rgb(132, 119, 187);
 }
 
 body {
-    background-color: var(--background)!important;
-    color:var(--text-color)!important;
+  background-color: var(--background) !important;
+  color: var(--text-color) !important;
 }
 
-.login-form {
-    form {
-        background-color: var(--formBg)!important;
-    }
+.login-form form {
+  background-color: var(--formBg) !important;
 }
 
 .toggle-theme {
@@ -30,6 +26,7 @@ body {
   display: inline-block;
   margin: 10px 10px;
 }
+
 .toggle-theme input {
   visibility: hidden;
 }
@@ -44,6 +41,7 @@ body {
   background-color: rgb(151, 171, 171);
   transition: 0.2s;
 }
+
 .slider::before {
   position: absolute;
   left: 3px;
@@ -60,6 +58,7 @@ body {
 .toggle-theme input:checked + .slider {
   background-color: rgb(112, 147, 181);
 }
+
 .toggle-theme input:checked + .slider::before {
   transform: translateX(30px);
-}
+}/*# sourceMappingURL=App.css.map */
