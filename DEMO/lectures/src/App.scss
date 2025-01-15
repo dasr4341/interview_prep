@@ -1,0 +1,65 @@
+
+
+:root {
+    --background: rgb(221, 131, 131);
+    --text-color: white;
+    --formBg: rgb(233, 84, 84);
+}
+
+
+[data-theme="dark"] {
+  --background: rgb(44, 37, 37);
+  --text-color: white;
+  --formBg: rgb(132, 119, 187);
+}
+
+* {
+    background-color: var(--background)!important;
+    color:var(--text-color)!important;
+}
+.login-form {
+    form {
+        background-color: var(--formBg)!important;
+    }
+}
+
+.toggle-theme {
+  width: 60px;
+  height: 30px;
+  position: relative;
+  display: inline-block;
+  margin: 10px 10px;
+}
+.toggle-theme input {
+  visibility: hidden;
+}
+
+.toggle-theme .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 25px;
+  background-color: rgb(151, 171, 171);
+  transition: 0.2s;
+}
+.slider::before {
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(68, 58, 58);
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.toggle-theme input:checked + .slider {
+  background-color: rgb(112, 147, 181);
+}
+.toggle-theme input:checked + .slider::before {
+  transform: translateX(30px);
+}

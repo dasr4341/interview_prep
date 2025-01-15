@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
-import { useForm, UseFormRegister } from "react-hook-form";
+import {
+  useForm,
+  UseFormRegisterReturn,
+} from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -29,7 +32,9 @@ const validationSchema = yup.object().shape({
     .required("Required")
     .oneOf([yup.ref("password")], "not matching"),
 });
-type ITextBox = React.InputHTMLAttributes<HTMLInputElement>;
+type ITextBox = React.InputHTMLAttributes<HTMLInputElement> & {
+  register: UseFormRegisterReturn;
+};
 function PasswordGenerator() {
   const [options, setOptions] = useState([
     {
@@ -166,18 +171,18 @@ function Login() {
   }, []);
 
   const TextBox = (props: ITextBox) => {
-    const { className, ...restProps } = props;
-    console.log(restProps);
+    const { className, register, ...restProps } = props;
     return (
       <input
-            {...restProps}
+        {...restProps}
+        {...register}
         className={` mt-8 font-light border border-gray-200 bg-gray-100 py-2 rounded px-2 text-gray-600 focus:outline-none ${className}`}
       />
     );
   };
 
   return (
-    <section className="login-form w-full flex flex-col min-h-screen bg-red-100 ">
+    <section className="login-form w-full flex flex-col min-h-screen  ">
       <label className=" toggle-theme self-end ">
         <input
           type="checkbox"
@@ -191,7 +196,7 @@ function Login() {
         <span className=" slider"></span>
       </label>
       <form
-        className="md:w-2/6 w-10/12 py-8 px-6 rounded bg-blue-100 flex flex-col absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 gap-6"
+        className="md:w-2/6 w-10/12 py-8 px-6 rounded  flex flex-col absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 gap-6"
         action=""
         onSubmit={handleSubmit(onSubmit)}
       >
@@ -203,17 +208,22 @@ function Login() {
         </label>
 
         <TextBox
-          {...register("email", { required: true, min: 4, max: 8 })}
+          register={register("email", { required: true, min: 4, max: 8 })}
           type="text"
           placeholder="Email"
         />
         <TextBox
-          {...register("password", { required: true, min: 4, max: 8 })}
+          name="password"
+          register={register("password", { required: true, min: 4, max: 8 })}
           type="text"
           placeholder="Password"
         />
         <TextBox
-          {...register("confirmPassword", { required: true, min: 4, max: 8 })}
+          register={register("confirmPassword", {
+            required: true,
+            min: 4,
+            max: 8,
+          })}
           type="text"
           placeholder="Confirm Password"
         />
