@@ -1,8 +1,9 @@
 function debounce(cb = {}, delay = 100) {
     let timer;
     return (...args) => {
+        console.log(timer);
         clearTimeout(timer);
-        setTimeout(() => {
+        timer = setTimeout(() => {
             cb(...args)
         }, delay)
     }
