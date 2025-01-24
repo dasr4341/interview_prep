@@ -75,7 +75,7 @@ export default function LifeCycle() {
           children: [],
         },
         {
-          name: "constructor()",
+          name: "render()",
           hasChildren: false,
           info: "this method is responsible for the rendering the contents to the ui",
           children: [],

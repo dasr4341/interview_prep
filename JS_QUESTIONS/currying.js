@@ -33,16 +33,16 @@
 
 
 // // convert a normal function to curried func
-// const curry = (func) => {
-//     return function curriedF(...args) {
-//         if (args.length >= func.length) {
-//           return func(...args)  
-//         } else {
-//           return function (...next) { return curriedF(...args, ...next)}
-//         }
-//     }
-// }
-// const normal = (a, b, c, d) => a + b + c + d
+const curry = (func) => {
+    return function curriedF(...args) {
+        if (args.length >= func.length) {
+          return func(...args)  
+        } else {
+          return function (...next) { return curriedF(...args, ...next)}
+        }
+    }
+}
+const normal = (a, b, c, d) => a + b + c + d
 
 // const totalSum = curry(normal);
 // console.log(totalSum(1)(2)(4)(42)   );
