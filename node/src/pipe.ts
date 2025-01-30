@@ -10,7 +10,7 @@ const writableStreams = fs.createWriteStream('./src/assets/file1.txt')
 const writableStreamsZip = fs.createWriteStream('./src/assets/file1.zip')
 
 // readableStreams.pipe(writableStreams)
-// readableStreams.pipe(gZip).pipe(writableStreamsZip)
+readableStreams.pipe(gZip).pipe(writableStreamsZip)
 
 // pipe returns a destination stream, which enables streaming
 // the destination stream needs to be a duplex, readable, or transform stream
