@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import './home.scss';
 
 interface IData {
@@ -59,15 +60,22 @@ const data: IData = {
   ],
 };
 
+
+
+function Explorer({ data }: { data: IData }) {
+  const [showList, setShowList] = useState(false);
+  return (
+    <section className="explorer-container">
+      <div className="explorer-header" onClick={() => { setShowList((p) => !p) }}>
+        <div>{data.haveChildren ? '🗂️' : '📂'}{data.name}</div>
+         {data.haveChildren && <div>{showList ?  '△' : '▽'}</div>}
+      </div>
+      {showList && data.haveChildren && <div className="explorer-list">{data.children.map(e => <Explorer data={e} />)}</div>}
+    </section>
+  );
+}
 function Home() {
-  function Explorer({ data }: { data: IData }) {
-    return (
-      <section className="explorer-container">
-        <div className="explorer-header">{data.name}</div>
-        {data.haveChildren && <div className="explorer-list">{data.children.map(e => <Explorer data={e} />)}</div>}
-      </section>
-    );
-  }
+
 
   return (
     <div>

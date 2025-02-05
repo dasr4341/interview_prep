@@ -5,17 +5,20 @@
     max-width: 400px;
     flex-direction: column;
     margin-top: 10px;
-    background-color: rgb(161, 153, 153);
+    // background-color: rgb(161, 153, 153);
     .explorer-header {
-        background-color: rgb(121, 112, 112);
+        // background-color: rgb(121, 112, 112);
         padding: 10px 5px;
-        display: inline;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
         border: 1px solid black;
     }
     .explorer-list {
         margin-left: 15px;
-        background-color: rgb(224, 208, 208);
-        @include sam()
+        // background-color: rgb(224, 208, 208);
+        // @include sam()
     }
 }
 
