@@ -1,0 +1,206 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 18px;
+$line-color: red;
+$pointer-color: rgb(227, 217, 217);
+$line-width: 1px;
+$card-gap: 80px;
+$icon-size: 40px;
+$pointer-size: 30px;
+$spacing: calc($icon-size - $pointer-size);
+$card-after-line: 110px;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  gap: $card-gap;
+  margin-bottom: $card-gap;
+  border-radius: calc($spacing);
+  position: relative;
+
+  .avatar {
+    position: relative;
+    .icon {
+      background-color: rgb(186, 5, 5);
+      width: $icon-size;
+      height: $icon-size;
+      z-index: 1;
+      border: 1px solid rgb(93, 86, 86);
+      border-radius: 50%;
+      // box-shadow: 0 0 10px 10px yellow;
+      transition: animation 2s;
+      // animation: glow 2s ease-in-out 0s infinite alternate both;
+
+      .pointer {
+        background-color: $pointer-color;
+        width: $pointer-size;
+        height: $pointer-size;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        top: ($spacing);
+      }
+      .pointer::after {
+        content: "";
+        width: calc($pointer-size / 2);
+        height: calc($pointer-size / 2);
+        background-color: $pointer-color;
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: -3px;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+  }
+
+  & .info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: rgb(35, 32, 32);
+    padding: $spacing 12px;
+    font-size: $font-lg;
+    font-weight: 500;
+    letter-spacing: 0.06rem;
+    border-radius: $spacing;
+
+    .info-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .info-badge {
+        padding: 2px 4px;
+        background-color: rgb(53, 48, 48);
+        font-weight: 700;
+        width: fit-content;
+        border-radius: 5px;
+        font-size: 14px;
+        letter-spacing: 0.1rem;
+        color: rgb(212, 167, 18);
+      }
+      .info-icon {
+        padding: $line-width;
+        border: $line-width dashed green;
+        border-radius: 50%;
+      }
+    }
+    .info-details {
+      font-size: $font-lg;
+      max-width: 80%;
+    }
+  }
+
+  &::before {
+    content: "";
+    width: calc(100% + ($card-gap - $pointer-size) + $spacing);
+    height: $line-width;
+    background-color: $line-color;
+    position: absolute;
+    bottom: calc($card-gap/2 * -1);
+    right: calc(
+      ($icon-size / 2 + (($card-gap - $pointer-size) + $spacing)) * -1
+    );
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    width: calc($card-after-line + $card-gap);
+    height: $line-width;
+    rotate: (90deg);
+    position: absolute;
+    top: calc($card-gap/2 * -1);
+    transform-origin: left;
+    right: calc(($card-after-line + ($card-gap * 2)) * -1);
+  }
+  &:last-child:before {
+    display: none;
+  }
+
+  &:nth-child(even):after {
+    z-index: -1;
+    background-color: $line-color;
+  }
+  &:nth-child(even) .avatar {
+    position: absolute;
+    right: calc(($card-gap + ($icon-size / 2)) * -1);
+  }
+  &:nth-child(even) {
+    // margin: auto 10px;
+    gap: $card-gap;
+  }
+  &:nth-child(odd) {
+    // margin: auto 10px;
+    // gap: calc($card-gap * 2);
+  }
+
+}
+
+.road-map-card-grp {
+  
+  .card .avatar::after {
+    content: "";
+    position: absolute;
+    width: $line-width;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+    background-color: $line-color;
+  }
+  .card .avatar::before {
+    content: "";
+    position: absolute;
+    width: $line-width;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: calc($card-gap / 2 * -1);
+    margin: auto;
+    background-color: $line-color;
+  }
+
+  .card:first-child .avatar::before {
+    display: none;
+  }
+
+  .card:last-child .avatar::after {
+    display: none;
+  }
+}
+
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px 5px rgb(171, 171, 3);
+  }
+  to {
+    box-shadow: 0 0 10px 15px rgb(255, 0, 0);
+  }
+}

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "rm -r -f -v ./dist && tsc -b --verbose ./tsconfig.build.json",
-    "start": "npm run build && node dist/server.js",
+    "start": "npm run build && node dist/express/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,12 +13,14 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/express": "^5.0.0",
     "@types/node": "^22.10.7",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "express": "^4.21.2",
     "tsx": "^4.19.2"
   }
 }
