@@ -1,11 +1,18 @@
-// import Image from "next/image";
-
-import RoadMap from "@/components/roadMap/RoadMap";
+"use client"
+import { useRouter } from 'next/navigation';
 
 export default function Home() {
+  const router = useRouter()
+
   return (
-    <div className="flex items-center justify-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <RoadMap />
+    <div >
+      <div  onClick={() => router.push('/road-map')}>
+        Road map
+      </div>
+      <div  onClick={() => router.push('/progress-bar')}>ProgressBar</div>
     </div>
   );
 }
+
+
+ 
