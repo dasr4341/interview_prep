@@ -1,0 +1,18 @@
+.counter {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+    background-color: rgb(93, 89, 89);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    button{
+        padding: 5px 15px;
+        width: fit-content;
+        font-size: 20px;
+    }
+    div{
+        color: white;
+    }
+}

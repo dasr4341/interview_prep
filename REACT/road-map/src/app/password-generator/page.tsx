@@ -46,7 +46,7 @@ function Page() {
           characters += "abcdefghijklmnop";
           break;
         }
-        case 1: {
+        case 1: {   
           characters += "ABCKEFGHIJKLMNOP";
           break;
         }
@@ -70,10 +70,7 @@ function Page() {
       const rand = Math.floor(Math.random() * len);
       password += characters.charAt(rand);
     }
-
     setPassword(password);
-
-    // return { password, error: '' };
   };
   const onChangeHandler = (
     element: ChangeEvent<HTMLInputElement>,

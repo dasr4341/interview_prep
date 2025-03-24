@@ -1,0 +1,9 @@
+when ever a execution context is created, a lexical environment is also created 
+ - lexical environment = local memory + lexical environment of its parent.
+ - lexical means a order/ hierarchy
+
+ whole chain of lexical env is scope chain
+
+
+closure - 
+is the bundle of its local scope + its lexical environment

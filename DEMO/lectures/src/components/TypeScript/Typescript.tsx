@@ -18,7 +18,7 @@ function Typescript() {
     //     isError: boolean
     // }
 
-    // we can extend the type to mention that - the type will always be an OBJECT
+    // we can extend the type to mention that - then the type will always be an OBJECT
     // we can also give default types - { user: [] }
     type ApiResponse<T extends object = { user: [] }> = {
             data: T,
