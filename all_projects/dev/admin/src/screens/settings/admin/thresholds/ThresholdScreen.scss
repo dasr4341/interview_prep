@@ -1,0 +1,16 @@
+.react-select__control {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-color: rgba(229, 229, 239, 1) !important;
+  border-radius: 0.5rem !important;
+}
+
+.label{
+  @media (min-width: 1025px) {
+    min-width: 45%;
+  }
+}
+
+.mw-130{
+  min-width: 130px;
+}

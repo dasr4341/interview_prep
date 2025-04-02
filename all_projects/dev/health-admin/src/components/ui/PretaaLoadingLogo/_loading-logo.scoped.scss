@@ -1,0 +1,9 @@
+.logo-animated {
+  margin: 12px;
+  animation: logo 10s linear infinite;
+}
+@keyframes logo {
+  100% {
+    box-shadow: inset black 0 -10em 0 0, inset black 0 -10em 0 0, inset black 0 -10em 0 0;
+  }
+}

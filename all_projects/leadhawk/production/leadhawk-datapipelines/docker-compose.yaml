@@ -1,0 +1,17 @@
+services:
+  scrapper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./screenshots:/app/screenshots
+      - ./logs:/app/logs
+    ports:
+      - 5000:5000
+  data-extractor:
+    build:
+      context: ./data_extractor
+    restart: unless-stopped
+    ports:
+      - 3001:3001

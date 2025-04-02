@@ -1,0 +1,21 @@
+.value-container, .cell{
+    overflow: hidden;
+}
+
+.value-container{
+    max-width: 100px;
+}
+
+.copy-btn{
+    display: none;
+}
+
+.cell:hover .value-container {
+    width: 80px;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+}
+
+.cell:hover .copy-btn{
+    display: flex;
+}

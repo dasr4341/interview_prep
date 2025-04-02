@@ -1,0 +1,31 @@
+$width : 160px;
+$width-lg : 240px;
+
+.row-element, .row-header {
+  width: $width ;
+  padding: 30px ;
+}
+.row-element-1, .row-header-1 {
+  width: $width ;
+  padding: 20px 50px
+}
+
+.row-element {
+  background-color: white;
+}
+.row-element-1 {
+  background-color: white;
+}
+
+.row-element:last-child, .row-header:last-child {
+  width: $width-lg ;
+}
+
+.virtuoso-item-list {
+  margin: 10px 0;
+}
+
+td {
+ border-bottom: 4px solid #F8F8FA;
+}
+

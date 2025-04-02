@@ -1,0 +1,62 @@
+.modal{
+  .company-filter-heading {
+    height: 65px;
+    background: #F8F8FA;
+  }
+  .clearall {
+    font-size: 15px;
+    color: #515151;
+    text-decoration:underline;
+  }
+
+  .showall {
+    font-size: 15px;
+    color: #3B7AF7;
+    line-height: 22px;
+  }
+  .filterDiv {
+    height: 50vh;
+    overflow-y: scroll;
+    @media (min-width: 1024px) {
+      height: 60vh;
+    }
+  }
+  .textfield
+  {
+    width: 30%;
+  }
+  .w-70{
+    width: 70px;
+  }
+  .filterlabel {
+    color: #000000;
+    font-weight: 500;
+  }
+  .fw-500{
+    font-weight: 500;
+  }
+  .d-flex{
+    display: flex;
+  }
+  .justify-content-between{
+    justify-content: space-between;
+  }
+  .text-gray-09{
+    color: #363646;
+  }
+  .opacity-03{
+    opacity: 0.3;
+  }
+  .text-red{
+    color: red;
+  }
+  .fs-14{
+    font-size: 14px;
+  }
+  .nps-error{
+    font-size: 10px;
+    line-height: 22px;
+    letter-spacing: -0.5px;
+    @apply text-pt-red-800;
+  }
+}

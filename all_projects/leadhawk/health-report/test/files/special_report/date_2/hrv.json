@@ -1,0 +1,116 @@
+{
+  "hrv": [
+    {
+      "value": {
+        "dailyRmssd": 34,
+        "deepRmssd": 27.655
+      },
+      "dateTime": "2023-11-12"
+    },
+    {
+      "value": {
+        "dailyRmssd": 54,
+        "deepRmssd": 34.491
+      },
+      "dateTime": "2023-11-13"
+    },
+    {
+      "value": {
+        "dailyRmssd": 41,
+        "deepRmssd": 29.854
+      },
+      "dateTime": "2023-11-14"
+    },
+    {
+      "value": {
+        "dailyRmssd": 61,
+        "deepRmssd": 31.859
+      },
+      "dateTime": "2023-11-15"
+    },
+    {
+      "value": {
+        "dailyRmssd": 51,
+        "deepRmssd": 30.018
+      },
+      "dateTime": "2023-11-16"
+    },
+    {
+      "value": {
+        "dailyRmssd": 57,
+        "deepRmssd": 45.972
+      },
+      "dateTime": "2023-11-17"
+    },
+    {
+      "value": {
+        "dailyRmssd": 41,
+        "deepRmssd": 33.147
+      },
+      "dateTime": "2023-11-18"
+    },
+    {
+      "value": {
+        "dailyRmssd": 42,
+        "deepRmssd": 39.601
+      },
+      "dateTime": "2023-11-19"
+    },
+    {
+      "value": {
+        "dailyRmssd": 65,
+        "deepRmssd": 25.042
+      },
+      "dateTime": "2023-11-20"
+    },
+    {
+      "value": {
+        "dailyRmssd": 53,
+        "deepRmssd": 37.247
+      },
+      "dateTime": "2023-11-21"
+    },
+    {
+      "value": {
+        "dailyRmssd": 65,
+        "deepRmssd": 37.448
+      },
+      "dateTime": "2023-11-22"
+    },
+    {
+      "value": {
+        "dailyRmssd": 48,
+        "deepRmssd": 25.074
+      },
+      "dateTime": "2023-11-23"
+    },
+    {
+      "value": {
+        "dailyRmssd": 54,
+        "deepRmssd": 23.883
+      },
+      "dateTime": "2023-11-24"
+    },
+    {
+      "value": {
+        "dailyRmssd": 50,
+        "deepRmssd": 24.714
+      },
+      "dateTime": "2023-11-25"
+    },
+    {
+      "value": {
+        "dailyRmssd": 53,
+        "deepRmssd": 34.308
+      },
+      "dateTime": "2023-11-26"
+    },
+    {
+      "value": {
+        "dailyRmssd": 92,
+        "deepRmssd": 34.308
+      },
+      "dateTime": "2023-11-27"
+    }
+  ]
+}

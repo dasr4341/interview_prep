@@ -1,0 +1,129 @@
+image: node:14
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: Deployment Procedure for Dev
+          size: 2x
+          caches:
+            - node
+          script:
+            - export NODE_OPTIONS=--max_old_space_size=3072
+            - yarn
+            - yarn build:staging
+            - npm run deploy:netlify -- --auth $NETLIFY_AUTH --site $NETLIFY_SITE_ID --dir="build" --prod
+            - scripts/notify.sh $VERSION_CHANGE $BITBUCKET_COMMIT $BITBUCKET_BRANCH
+    beta:
+      - step:
+          name: Deployment Procedure for Beta
+          size: 2x
+          caches:
+            - node
+          script:
+            - export NODE_OPTIONS=--max_old_space_size=3072
+            - yarn
+            - yarn build:staging3
+            - npm run deploy:netlify -- --auth $NETLIFY_AUTH --site $NETLIFY_SITE_ID_3 --dir="build" --prod
+
+    release/uat:
+      - step:
+          name: Deployment Procedure for UAT
+          deployment: UAT
+          size: 2x
+          caches:
+            - node
+          script:
+            - apt-get update
+            - apt-get install -y jq
+            - yarn
+            - export NODE_OPTIONS=--max_old_space_size=4000
+            - scripts/update-build.sh
+            - yarn build
+            - pipe: atlassian/aws-s3-deploy:0.3.8
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'us-east-1'
+                S3_BUCKET: $S3_BUCKET
+                LOCAL_PATH: 'build'
+                ACL: 'public-read'
+                DELETE_FLAG: "true"
+            - pipe: atlassian/aws-cloudfront-invalidate:0.6.0
+              variables:
+                DISTRIBUTION_ID: $CLOUD_FRONT_DISTRIBUTION_ID
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'us-east-1'
+                DEBUG: "true"
+            - scripts/version-bump.sh $VERSION_CHANGE $BITBUCKET_COMMIT $BITBUCKET_BRANCH
+            - scripts/notify.sh $VERSION_CHANGE $BITBUCKET_COMMIT $BITBUCKET_BRANCH
+
+    main:
+      - step:
+          name: Deployment Procedure for Production
+          deployment: Production
+          size: 2x
+          caches:
+            - node
+          script:
+            - apt-get update
+            - apt-get install -y jq
+            - yarn
+            - export NODE_OPTIONS=--max_old_space_size=4000
+            - yarn build
+            - pipe: atlassian/aws-s3-deploy:0.3.8
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'us-east-2'
+                S3_BUCKET: $S3_BUCKET
+                LOCAL_PATH: 'build'
+                ACL: 'public-read'
+                DELETE_FLAG: "true"
+            - pipe: atlassian/aws-cloudfront-invalidate:0.6.0
+              variables:
+                DISTRIBUTION_ID: $CLOUD_FRONT_DISTRIBUTION_ID
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'us-east-1'
+                DEBUG: "true"
+            - scripts/version-bump.sh $VERSION_CHANGE $BITBUCKET_COMMIT $BITBUCKET_BRANCH
+            - scripts/notify.sh $VERSION_CHANGE $BITBUCKET_COMMIT $BITBUCKET_BRANCH
+
+
+    release/testing:
+      - step:
+          name: Deployment Procedure for Testing
+          deployment: Testing
+          script:
+            - apt-get update
+            - apt-get install -y jq
+            - yarn
+            - yarn build
+            - pipe: atlassian/aws-s3-deploy:0.3.8
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'us-east-1'
+                S3_BUCKET: $S3_BUCKET
+                LOCAL_PATH: 'build'
+                ACL: 'public-read'
+            - scripts/version-bump.sh $VERSION_CHANGE $BITBUCKET_COMMIT $BITBUCKET_BRANCH
+
+  pull-requests:
+    '**':
+      - step:
+          name: SonarQube analysis
+          image: sonarsource/sonar-scanner-cli:latest
+          caches:
+            - sonar
+            - node
+          script:
+            - sonar-scanner  -Dsonar.login=$SONAR_CLOUD
+            
+
+
+definitions:
+  caches:
+    sonar: /opt/sonar-scanner/.sonar

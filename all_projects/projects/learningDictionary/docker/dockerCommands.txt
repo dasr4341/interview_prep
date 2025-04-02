@@ -1,0 +1,25 @@
+- Docker pull img-name
+- Docker run ing-name
+- Docker run —name container name -e key=value -e key2=value2 -d(detached mode) img-name
+- Docker stop container_name
+
+# Will stop the container when all the necessary steps are done
+- Docker stop containerId
+ 
+# No matter what stop the container right at that moment
+- docker kill containerId
+
+# Delete all stopped containers
+- Docker container prune
+
+# To get all the running containers
+- Docker ps --all
+
+# To get all the containers  (running + stopped)
+- docker container ls -a
+
+# To exec command inside this container shell
+- Docker exec -it containerId bash
+- exit (to exit from the shell)
+
+  

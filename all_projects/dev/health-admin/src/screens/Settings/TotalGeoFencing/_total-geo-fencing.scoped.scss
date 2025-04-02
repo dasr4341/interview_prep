@@ -1,0 +1,87 @@
+.yellowBox {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #fecb01;
+  display: block;
+  margin-top: 5px;
+}
+.blueBox {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #03bffb;
+  display: block;
+  margin-top: 5px;
+}
+.nav-link .activeTabClasses {
+  border-color: transparent;
+}
+.radio-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.details {
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  z-index: 0;
+  border: 1px solid #797979;
+  background-color: rgba(255, 255, 255, 0.838);
+  border-radius: 0.5rem;
+}
+
+.fieldWidth {
+  width: 500px;
+}
+.sliderWidth {
+  width: 372px;
+}
+.pt-8 {
+  padding: 2rem;
+  position: relative;
+}
+
+.listContainer {
+  height: 180px;
+  padding-right: 15px;
+}
+
+.triangle_down {
+  position: center;
+  top: -5px;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 0.1em solid rgba(133, 133, 161, 1);
+  border-top: 0.1em solid rgba(133, 133, 161, 1);
+  transform: rotate(135deg);
+  margin-left: 6rem;
+  cursor: pointer;
+}
+.triangle_up {
+  position: center;
+  top: -5px;
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 0.1em solid rgba(133, 133, 161, 1);
+  border-top: 0.1em solid rgba(133, 133, 161, 1);
+  transform: rotate(-45deg);
+  margin-left: 6rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.search:focus {
+  outline: none;
+}
+@media screen and (max-width:1024px) {
+.pt-8 {
+  padding-left: 0;
+  padding-right: 0;
+}
+}

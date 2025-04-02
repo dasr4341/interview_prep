@@ -1,0 +1,11 @@
+Model Information:
+* title:	Kid Buu
+* source:	https://sketchfab.com/3d-models/kid-buu-a9e9ea6fce53402ca7743cda0efe5e50
+* author:	EstebanKaio (https://sketchfab.com/EstebanKaio)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Kid Buu" (https://sketchfab.com/3d-models/kid-buu-a9e9ea6fce53402ca7743cda0efe5e50) by EstebanKaio (https://sketchfab.com/EstebanKaio) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

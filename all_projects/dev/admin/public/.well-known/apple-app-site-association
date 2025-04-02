@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2STG32X27Q.com.pretaa.mobile",
+        "paths": ["forgot_password/*", "welcome/*"]
+      }
+    ]
+  }
+}

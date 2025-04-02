@@ -1,0 +1,53 @@
+.radio-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1024px) {
+  .fieldWidth {
+    width: 500px;
+  }
+}
+
+.yellowBox{
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #FECB01;
+  display: block;
+  margin-top: 5px;
+}
+.blueBox{
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #03BFFB;
+  display: block;
+  margin-top: 5px;
+}
+.nav-link .activeTabClasses{
+border-color: transparent;
+}
+@media screen and (min-width: 1024px) {
+  .fieldWidth {
+    width: 500px;
+  }
+  .sliderWidth{
+    width: 372px
+  }
+.pt-8{
+    padding: 2rem;
+    position: relative;
+  }
+  .details{
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    z-index: 0;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
+  .listContainer{
+    height: 180px;
+    padding-right: 15px;
+  }
+}

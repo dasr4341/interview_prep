@@ -1,0 +1,7 @@
+.modal-parent {
+  overflow-y: scroll;
+
+  @media screen and (min-width: 1280px) {
+    overflow-y: inherit;
+  }
+}

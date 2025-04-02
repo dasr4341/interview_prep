@@ -1,0 +1,4 @@
+node_modules
+dist
+**/setupTests.ts
+e2e-ts/**/*.*

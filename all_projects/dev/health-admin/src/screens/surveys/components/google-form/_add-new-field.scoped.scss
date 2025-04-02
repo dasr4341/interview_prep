@@ -1,0 +1,11 @@
+.dropdown_menu {
+  .mantine-UnstyledButton-root {
+    font: inherit;
+    &:active {
+      transform: translateY(0);
+    }
+    &:focus-visible {
+      outline: -webkit-focus-ring-color auto;
+    }
+  }
+}

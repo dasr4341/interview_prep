@@ -1,0 +1,45 @@
+.nav-wrapper {
+  top: 0;
+  z-index: 1000;
+
+  .selected-footer-nav {
+    @apply text-base;
+    @apply font-bold;
+    letter-spacing: -0.6px;
+    border-bottom: 2px solid white;
+  }
+}
+.side-nav {
+  @media (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    left: -150%;
+    transition: 0.2s ease-in;
+
+    &.open {
+      left: 0%;
+    }
+  }
+}
+.chevron-back {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-125%, -50%);
+}
+
+.nav-mobile {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+.navlink-underline-active {
+  text-underline-offset: 2px;
+}
+.nav-link-fontsize {
+  font-size: 13px;
+}

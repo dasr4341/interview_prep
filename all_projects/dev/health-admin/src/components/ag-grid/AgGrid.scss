@@ -1,0 +1,32 @@
+.ag-theme-alpine{
+  --ag-font-family: @apply font-sans;
+
+  .ag-invisible{
+    display: none !important;
+  }
+  .ag-checkbox-input-wrapper input {
+    margin-top: -20px;
+  }
+  @-moz-document url-prefix(){
+    .ag-checkbox-input-wrapper input {
+      margin-top: -2px;
+    }
+   }
+}
+
+.ag-center-cols-viewport {
+  height: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}

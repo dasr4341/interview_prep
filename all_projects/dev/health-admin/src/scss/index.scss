@@ -1,0 +1,189 @@
+iframe {
+  display: none;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Global Styles
+@import './node_modules/placeholder-loading/src/scss/placeholder-loading';
+@import 'react-datepicker/dist/react-datepicker.css';
+
+// Global Components
+@import './fonts';
+@import './components/button';
+@import './components/link';
+@import './components/forms';
+@import './components/modal';
+@import './components/typography.scss';
+@import './components/icons';
+@import './components/timepicker';
+@import './components/height';
+@import './components/email-content';
+@import './components/date-range-picker';
+@import './components/toastify';
+
+
+@import './utilities';
+@import './components/pdf';
+
+
+body {
+  @apply font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.auth-container.main-container {
+  div.o-form-content.o-form-theme {
+    > h2 {
+      display: none;
+    }
+    .o-form-label-top .okta-form-label.o-form-label,
+    .o-form-input-name-remember .custom-checkbox label,
+    .okta-form-input-error,
+    .o-form-input-error,
+    .o-form-explain {
+      text-align: left;
+    }
+  }
+}
+
+.ag-theme-alpine > nav > ul > li > button:disabled {
+  cursor: not-allowed;
+}
+.pdf-to-download-radio-checkbox  {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.pdf-to-download-radio-checkbox > label {
+  margin-top: 0;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pdf-to-download .pdf-to-download-btn {
+  display: none;
+}
+
+.pdf-to-download .pdf-to-download-radio-checkbox > label > input {
+  margin-top: 14px;
+}
+
+.pdf-to-download-radio-checkbox > label > input {
+  margin-right: 6px;
+}
+// HeatmapScaleEllipse color level
+.reportScale-0 {
+  color: #60db88,
+}
+.reportScale-1 {
+  color: #2abf5c,
+}
+.reportScale-2 {
+  color: #37b160,
+}
+.reportScale-3 {
+  color: #10933e,
+}
+.reportScale-4 {
+  color: #f2dd4a,
+}
+.reportScale-5 {
+  color: #ed6512,
+}
+.reportScale-6 {
+  color: #ea4029,
+}
+
+
+// ag grid height
+@media screen and (max-width: 1026px) {
+  .pdf-to-download-radio-checkbox > label {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .pdf-to-download-radio-checkbox  {
+    display: flex;
+    margin-top: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .pdf-to-download .pdf-to-download-radio-checkbox > label > input {
+    margin-top: 13px;
+  }
+}
+
+.result-wrapper .red {
+  color: red;
+}
+
+// Mantine font-family
+.mantine-Menu-item {
+  @apply font-sans;
+}
+
+// TODO
+.chart-js-tool-tip::before {
+  content: "";
+
+  position: absolute;
+  top: 40%;
+  left: calc(100%);
+  border: 8px solid black;
+  
+  border-left-color: rgba(0, 0, 0, 0.654);
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  
+  margin: 0 auto;
+}
+
+.calendar-container input[type=text] {
+  width: calc(100% + 25px) !important;
+  background: transparent;
+  z-index: 1;
+}
+
+.calendar-container .react-datepicker-popper{
+  z-index: 11;
+}
+.details-field textarea.mantine-Input-input{
+  height: 196px;
+}
+.comment-box textarea.mantine-Input-input{
+  height: 140px;
+}
+.mantine-InputWrapper-root {
+  position: relative;
+}
+// custom tooltip arrow for doughnut chart
+.custom-tooltip-arrow::before {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+  left: 21%;
+  bottom: 100%;
+  transform: translateX(-50%);
+}

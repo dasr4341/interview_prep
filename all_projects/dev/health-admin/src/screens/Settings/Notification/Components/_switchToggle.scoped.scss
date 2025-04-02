@@ -1,0 +1,23 @@
+.toggle-wapper {
+	display: none;
+	+ {
+		.toggle-bar {
+			width: 51px;
+			height: 31px;
+			>.toggle-circle {
+				width: 27px;
+				height: 27px;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+			}
+		}
+	}
+	&:checked {
+		+ {
+			.toggle-bar {
+				>.toggle-circle {
+					transform: translateX(20px);
+				}
+			}
+		}
+	}
+}

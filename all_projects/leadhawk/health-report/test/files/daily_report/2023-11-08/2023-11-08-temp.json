@@ -1,0 +1,179 @@
+{
+  "tempSkin": [
+    {
+      "dateTime": "2023-10-10",
+      "value": {
+        "nightlyRelative": -0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-11",
+      "value": {
+        "nightlyRelative": 0.9
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-12",
+      "value": {
+        "nightlyRelative": -0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-13",
+      "value": {
+        "nightlyRelative": -0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-15",
+      "value": {
+        "nightlyRelative": -0.7
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-16",
+      "value": {
+        "nightlyRelative": -0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-17",
+      "value": {
+        "nightlyRelative": -0.1
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-18",
+      "value": {
+        "nightlyRelative": 0
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-19",
+      "value": {
+        "nightlyRelative": -0.3
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-20",
+      "value": {
+        "nightlyRelative": -0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-22",
+      "value": {
+        "nightlyRelative": 0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-26",
+      "value": {
+        "nightlyRelative": -1
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-27",
+      "value": {
+        "nightlyRelative": 0
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-28",
+      "value": {
+        "nightlyRelative": -0.5
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-29",
+      "value": {
+        "nightlyRelative": -0.1
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-30",
+      "value": {
+        "nightlyRelative": 1
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-10-31",
+      "value": {
+        "nightlyRelative": -0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-01",
+      "value": {
+        "nightlyRelative": -1
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-02",
+      "value": {
+        "nightlyRelative": -0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-03",
+      "value": {
+        "nightlyRelative": -0.1
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-04",
+      "value": {
+        "nightlyRelative": 0
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-05",
+      "value": {
+        "nightlyRelative": 0.3
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-06",
+      "value": {
+        "nightlyRelative": 0.3
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-07",
+      "value": {
+        "nightlyRelative": 0.5
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-08",
+      "value": {
+        "nightlyRelative": -0.4
+      },
+      "logType": "other_sensors"
+    }
+  ]
+}

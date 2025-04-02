@@ -1,0 +1,41 @@
+{
+  "name": "cdk-leadhawk",
+  "version": "0.1.0",
+  "bin": {
+    "cdk-leadhawk": "bin/cdk-leadhawk.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "synth:itobuz": "dotenv -e .env.itobuz cdk synth -- --require-approval never",
+    "synth:leadhawk": "dotenv -e .env.leadhawk cdk synth -- --require-approval never",
+    "diff:itobuz": "dotenv -e .env.itobuz cdk diff -- --require-approval never",
+    "diff:leadhawk": "dotenv -e .env.leadhawk cdk diff -- --require-approval never",
+    "deploy:itobuz": "dotenv -e .env.itobuz cdk deploy -- --require-approval never",
+    "deploy:leadhawk": "dotenv -e .env.leadhawk cdk deploy -- --require-approval never",
+    "diff:services:leadhawk": "dotenv -e .env.leadhawk cdk diff CdkLeadhawkStack -- --require-approval never",
+    "deploy:services:leadhawk": "dotenv -e .env.leadhawk cdk deploy CdkLeadhawkStack -- --require-approval never",
+    "diff:services:itobuz": "dotenv -e .env.itobuz cdk diff CdkLeadhawkStack -- --require-approval never",
+    "deploy:services:itobuz": "dotenv -e .env.itobuz cdk deploy CdkLeadhawkStack -- --require-approval never",
+    "diff:scrapper:leadhawk": "dotenv -e .env.leadhawk cdk diff CdkLeadhawkScrapperStack -- --require-approval never",
+    "deploy:scrapper:leadhawk": "dotenv -e .env.leadhawk cdk deploy CdkLeadhawkScrapperStack -- --require-approval never",
+    "destroy:scrapper:leadhawk": "dotenv -e .env.leadhawk cdk destroy CdkLeadhawkScrapperStack -- --require-approval never",
+    "diff:scrapper:itobuz": "dotenv -e .env.itobuz cdk diff CdkLeadhawkScrapperStack -- --require-approval never",
+    "deploy:scrapper:itobuz": "dotenv -e .env.itobuz cdk deploy CdkLeadhawkScrapperStack -- --require-approval never"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@types/node": "20.12.7",
+    "aws-cdk": "2.138.0",
+    "dotenv-cli": "^7.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.4.5"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.138.0",
+    "constructs": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "source-map-support": "^0.5.21"
+  }
+}

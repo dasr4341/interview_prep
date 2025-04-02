@@ -1,0 +1,19 @@
+export enum FamilyRelationShipType {
+  BROTHER_SISTER = 'BROTHER_SISTER',
+  CHILD = 'CHILD',
+  GRANDPARENT = 'GRANDPARENT',
+  GUARDIAN = 'GUARDIAN',
+  PARENT = 'PARENT',
+  SPOUSE = 'SPOUSE',
+  SPOUSE_PARTNER = 'SPOUSE_PARTNER',
+}
+
+export enum LegalRelationType {
+  GUARANTOR = 'GUARANTOR',
+  PROBATION_OFFICER = 'PROBATION_OFFICER',
+  SPONSOR = 'SPONSOR',
+}
+
+export enum OtherRelationType {
+  OTHER = 'OTHER',
+}

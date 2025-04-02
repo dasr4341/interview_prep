@@ -1,0 +1,39 @@
+.patient-search{
+  outline: 0px!important;
+  border: 0px!important;
+  color: transparent;
+  text-shadow: 0 0 0 black;
+}
+.patient-search:focus{
+  outline: 0px!important;
+  border: 0px!important;
+  outline-offset: 0px;
+  border-color: transparent!important;
+}
+
+.filter-border {
+  border:  1px solid #C5C5D8;
+  border-radius: 6px;
+}
+
+.filter-border-b{
+  border-bottom:  1px solid #C5C5D8;
+  border-radius: 2px;
+}
+
+.filter-z-index {
+  z-index: 1000;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+
+@media (min-width: '') {
+  .date-range  {  
+    background-color: red!important;
+ }
+}
+
+

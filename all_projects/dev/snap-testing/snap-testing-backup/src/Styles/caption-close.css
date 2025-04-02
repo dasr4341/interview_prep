@@ -1,0 +1,8 @@
+
+.caption-body:hover .caption-close{
+  display: block;
+}
+
+.caption-body:hover .caption-chip{
+  display: none;
+}

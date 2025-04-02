@@ -1,0 +1,31 @@
+.survey-header {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.survey-header-subScales{
+  margin: 30px 0 10px 0;
+}
+.survey-header-subScales-content {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3px;
+}
+
+@media screen and (min-width: 624px){
+  .survey-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .survey-header-subScales-content {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3px;
+  }
+  .survey-header-subScales{
+    margin-top: 10px;
+  }
+}

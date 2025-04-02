@@ -1,0 +1,28 @@
+.rdt {
+  .form-control {
+    border-color: transparent;
+    @apply bg-primary-100;
+    @apply text-xxs;
+    letter-spacing: 0.1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    outline: none;
+    &:focus{
+      @apply text-pt-blue-300;
+    }
+  }
+  .rdtPicker {
+    box-shadow: none;
+    background: #f5f4f5;
+    border-radius: 10px;
+    @apply text-xxs;
+    right: 0;
+    .rdtToday{
+      &::before{
+       border-bottom: 7px solid #3b7af7;
+      }
+    }
+  }
+}
+

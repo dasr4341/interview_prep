@@ -1,0 +1,1133 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 59,
+  "make_name": "WILLYS",
+  "display_order": 0,
+  "make_display": "WILLYS",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 55257,
+      "year": "2024",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55256,
+      "year": "2023",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55255,
+      "year": "2022",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55254,
+      "year": "2021",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55253,
+      "year": "2020",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55252,
+      "year": "2019",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55251,
+      "year": "2018",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55250,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55249,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55248,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55247,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55246,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55245,
+      "year": "2012",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55244,
+      "year": "2011",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55243,
+      "year": "2010",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 6213,
+              "model_id": 588,
+              "variant_name": "CJ4",
+              "variant_name_short": "CJ4",
+              "variant_display_name": "CJ4",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": -1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55242,
+      "year": "2009",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55241,
+      "year": "2008",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55240,
+      "year": "2007",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55239,
+      "year": "2006",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55238,
+      "year": "2005",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55237,
+      "year": "2004",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55236,
+      "year": "2003",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55235,
+      "year": "2002",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55234,
+      "year": "2001",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55233,
+      "year": "2000",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55232,
+      "year": "1999",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55231,
+      "year": "1998",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55230,
+      "year": "1997",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55229,
+      "year": "1996",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55228,
+      "year": "1995",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55227,
+      "year": "1994",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55226,
+      "year": "1993",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55225,
+      "year": "1992",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55224,
+      "year": "1991",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55223,
+      "year": "1990",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55222,
+      "year": "1989",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55221,
+      "year": "1988",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55220,
+      "year": "1987",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55219,
+      "year": "1986",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55218,
+      "year": "1985",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55217,
+      "year": "1984",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55216,
+      "year": "1983",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55215,
+      "year": "1982",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55214,
+      "year": "1981",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 25826,
+      "year": "1980",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55288,
+      "year": "1970",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55287,
+      "year": "1969",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55286,
+      "year": "1968",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55285,
+      "year": "1967",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55284,
+      "year": "1966",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55283,
+      "year": "1965",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55282,
+      "year": "1964",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55281,
+      "year": "1963",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55280,
+      "year": "1962",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55279,
+      "year": "1961",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 55278,
+      "year": "1960",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 588,
+          "make_id": 59,
+          "model_name": "JEEP",
+          "model_display": "JEEP",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    }
+  ]
+}

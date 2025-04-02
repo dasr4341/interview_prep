@@ -1,0 +1,1 @@
+{"version":3,"file":"message.lib.js","sourceRoot":"","sources":["../../../lib/message.lib.ts"],"names":[],"mappings":"AAAA,MAAM,CAAC,MAAM,WAAW,GAAG;IACvB,OAAO,EAAE;QACL,wBAAwB,EAAG,2BAA2B;KACzD;IACD,KAAK,EAAE;QACH,aAAa,EAAE,iBAAiB;QAChC,WAAW,EAAE,CAAC,YAAqB,EAAE,EAAE,CAAE,oBAAoB,YAAY,IAAI,KAAK,YAAY,EAAE,EAAE;KACrG;CACJ,CAAA"}

@@ -1,0 +1,10 @@
+[type='checkbox']:focus, 
+[type='radio']:focus {
+  box-shadow: none;
+}
+
+.min-width-20 {
+  min-width: 20px;
+}
+
+@import '../scss/components/date-range-picker';

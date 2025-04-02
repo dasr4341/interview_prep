@@ -1,0 +1,116 @@
+{
+  "tempSkin": [
+    {
+      "dateTime": "2023-11-12",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-13",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-14",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-15",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-16",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-17",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-18",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-19",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-20",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-21",
+      "value": {
+        "nightlyRelative": 0
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-22",
+      "value": {
+        "nightlyRelative": 0.8
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-23",
+      "value": {
+        "nightlyRelative": 0
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-24",
+      "value": {
+        "nightlyRelative": 0.8
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-25",
+      "value": {
+        "nightlyRelative": 0.2
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-26",
+      "value": {
+        "nightlyRelative": null
+      },
+      "logType": "other_sensors"
+    },
+    {
+      "dateTime": "2023-11-27",
+      "value": {
+        "nightlyRelative": -1.8
+      },
+      "logType": "other_sensors"
+    }
+  ]
+}

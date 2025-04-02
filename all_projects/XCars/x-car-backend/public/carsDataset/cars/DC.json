@@ -1,0 +1,167 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 43,
+  "make_name": "DC",
+  "display_order": 0,
+  "make_display": "DC",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 24164,
+      "year": "2019",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 392,
+          "make_id": 43,
+          "model_name": "AVANTI",
+          "model_display": "AVANTI",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 3927,
+              "model_id": 392,
+              "variant_name": "AVANTI",
+              "variant_name_short": "",
+              "variant_display_name": "AVANTI",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 25044,
+      "year": "2018",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 392,
+          "make_id": 43,
+          "model_name": "AVANTI",
+          "model_display": "AVANTI",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 3927,
+              "model_id": 392,
+              "variant_name": "AVANTI",
+              "variant_name_short": "",
+              "variant_display_name": "AVANTI",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 27104,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 392,
+          "make_id": 43,
+          "model_name": "AVANTI",
+          "model_display": "AVANTI",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 3927,
+              "model_id": 392,
+              "variant_name": "AVANTI",
+              "variant_name_short": "",
+              "variant_display_name": "AVANTI",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 19576,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 392,
+          "make_id": 43,
+          "model_name": "AVANTI",
+          "model_display": "AVANTI",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 3927,
+              "model_id": 392,
+              "variant_name": "AVANTI",
+              "variant_name_short": "",
+              "variant_display_name": "AVANTI",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 20220,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 392,
+          "make_id": 43,
+          "model_name": "AVANTI",
+          "model_display": "AVANTI",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 3927,
+              "model_id": 392,
+              "variant_name": "AVANTI",
+              "variant_name_short": "",
+              "variant_display_name": "AVANTI",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

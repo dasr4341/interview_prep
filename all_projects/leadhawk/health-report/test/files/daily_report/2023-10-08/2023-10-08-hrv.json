@@ -1,0 +1,165 @@
+{
+  "hrv": [
+    {
+      "value": {
+        "dailyRmssd": 42.623,
+        "deepRmssd": 49.101
+      },
+      "dateTime": "2023-09-09"
+    },
+    {
+      "value": {
+        "dailyRmssd": 33.816,
+        "deepRmssd": 38.876
+      },
+      "dateTime": "2023-09-10"
+    },
+    {
+      "value": {
+        "dailyRmssd": 28.508,
+        "deepRmssd": 18.645
+      },
+      "dateTime": "2023-09-11"
+    },
+    {
+      "value": {
+        "dailyRmssd": 36.112,
+        "deepRmssd": 31.07
+      },
+      "dateTime": "2023-09-13"
+    },
+    {
+      "value": {
+        "dailyRmssd": 27.862,
+        "deepRmssd": 24.834
+      },
+      "dateTime": "2023-09-14"
+    },
+    {
+      "value": {
+        "dailyRmssd": 37.379,
+        "deepRmssd": 27.655
+      },
+      "dateTime": "2023-09-15"
+    },
+    {
+      "value": {
+        "dailyRmssd": 25.53,
+        "deepRmssd": 34.491
+      },
+      "dateTime": "2023-09-17"
+    },
+    {
+      "value": {
+        "dailyRmssd": 30.526,
+        "deepRmssd": 29.854
+      },
+      "dateTime": "2023-09-18"
+    },
+    {
+      "value": {
+        "dailyRmssd": 33.78,
+        "deepRmssd": 31.859
+      },
+      "dateTime": "2023-09-19"
+    },
+    {
+      "value": {
+        "dailyRmssd": 22.424,
+        "deepRmssd": 30.018
+      },
+      "dateTime": "2023-09-20"
+    },
+    {
+      "value": {
+        "dailyRmssd": 38.698,
+        "deepRmssd": 45.972
+      },
+      "dateTime": "2023-09-21"
+    },
+    {
+      "value": {
+        "dailyRmssd": 36.974,
+        "deepRmssd": 33.147
+      },
+      "dateTime": "2023-09-22"
+    },
+    {
+      "value": {
+        "dailyRmssd": 38.116,
+        "deepRmssd": 39.601
+      },
+      "dateTime": "2023-09-23"
+    },
+    {
+      "value": {
+        "dailyRmssd": 25.687,
+        "deepRmssd": 25.042
+      },
+      "dateTime": "2023-09-24"
+    },
+    {
+      "value": {
+        "dailyRmssd": 35.378,
+        "deepRmssd": 37.247
+      },
+      "dateTime": "2023-09-25"
+    },
+    {
+      "value": {
+        "dailyRmssd": 32.916,
+        "deepRmssd": 37.448
+      },
+      "dateTime": "2023-09-26"
+    },
+    {
+      "value": {
+        "dailyRmssd": 28.857,
+        "deepRmssd": 25.074
+      },
+      "dateTime": "2023-09-27"
+    },
+    {
+      "value": {
+        "dailyRmssd": 24.965,
+        "deepRmssd": 23.883
+      },
+      "dateTime": "2023-09-28"
+    },
+    {
+      "value": {
+        "dailyRmssd": 25.357,
+        "deepRmssd": 24.714
+      },
+      "dateTime": "2023-09-29"
+    },
+    {
+      "value": {
+        "dailyRmssd": 34.693,
+        "deepRmssd": 34.308
+      },
+      "dateTime": "2023-09-30"
+    },
+    {
+      "value": {
+        "dailyRmssd": 13.282,
+        "deepRmssd": 22.079
+      },
+      "dateTime": "2023-10-02"
+    },
+    {
+      "value": {
+        "dailyRmssd": 11.078,
+        "deepRmssd": 10.561
+      },
+      "dateTime": "2023-10-04"
+    },
+    {
+      "value": {
+        "dailyRmssd": 37.025,
+        "deepRmssd": 50.424
+      },
+      "dateTime": "2023-10-06"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "pretaaAdmin": {
+    "email": "prosenjit+pretaaadmin@itobuz.com",
+    "password": "pR3t@A4321"
+  },
+  "superAdmin": {
+    "email": "palash+superadmin@itobuz.com",
+    "password": "Itobuz#1234"
+  },
+  "facilityAdmin": {
+    "email": "pradipta@itobuz.com",
+    "password": "Itobuz#1234"
+  },
+  "facilityAdminUid": "535f7af1-b984-4057-9f14-e47b883b05d2",
+  "facilityUser": {
+    "email": "prosenjit+facility@itobuz.com",
+    "password": "Pretaa@124"
+  },
+  "careTeamId": "535f7af1-b984-4057-9f14-e47b883b05f3",
+
+  "patientId": "535f7af1-b984-4057-9f14-e47b883b05f4",
+  "patient": {
+    "email": "prosenjit+patient@itobuz.com",
+    "password": "Itobuz#1234"
+  },
+  "supporter": {
+    "email": "soumabha+9050@itobuz.com",
+    "password": "KHbHTBTT3mS0vqbfsMjyFIoflqcvQ6P#"
+  },
+  "twoAuthEnabled": {
+    "email": "prosenjit+otp-test@itobuz.com",
+    "password": "Pretaa@1234"
+  },
+  "caseManagerId": "1f9d9c3f-c9e5-4b45-abe8-280a7c755985",
+  "patientEmail": "prosenjit+patient@itobuz.com",
+  "careTeamEmail": "prosenjit+facility@itobuz.com",
+  "superAdminID": "a0e28df8-f5a2-41ef-9cbb-c15accdd3bfe"
+}

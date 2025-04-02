@@ -1,0 +1,11 @@
+
+.menu-btn {
+  @apply text-lgx;
+  @apply inline-block;
+  @apply text-center;
+  @apply font-normal;
+  @apply p-5; 
+  @apply w-full;
+  @apply dark:hover:bg-gray-800;
+  @apply dark:hover:text-gray-300;
+}

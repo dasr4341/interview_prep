@@ -1,0 +1,8 @@
+
+
+@media (width <= 1000px) {
+    .top-section .right {
+      display: none;
+    }
+  }
+  

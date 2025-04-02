@@ -1,0 +1,24 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "2STG32X27Q.com.pretaa.healthmobile",
+        "paths": [
+          "forgot_password/*",
+          "welcome/*",
+          "authenticate-with-fhs/*",
+          "fhs-confirm/*",
+          "patient-invitation/*",
+          "dashboard/events/*",
+          "dashboard/events/reports/*/with-report?reportType=*",
+          "dashboard/event/survey/*",
+          "dashboard/patient/list/*/surveys/OPEN",
+          "dashboard/patient/surveys/list/submit/*",
+          "dashboard/patient/surveys/list/open",
+          "dashboard/events/assessment/*"
+        ]
+      }
+    ]
+  }
+}

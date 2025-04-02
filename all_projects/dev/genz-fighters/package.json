@@ -1,0 +1,20 @@
+{
+  "name": "aframe",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "homepage": "./",
+  "scripts": {
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "preview": "npx vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "aframe": "^1.5.0",
+    "path": "^0.12.7",
+    "three": "^0.162.0"
+  }
+}

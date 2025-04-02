@@ -1,0 +1,105 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 53,
+  "make_name": "EICHER",
+  "display_order": 0,
+  "make_display": "EICHER",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 28548,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 498,
+          "make_id": 53,
+          "model_name": "POLARIS MULTIX",
+          "model_display": "POLARIS MULTIX",
+          "body_type": "Hatchback",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 5434,
+              "model_id": 498,
+              "variant_name": "MX",
+              "variant_name_short": "",
+              "variant_display_name": "MX",
+              "transportation_category": "Category_1",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 24773,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 498,
+          "make_id": 53,
+          "model_name": "POLARIS MULTIX",
+          "model_display": "POLARIS MULTIX",
+          "body_type": "Hatchback",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 5434,
+              "model_id": 498,
+              "variant_name": "MX",
+              "variant_name_short": "",
+              "variant_display_name": "MX",
+              "transportation_category": "Category_1",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 23546,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 498,
+          "make_id": 53,
+          "model_name": "POLARIS MULTIX",
+          "model_display": "POLARIS MULTIX",
+          "body_type": "Hatchback",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 5434,
+              "model_id": 498,
+              "variant_name": "MX",
+              "variant_name_short": "",
+              "variant_display_name": "MX",
+              "transportation_category": "Category_1",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

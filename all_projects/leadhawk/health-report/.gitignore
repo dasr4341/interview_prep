@@ -1,0 +1,13 @@
+# folders
+/node_modules
+/dist
+/temp
+/debug/json/*.json
+/debug/pdf/*.pdf
+/debug/img/*.png
+/log/**.log
+
+# files
+/.env
+.DS_Store
+.scannerwork

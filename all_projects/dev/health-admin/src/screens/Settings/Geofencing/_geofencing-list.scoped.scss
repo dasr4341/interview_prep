@@ -1,0 +1,30 @@
+$width : 160px;
+$width-lg : 240px;
+
+.row-element, .row-header {
+  width: $width ;
+  padding: 20px ;
+}
+
+.row-element {
+  background-color: white;
+}
+
+.row-element:last-child, .row-header:last-child {
+  width: $width-lg ;
+}
+
+.virtuoso-item-list {
+  margin: 10px 0;
+}
+
+td {
+ border-bottom: 4px solid #F8F8FA;
+}
+
+.map-view-img{
+  margin-top: 30px;
+  width: 100%;
+  height: 100vh;
+}
+

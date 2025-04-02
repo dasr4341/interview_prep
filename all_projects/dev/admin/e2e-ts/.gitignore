@@ -1,0 +1,5 @@
+node_modules
+cypress.private.json
+cypress/videos
+cypress/screenshots
+cypress.env-user.json

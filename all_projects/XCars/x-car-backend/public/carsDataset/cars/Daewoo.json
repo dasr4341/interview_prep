@@ -1,0 +1,732 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 40,
+  "make_name": "DAEWOO",
+  "display_order": 0,
+  "make_display": "Daewoo",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 53381,
+      "year": "2023",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53380,
+      "year": "2022",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53379,
+      "year": "2021",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53378,
+      "year": "2020",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53377,
+      "year": "2019",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53376,
+      "year": "2018",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53375,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53374,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53373,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53372,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53371,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53370,
+      "year": "2012",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53369,
+      "year": "2011",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53368,
+      "year": "2010",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 2707,
+              "model_id": 310,
+              "variant_name": "SD",
+              "variant_name_short": "SD",
+              "variant_display_name": "SD",
+              "transportation_category": "Category_2",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "12",
+              "ex_showroom_price": 340000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 53367,
+      "year": "2009",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 53366,
+      "year": "2008",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 53365,
+      "year": "2007",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 53364,
+      "year": "2006",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 53363,
+      "year": "2005",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 18808,
+      "year": "2004",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 53362,
+      "year": "2003",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 10882,
+      "year": "2002",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 11165,
+      "year": "2001",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 11419,
+      "year": "2000",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 367,
+          "make_id": 40,
+          "model_name": "cielo",
+          "model_display": "cielo",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        },
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 11621,
+      "year": "1999",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 367,
+          "make_id": 40,
+          "model_name": "cielo",
+          "model_display": "cielo",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        },
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 22079,
+      "year": "1998",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 367,
+          "make_id": 40,
+          "model_name": "cielo",
+          "model_display": "cielo",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        },
+        {
+          "status": "Active",
+          "model_id": 310,
+          "make_id": 40,
+          "model_name": "MATIZ",
+          "model_display": "Matiz",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 18802,
+      "year": "1997",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 367,
+          "make_id": 40,
+          "model_name": "cielo",
+          "model_display": "cielo",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 18803,
+      "year": "1996",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 367,
+          "make_id": 40,
+          "model_name": "cielo",
+          "model_display": "cielo",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 24713,
+      "year": "1995",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 367,
+          "make_id": 40,
+          "model_name": "cielo",
+          "model_display": "cielo",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 30658,
+      "year": "1994",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 367,
+          "make_id": 40,
+          "model_name": "cielo",
+          "model_display": "cielo",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    }
+  ]
+}

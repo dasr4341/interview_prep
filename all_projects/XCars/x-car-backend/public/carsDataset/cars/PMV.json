@@ -1,0 +1,63 @@
+{
+  "logo": "https://fastly-production.24c.in/cars24/brand/",
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 64,
+  "make_name": "PMV",
+  "display_order": 1,
+  "make_display": "PMV",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 57707,
+      "year": "2024",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 701,
+          "make_id": 64,
+          "model_name": "Eas-E",
+          "model_display": "Eas-E",
+          "body_type": "Hatchback",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 57706,
+      "year": "2023",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 701,
+          "make_id": 64,
+          "model_name": "Eas-E",
+          "model_display": "Eas-E",
+          "body_type": "Hatchback",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 57705,
+      "year": "2022",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 701,
+          "make_id": 64,
+          "model_name": "Eas-E",
+          "model_display": "Eas-E",
+          "body_type": "Hatchback",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 60,
+  "make_name": "ROVAR",
+  "display_order": 0,
+  "make_display": "ROVAR",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 25824,
+      "year": "1997",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 595,
+          "make_id": 60,
+          "model_name": "MONTEGO",
+          "model_display": "MONTEGO",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    }
+  ]
+}

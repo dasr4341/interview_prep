@@ -1,0 +1,300 @@
+{
+  "logo": "https://fastly-production.24c.in/cars24/brand/ea6c432f-2a94-4320-b97a-14c989f62acbimage(8).png",
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 1,
+  "make_name": "ASHOK LEYLAND",
+  "display_order": 0,
+  "make_display": "Ashok Leyland",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 1,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 1,
+          "make_id": 1,
+          "model_name": "STILE",
+          "model_display": "Stile",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 1,
+              "model_id": 1,
+              "variant_name": "LE 7 SEATER",
+              "variant_name_short": "LE 7 SEATER",
+              "variant_display_name": "LE 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 2,
+              "model_id": 1,
+              "variant_name": "LE 8 SEATER",
+              "variant_name_short": "LE 8 SEATER",
+              "variant_display_name": "LE 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 3,
+              "model_id": 1,
+              "variant_name": "LS 7 SEATER",
+              "variant_name_short": "LS 7 SEATER",
+              "variant_display_name": "LS 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 4,
+              "model_id": 1,
+              "variant_name": "LS 8 SEATER",
+              "variant_name_short": "LS 8 SEATER",
+              "variant_display_name": "LS 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 5,
+              "model_id": 1,
+              "variant_name": "LX 7 SEATER",
+              "variant_name_short": "LX 7 SEATER",
+              "variant_display_name": "LX 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 6,
+              "model_id": 1,
+              "variant_name": "LX 8 SEATER",
+              "variant_name_short": "LX 8 SEATER",
+              "variant_display_name": "LX 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 1512,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 1,
+          "make_id": 1,
+          "model_name": "STILE",
+          "model_display": "Stile",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 1,
+              "model_id": 1,
+              "variant_name": "LE 7 SEATER",
+              "variant_name_short": "LE 7 SEATER",
+              "variant_display_name": "LE 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 2,
+              "model_id": 1,
+              "variant_name": "LE 8 SEATER",
+              "variant_name_short": "LE 8 SEATER",
+              "variant_display_name": "LE 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 3,
+              "model_id": 1,
+              "variant_name": "LS 7 SEATER",
+              "variant_name_short": "LS 7 SEATER",
+              "variant_display_name": "LS 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 4,
+              "model_id": 1,
+              "variant_name": "LS 8 SEATER",
+              "variant_name_short": "LS 8 SEATER",
+              "variant_display_name": "LS 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 5,
+              "model_id": 1,
+              "variant_name": "LX 7 SEATER",
+              "variant_name_short": "LX 7 SEATER",
+              "variant_display_name": "LX 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 6,
+              "model_id": 1,
+              "variant_name": "LX 8 SEATER",
+              "variant_name_short": "LX 8 SEATER",
+              "variant_display_name": "LX 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 3021,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 1,
+          "make_id": 1,
+          "model_name": "STILE",
+          "model_display": "Stile",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 1,
+              "model_id": 1,
+              "variant_name": "LE 7 SEATER",
+              "variant_name_short": "LE 7 SEATER",
+              "variant_display_name": "LE 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 2,
+              "model_id": 1,
+              "variant_name": "LE 8 SEATER",
+              "variant_name_short": "LE 8 SEATER",
+              "variant_display_name": "LE 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 3,
+              "model_id": 1,
+              "variant_name": "LS 7 SEATER",
+              "variant_name_short": "LS 7 SEATER",
+              "variant_display_name": "LS 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 4,
+              "model_id": 1,
+              "variant_name": "LS 8 SEATER",
+              "variant_name_short": "LS 8 SEATER",
+              "variant_display_name": "LS 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 5,
+              "model_id": 1,
+              "variant_name": "LX 7 SEATER",
+              "variant_name_short": "LX 7 SEATER",
+              "variant_display_name": "LX 7 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 6,
+              "model_id": 1,
+              "variant_name": "LX 8 SEATER",
+              "variant_name_short": "LX 8 SEATER",
+              "variant_display_name": "LX 8 SEATER",
+              "transportation_category": "Category_3",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

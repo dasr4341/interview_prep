@@ -1,0 +1,18 @@
+.unread-block {
+  background-color: #ffffff;
+}
+.read-block{
+  background-color: transparent;
+}
+.read-block .note-text{
+  color: #23265B;
+  font-weight: 500;
+}
+.unread-block .note-text{
+  color: #23265B;
+  font-weight: 700;
+}
+
+.bg-register {
+  background-color: #FCF9E3;
+}

@@ -1,0 +1,96 @@
+// Fix react hot reload issue 
+iframe {
+  display: none !important;
+}
+
+.m-w-screen-2\/3 {
+  min-width: 66vw;
+}
+
+.shadow-table-header {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-nav {
+  box-shadow: -2px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.text-2xs {
+  font-size: 0.625rem;
+}
+
+.border-not-last-child {
+  border-bottom-width: 1px;
+
+  &:last-child {
+    border-bottom-width: 0px;
+  }
+}
+
+.lg\:max-hg-60 {
+  max-height: 60vh;
+}
+
+.color-box {
+  width: 10px;
+  height: 10px;
+  background-color: #3b7af7;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.badge {
+  @apply uppercase;
+  @apply text-black;
+  @apply font-bold;
+  @apply text-xxs;
+  @apply bg-yellow-500;
+  @apply rounded-3xl;
+  @apply px-3;
+  @apply py-2;
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.html-label h1 {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.html-label h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.html-label h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.html-label h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.html-label h5 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.html-label h6 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+

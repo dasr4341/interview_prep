@@ -1,0 +1,62 @@
+.event-row-pop-over-content {
+  margin: auto;
+  background: rgb(214, 1, 1);
+  width: 50%;
+  padding: 5px;
+}
+.event-row-pop-over-arrow {
+  color: rgb(255, 255, 255);
+}
+[role='tooltip'].event-row-pop-over-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.event-row-pop-over-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup='tooltip'].event-row-pop-over-overlay {
+  background: transparent;
+}
+.pop-over-list li{
+  border-bottom: 1px solid #E5E5EF;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  cursor: pointer;
+  color: #23265B;
+  width: 100%;
+}
+.pop-over-list li:hover{
+  color: #ffcc01;
+}
+
+.pop-over-list li:last-child {
+  border-bottom: none;
+}
+.snooze-timing-list{
+  margin-left: 15px;
+}
+.snooze-timing-list li{
+  border-bottom: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.snooze-timing-list li input {
+  border: 1px solid #E5E5EF;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  max-width: 50px;
+  padding: 2px;
+  font-size: 13px;
+}
+.apply-check{
+  font-size: 20px;
+  background: #ffcc01;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.hover-event-action:hover{
+  color: #ffcc01;
+}

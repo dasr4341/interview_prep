@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "nodenext",
+    "target": "ES2023",
+    "strict": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+  },
+  "include": [
+    "src/**/*",
+    "index.d.ts"
+  ],
+  "exclude": ["node_modules", "dist", "archive"],
+  
+}

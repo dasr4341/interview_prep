@@ -1,0 +1,165 @@
+---
+# health-report pipeline
+# v10.7.1
+
+image: node:18.19-alpine3.19
+
+definitions:
+  steps:
+    - step: &ecr-pipeline-anchor
+        name: 'ecr pipeline'
+        services:
+          - docker
+        script:
+          - echo 'ecr pipeline start'
+          - apk update && apk upgrade && apk add git && apk add openssh-client
+          - docker version && node -v && npm -v
+          - git submodule update --init --recursive
+          - cd html
+          - git checkout staging && git pull
+          - cd ..
+          - npm i
+          - npm run build
+          - docker image build -t ${AWS_ECR_IMAGE}:v10.7.1 ./
+          - pipe: atlassian/aws-ecr-push-image:2.2.0
+            variables:
+              AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+              AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+              AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+              IMAGE_NAME: ${AWS_ECR_IMAGE}
+              TAGS: 'v10.7.1'
+          - echo 'ecr pipeline end'
+
+    - step: &lambda-daily_report-pipeline-anchor
+        name: 'lambda daily_report pipeline'
+        script:
+          - echo 'lambda daily_report pipeline start'
+          - rm -rf  /opt/atlassian/pipelines/agent/build/.bitbucket/pipelines/generated/pipeline/pipes
+          - pipe: atlassian/aws-lambda-deploy:1.10.1
+            variables:
+              AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+              AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+              AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+              FUNCTION_NAME: 'pretaa-health-function'
+              COMMAND: 'update'
+              IMAGE_URI: '${AWS_ACCOUNT_NUMBER}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${AWS_ECR_IMAGE}:v10.7.1'
+          - echo 'lambda daily_report pipeline end'
+
+    - step: &lambda-special_report-pipeline-anchor
+        name: 'lambda special_report pipeline'
+        script:
+          - echo 'lambda special_report pipeline start'
+          - rm -rf  /opt/atlassian/pipelines/agent/build/.bitbucket/pipelines/generated/pipeline/pipes
+          - pipe: atlassian/aws-lambda-deploy:1.10.1
+            variables:
+              AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+              AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+              AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+              FUNCTION_NAME: 'pretaa-health-special-report-function'
+              COMMAND: 'update'
+              IMAGE_URI: '${AWS_ACCOUNT_NUMBER}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${AWS_ECR_IMAGE}:v10.7.1'
+          - echo 'lambda special_report pipeline end'
+
+    - step: &lambda-weekly_report-pipeline-anchor
+        name: 'lambda weekly_report pipeline'
+        script:
+          - echo 'lambda special_report pipeline start'
+          - rm -rf  /opt/atlassian/pipelines/agent/build/.bitbucket/pipelines/generated/pipeline/pipes
+          - pipe: atlassian/aws-lambda-deploy:1.10.1
+            variables:
+              AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+              AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+              AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+              FUNCTION_NAME: 'pretaa-health-weekly-report-function'
+              COMMAND: 'update'
+              IMAGE_URI: '${AWS_ACCOUNT_NUMBER}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${AWS_ECR_IMAGE}:v10.7.1'
+          - echo 'lambda weekly_report pipeline end'
+
+    - step: &lambda-monthly_report-pipeline-anchor
+        name: 'lambda monthly_report pipeline'
+        script:
+          - echo 'lambda special_report pipeline start'
+          - rm -rf  /opt/atlassian/pipelines/agent/build/.bitbucket/pipelines/generated/pipeline/pipes
+          - pipe: atlassian/aws-lambda-deploy:1.10.1
+            variables:
+              AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+              AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+              AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+              FUNCTION_NAME: 'pretaa-health-monthly-report-function'
+              COMMAND: 'update'
+              IMAGE_URI: '${AWS_ACCOUNT_NUMBER}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${AWS_ECR_IMAGE}:v10.7.1'
+          - echo 'lambda monthly_report pipeline end'
+
+    - step: &sonar-scanner
+        name: SonarQube analysis
+        image: sonarsource/sonar-scanner-cli:latest
+        script:
+          - sonar-scanner  -Dsonar.login=$SONAR_CLOUD
+
+pipelines:
+  branches:
+    main:
+      - stage:
+          name: 'production health-report pipeline'
+          deployment: production
+          steps:
+            - step:
+                <<: *ecr-pipeline-anchor
+            - step:
+                name: 'lambda daily_report pipeline'
+                script:
+                  - echo 'lambda daily_report pipeline start'
+                  - rm -rf  /opt/atlassian/pipelines/agent/build/.bitbucket/pipelines/generated/pipeline/pipes
+                  - pipe: atlassian/aws-lambda-deploy:1.10.1
+                    variables:
+                      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
+                      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
+                      AWS_DEFAULT_REGION: ${AWS_DEFAULT_REGION}
+                      FUNCTION_NAME: 'Pretaa-Fitbit'
+                      COMMAND: 'update'
+                      IMAGE_URI: '${AWS_ACCOUNT_NUMBER}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${AWS_ECR_IMAGE}:v10.7.1'
+                  - echo 'lambda daily_report pipeline end'
+            - step:
+                <<: *lambda-special_report-pipeline-anchor
+            - step:
+                <<: *lambda-weekly_report-pipeline-anchor
+            - step:
+                <<: *lambda-monthly_report-pipeline-anchor
+            - step:
+                <<: *sonar-scanner
+
+    staging:
+      - stage:
+          name: 'staging health-report pipeline'
+          deployment: staging
+          steps:
+            - step:
+                <<: *ecr-pipeline-anchor
+            - step:
+                <<: *lambda-daily_report-pipeline-anchor
+            - step:
+                <<: *lambda-special_report-pipeline-anchor
+            - step:
+                <<: *lambda-weekly_report-pipeline-anchor
+            - step:
+                <<: *lambda-monthly_report-pipeline-anchor
+            - step:
+                <<: *sonar-scanner
+
+    dev:
+      - stage:
+          name: 'dev health-report pipeline'
+          deployment: dev
+          steps:
+            - step:
+                <<: *ecr-pipeline-anchor
+            - step:
+                <<: *lambda-daily_report-pipeline-anchor
+            - step:
+                <<: *lambda-special_report-pipeline-anchor
+            - step:
+                <<: *lambda-weekly_report-pipeline-anchor
+            - step:
+                <<: *lambda-monthly_report-pipeline-anchor
+            - step:
+                <<: *sonar-scanner

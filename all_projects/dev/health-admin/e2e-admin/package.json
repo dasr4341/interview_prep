@@ -1,0 +1,30 @@
+{
+  "name": "e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open:dev": "export baseURL=https://pretaa-health-dev.netlify.app && cypress open",
+    "cypress:run:dev": "export baseURL=https://pretaa-health-dev.netlify.app && cypress run",
+    "cypress:open:local": "export baseURL=http://localhost:3000 && cypress open",
+    "cypress:run:local": "export baseURL=http://localhost:3000 && cypress run",
+    "start": "npm run cypress:open:dev",
+    "start:ci:happy": "npm run cypress:run:local -- --env grep=@happy-path"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "cross-env": "^7.0.3",
+    "cypress": "^13.1.0",
+    "cypress-localstorage-commands": "^2.2.1",
+    "cypress-network-idle": "^1.11.0",
+    "date-fns": "^2.30.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@cypress/grep": "^3.1.5"
+  }
+}

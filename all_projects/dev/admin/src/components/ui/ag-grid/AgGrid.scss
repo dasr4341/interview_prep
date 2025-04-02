@@ -1,0 +1,13 @@
+.ag-theme-alpine{
+  .ag-invisible{
+    display: none !important;
+  }
+  .ag-checkbox-input-wrapper input {
+    margin-top: -20px;
+  }
+  @-moz-document url-prefix(){
+    .ag-checkbox-input-wrapper input {
+      margin-top: -2px;
+    }
+   }
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .email-container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        border: 1px solid #eaeaea;
+      }
+      .email-header {
+        text-align: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dddddd;
+      }
+      .email-header h2 {
+        color: #0073e6;
+        margin: 0;
+        font-size: 20px;
+      }
+      .email-body {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      .email-body p {
+        color: #555555;
+        margin: 10px 0;
+      }
+      .details {
+        background-color: #f1f9ff;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 15px;
+        border: 1px solid #d4e8ff;
+      }
+      .details p {
+        margin: 5px 0;
+        font-size: 15px;
+      }
+      .details strong {
+        color: #333333;
+      }
+      .email-footer {
+        text-align: center;
+        margin-top: 25px;
+        padding-top: 15px;
+        border-top: 1px solid #dddddd;
+        color: #777777;
+        font-size: 12px;
+      }
+      .email-footer p {
+        margin: 5px 0;
+      }
+      .thanks {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="email-header">
+        <h2>New Lead Notification</h2>
+      </div>
+      <div class="email-body">
+        <p>Hello <strong>{{dealerName}}</strong>,</p>
+        <p>You have received a new lead. Below are the details:</p>
+
+        <div class="details">
+          <p><strong>Email:</strong> {{email}}</p>
+          <p><strong>Phone:</strong> {{phone}}</p>
+          <p><strong>Car Details:</strong> {{carInfo}}</p>
+          <p><strong>Date:</strong> {{date}}</p>
+          <p><strong>Message:</strong> {{message}}</p>
+        </div>
+
+        <p>
+          Please review the details and respond promptly to connect with the
+          lead.
+        </p>
+      </div>
+      <div class="thanks">
+        <p>Best regards,</p>
+        <p>Team X-Car</p>
+      </div>
+      <div class="email-footer">
+        <p>This is an automated message. Please do not reply directly.</p>
+        <p>&copy; {{year}} X-Car. All rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

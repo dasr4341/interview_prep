@@ -1,0 +1,17 @@
+
+/* Number arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:disabled{
+  cursor:not-allowed ;
+  opacity: .5;
+}

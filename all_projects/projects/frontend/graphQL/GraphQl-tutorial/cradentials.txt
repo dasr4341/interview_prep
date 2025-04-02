@@ -1,0 +1,3 @@
+mongoDB user - rahulGraphQl
+password - XlgGwea2ZtU5Nez7
+mongodb+srv://rahulGraphQl:XlgGwea2ZtU5Nez7@cluster0.b1bnuvy.mongodb.net/graphQl-basics

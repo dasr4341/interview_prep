@@ -1,0 +1,47 @@
+{
+  "editor.tabSize": 2,
+  "editor.fontSize": 12,
+  "editor.renderWhitespace": "trailing",
+  "editor.rulers": [140],
+  "editor.suggest.selectionMode": "always",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.formatOnSave": true,
+  "explorer.autoReveal": false,
+  "explorer.compactFolders": false,
+  "workbench.editor.enablePreview": true,
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.scrollback": 100000000,
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools"
+  },
+  "python.analysis.typeCheckingMode": "off",
+  "liveServer.settings.host": "127.0.0.1",
+  "liveServer.settings.port": 5501,
+  "rust-analyzer.linkedProjects": [".\\Cargo.toml"],
+  "sqltools.format": {
+    "language": "sql",
+    "linesBetweenQueries": 3,
+    "reservedWordCase": "upper"
+  },
+  "indentRainbow.includedLanguages": ["yaml", "dockercompose"]
+}

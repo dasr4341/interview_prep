@@ -1,0 +1,45 @@
+--------------------------- to get userById ---------------
+query getUserById($userId:ID!){
+userById(id:$userId){
+name
+}
+}
+---------------------------- to get allUser -------------------
+query getAllUsers{
+getAllUsers{
+name
+}
+}
+--------------------------- create user ---------------------------
+mutation createUser($userNew:UserSignUpInput!){
+  user:signUpUser(signUpUserData:$userNew){ 
+    _id,
+    name
+  }
+}
+            ====== Query Variables ========
+{
+  "userNew": {
+    "name": "navin",
+    "email": "svaadsad@sd.com",
+    "phone": "12356789800",
+    "password": "12345"
+  }
+}
+------------------------------------------------------ signIn
+
+mutation signIn($signInData:UserSignInInput!){
+  user:signInUser(signInUserData:$signInData){ 
+    token
+  }
+}
+
+====== Query Variables ========
+
+{
+  "signInData":{
+    "email": "svdsad@sd.com",
+    "password":"12345"
+}
+}
+------------------------------------------------

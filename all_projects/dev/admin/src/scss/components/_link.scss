@@ -1,0 +1,15 @@
+.link {
+  @apply text-primary-light;
+  @apply underline;
+}
+
+.breadcrumb {
+  @apply capitalize;
+  @apply mr-2;
+  @apply text-primary-light;
+  @apply text-xs;
+  @apply relative;
+  @apply uppercase;
+
+  font-weight: 600;
+}

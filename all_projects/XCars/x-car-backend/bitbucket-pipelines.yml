@@ -1,0 +1,80 @@
+image: node:20.12.2-alpine3.19
+
+pipelines:
+  branches:
+    XC-00-dev/hotfix:
+      - step:
+          name: Build
+          caches:
+            - node
+          script:
+            - yarn
+            - yarn build
+          artifacts:
+            - dist/**
+
+      - step:
+          name: Build envfile
+          script:
+            - |
+              cat <<EOF > .env
+              PORT=$PORT
+              POSTGRES_DB_PORT=$POSTGRES_DB_PORT
+              POSTGRES_HOST=$POSTGRES_HOST
+              POSTGRES_USERNAME=$POSTGRES_USERNAME
+              POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+              POSTGRES_DB=$POSTGRES_DB
+              DATABASE_URL=$DATABASE_URL
+              CORS_ORIGIN=$CORS_ORIGIN
+              AWS_ACCESS_KEY=$AWS_ACCESS_KEY
+              AWS_SECRET_KEY=$AWS_SECRET_KEY
+              AWS_REGION=$AWS_REGION
+              SENDER_EMAIL=$SENDER_EMAIL
+              JWT_ACCESS_TOKEN_EXPIRATION_TIME=$JWT_ACCESS_TOKEN_EXPIRATION_TIME
+              JWT_REFRESH_TOKEN_EXPIRATION_TIME=$JWT_REFRESH_TOKEN_EXPIRATION_TIME
+              COUNTRY_CODE=$COUNTRY_CODE
+              SECRET_ACCESS_KEY=$SECRET_ACCESS_KEY
+              ACCESS_KEY_ID=$ACCESS_KEY_ID
+              REGION=$REGION
+              AWS_S3_BUCKET_NAME=$AWS_S3_BUCKET_NAME
+              ADMIN_EMAIL=$ADMIN_EMAIL
+              ADMIN_PASSWORD=$ADMIN_PASSWORD
+              JWT_ACCESS_SECRET=$JWT_ACCESS_SECRET
+              JWT_REFRESH_SECRET=$JWT_REFRESH_SECRET
+              JWT_FORGET_PASSWORD_SECRET=$JWT_FORGET_PASSWORD_SECRET
+              JWT_ACCESS_TOKEN_EXPIRATION_TIME=$JWT_ACCESS_TOKEN_EXPIRATION_TIME
+              JWT_REFRESH_TOKEN_EXPIRATION_TIME=$JWT_REFRESH_TOKEN_EXPIRATION_TIME
+              JWT_FORGET_PASSWORD_TOKEN_EXPIRATION_TIME=$JWT_FORGET_PASSWORD_TOKEN_EXPIRATION_TIME
+              PAGE=$PAGE
+              LIMIT=$LIMIT
+              VIMEO_ACCESS_TOKEN=$VIMEO_ACCESS_TOKEN
+              FRONTEND_URL=$FRONTEND_URL
+              EOF
+              cat .env
+          artifacts:
+            - .env
+
+      - step:
+          name: Build and publish docker image
+          image: atlassian/default-image:4
+          # runs-on:
+          #   - linux
+          #   - self.hosted
+          services:
+            - docker
+          script:
+            # - echo "Executing on self-hosted runner"
+            # - export DOCKER_CLI_EXPERIMENTAL=enabled # Enable usage of buildx in Docker version < 23
+            # - export BUILDX_VERSION=0.11.0 # define what BUILDX_VERSION to download and install
+            # - apk add --no-cache curl
+            # - curl -fsSLO https://github.com/docker/buildx/releases/download/v${BUILDX_VERSION}/buildx-v${BUILDX_VERSION}.linux-amd64
+            # - mkdir -p $HOME/.docker/cli-plugins/ && mv buildx-v${BUILDX_VERSION}.linux-amd64 $HOME/.docker/cli-plugins/docker-buildx && chmod +x ~/.docker/cli-plugins/docker-buildx # download buildx and move it to the docker plugin folder
+            # - docker run --rm --privileged multiarch/qemu-user-static --reset -p yes; docker buildx create --use # setup the QEMU emulation environment
+            # - docker buildx build -t ${ECR_REPOSITORY_NAME} -f ./docker/Dockerfile.dev --platform linux/amd64,linux/arm64 . # Build multi-architecture image for the platforms provided and push to Dockerhub
+            - docker image build -t ${ECR_REPOSITORY_NAME} -f ./docker/Dockerfile.dev ./
+            - pipe: atlassian/aws-ecr-push-image:2.4.2
+              variables:
+                AWS_ACCESS_KEY_ID: ${ECR_ACCESS_KEY}
+                AWS_SECRET_ACCESS_KEY: ${ECR_SECRET_KEY}
+                AWS_DEFAULT_REGION: ${REGION}
+                IMAGE_NAME: ${ECR_REPOSITORY_NAME}

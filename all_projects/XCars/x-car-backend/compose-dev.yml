@@ -1,0 +1,35 @@
+name: x-cars-dev
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    restart: on-failure:3
+    environment:
+      POSTGRES_USER: ${POSTGRES_USERNAME}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  app:
+    container_name: app
+    image: x-cars-dev:latest
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile.dev
+      no_cache: true
+    restart: on-failure:3
+    depends_on:
+      - postgres
+    ports:
+      - 4001:4000
+    environment:
+      DATABASE_URL: ${DATABASE_URL_DEV}
+    env_file:
+      - .env
+
+volumes:
+  postgres_data:

@@ -1,0 +1,21 @@
+[
+  {
+    "battery": "Medium",
+    "batteryLevel": 49,
+    "deviceVersion": "Versa 4",
+    "features": [],
+    "id": "2342308121",
+    "lastSyncTime": "2023-11-27T09:42:29.547Z",
+    "mac": "7EBBA51EDBC9",
+    "type": "TRACKER"
+  },
+  {
+    "battery": "Empty",
+    "batteryLevel": 0,
+    "deviceVersion": "MobileTrack",
+    "features": [],
+    "id": "2453455979",
+    "lastSyncTime": "2023-11-12T02:41:15.000",
+    "type": "TRACKER"
+  }
+]

@@ -1,0 +1,16 @@
+textarea {
+  text-align: center;
+  padding-top: 80px;
+}
+.iconPosition {
+  left: 49%;
+  top: 33%;
+}
+@media screen and (min-width: 1280px) {
+  .input-field-width {
+    width: 500px;
+  }
+  .text-area-width {
+    width: 759px;
+  }
+}

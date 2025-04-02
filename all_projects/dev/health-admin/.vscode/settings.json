@@ -1,0 +1,37 @@
+{
+  "cSpell.words": [
+    "apikey",
+    "classname",
+    "CLIENTID",
+    "CLIENTSECRET",
+    "closebtn",
+    "FITBIT",
+    "Geofences",
+    "gsap",
+    "hookform",
+    "incompleted",
+    "mantine",
+    "nouislider",
+    "Pretaa",
+    "semibold",
+    "superadmin",
+    "testid",
+    "tilesloaded",
+    "tinymce",
+    "URICA"
+  ],
+  "cSpell.ignoreWords": [],
+  "editor.rulers": [
+    80
+  ],
+  "editor.tabSize": 2,
+  "prettier.proseWrap": "always",
+  "sonarlint.connectedMode.project": {
+    "connectionId": "pretaa-health-admin",
+    "projectKey": "pretaa-health-admin"
+  },
+  "sonarlint.analyzerProperties": {
+    "sonar.javascript.node.maxspace": "8096"
+  }
+  
+}

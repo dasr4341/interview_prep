@@ -1,0 +1,51 @@
+{
+  "name": "pretaa-health-report",
+  "version": "10.7.1",
+  "type": "module",
+  "author": "Arijit Das",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/bitbucket_pretaa/health-fitbit-data-sync/src/main/"
+  },
+  "license": "ISC",
+  "scripts": {
+    "build": "rm -r -f -v ./dist && tsc -b --verbose ./tsconfig.build.json",
+    "dr": "ts-node ./src/local/daily_report_local.ts",
+    "sr": "ts-node ./src/local/special_report_local.ts",
+    "wr": "ts-node ./src/local/weekly_report_local.ts",
+    "mr": "ts-node ./src/local/monthly_report_local.ts",
+    "deploy:dev": "npm run build && sh publish.sh us-west-1",
+    "deploy:staging": "npm run build && sh publish.sh us-east-2",
+    "deploy:prod": "npm run build && sh publish.sh us-west-2",
+    "code:format": "biome format ./src --write",
+    "debug:clean": "ts-node ./test/cleanup.ts clean"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.398.0",
+    "@aws-sdk/client-s3": "^3.400.0",
+    "@aws-sdk/client-secrets-manager": "^3.485.0",
+    "@aws-sdk/client-sns": "^3.398.0",
+    "@aws-sdk/client-sqs": "^3.398.0",
+    "@aws-sdk/s3-request-presigner": "^3.435.0",
+    "@aws-sdk/util-dynamodb": "^3.398.0",
+    "@biomejs/biome": "1.5.1",
+    "@prisma/client": "^5.3.1",
+    "@sentry/node": "^7.69.0",
+    "@types/aws-lambda": "^8.10.119",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.5.7",
+    "@types/uuid": "^9.0.3",
+    "date-fns": "^2.29.3",
+    "date-fns-tz": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "prisma": "^5.3.1",
+    "puppeteer": "^20.9.0",
+    "puppeteer-core": "^19.8.0",
+    "puppeteer-report": "^3.1.0",
+    "ts-node": "^10.9.1",
+    "tsx": "^3.12.10",
+    "typescript": "^5.2.2",
+    "uuid": "^9.0.0"
+  }
+}

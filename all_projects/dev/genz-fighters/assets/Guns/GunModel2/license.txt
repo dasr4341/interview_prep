@@ -1,0 +1,8 @@
+Model Information:
+* title:	Arcade Gun
+* source:	https://sketchfab.com/3d-models/arcade-gun-4ec4e76872dc4dfd92b81058fdc895b7
+* author:	eevi_ka (https://sketchfab.com/eevi_ka)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

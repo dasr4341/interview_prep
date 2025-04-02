@@ -1,0 +1,28 @@
+.event-header {
+  box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.04);
+  line-height: 0;
+  background: rgba(#ffffff, 1);
+}
+
+.sticky-header {
+  width: 100%;
+  padding: 0 24px;
+  animation: slide 0.3s;
+  box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.04);
+  background: rgba(#ffffff, 0.5);
+
+  @media screen and (min-width: 768px) {
+    padding: 0 64px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}

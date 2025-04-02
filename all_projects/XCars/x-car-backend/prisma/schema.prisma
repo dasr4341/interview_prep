@@ -1,0 +1,457 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+// users -> Admin, Dealer and Customer
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL_DEV")
+}
+
+enum Mode {
+  EMAIL
+  PHONE_NUMBER
+}
+
+enum Roles {
+  SUPER_ADMIN
+  ADMIN
+  DEALER
+  USER
+}
+
+enum CarStatus {
+  PENDING
+  APPROVED
+  DISABLED
+  SOLD
+}
+
+enum UserStatus {
+  PENDING
+  APPROVED
+  ONBOARDED
+  DISABLED
+}
+
+enum QuotationStatus {
+  PENDING
+  CANCELLED
+  ACTIVE
+  PAID
+  EXPIRED
+}
+
+enum RazorpayOrderStatus {
+  CREATED
+  ATTEMPTED
+  PAID
+}
+
+enum Currency {
+  INR
+}
+
+enum FuelType {
+  Petrol
+  Diesel
+  Electric
+  Hybrid
+}
+
+enum TransmissionType {
+  AT
+  MT
+}
+
+enum DocumentType {
+  DOCUMENT
+  IMAGE
+  VIDEO
+}
+
+enum SubscriptionStatus {
+  PENDING
+  CONFIRMED
+}
+
+enum LeadType {
+  LEAD
+  HOT_LEAD
+}
+
+enum LeadsStatus {
+  ASSIGNED
+  UNASSIGNED
+}
+
+enum ProductType {
+  PRODUCT
+  BUNDLE
+}
+
+model ValidTokens {
+  id        String   @id @default(uuid())
+  token     String   @unique
+  userId    String   @unique @map("user_id")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("valid_tokens")
+}
+
+model Admin {
+  id            String          @id @default(uuid())
+  firstName     String?         @map("first_name") @db.VarChar(255)
+  lastName      String?         @map("last_name") @db.VarChar(255)
+  email         String          @unique
+  role          Roles
+  adminStatus   UserStatus      @map("admin_status")
+  password      String
+  createdAt     DateTime        @default(now()) @map("created_at")
+  updatedAt     DateTime        @default(now()) @updatedAt @map("updated_at")
+  UserAnalytics UserAnalytics[]
+  quotation     Quotation[]     @relation("AdminDetail")
+
+  @@map("admin")
+}
+
+model UserDocuments {
+  id        String   @id @default(uuid())
+  User      User     @relation(fields: [userId], references: [id])
+  userId    String   @map("user_id")
+  fileName  String   @map("file_name")
+  fileType  String   @map("file_type")
+  path      String   @default("")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+
+  @@map("user_documents")
+}
+
+model ContactData {
+  id             String           @id @default(uuid())
+  user           User             @relation(fields: [userId], references: [id])
+  userId         String           @map("user_id")
+  car            Car              @relation(fields: [carId], references: [id])
+  carId          String           @map("car_id") @db.Uuid
+  alternatePhone String?          @map("alternate_phone")
+  alternateEmail String?          @map("alternate_email")
+  contactMessage ContactMessage[]
+  lead           Leads[]
+  createdAt      DateTime         @default(now()) @map("created_at")
+  updatedAt      DateTime         @updatedAt @map("updated_at")
+
+  @@unique([userId, carId], name: "userId_carId", map: "userId_carId")
+  @@map("contact_data")
+}
+
+model ContactMessage {
+  id            String       @id @default(uuid())
+  ContactData   ContactData? @relation(fields: [contactDataId], references: [id])
+  contactDataId String?      @map("contact_data_id")
+  message       String
+  createdAt     DateTime     @default(now()) @map("created_at")
+  updatedAt     DateTime     @updatedAt @map("updated_at")
+
+  @@map("contact_message")
+}
+
+model User {
+  id                             String            @id @default(uuid())
+  firstName                      String?           @map("first_name") @db.VarChar(255)
+  lastName                       String?           @map("last_name") @db.VarChar(255)
+  email                          String?           @unique
+  role                           Roles?
+  profileImage                   String?           @map("profile_image")
+  companyName                    String?           @map("company_name")
+  location                       String?
+  phoneNumber                    String?           @unique @map("phone_number")
+  isEmailConfirmed               Boolean           @default(false) @map("is_email_confirmed")
+  isPhoneNumberConfirmed         Boolean           @default(false) @map("is_phone_number_confirmed")
+  userStatus                     UserStatus        @default(PENDING) @map("user_status")
+  cars                           Car[]
+  documents                      UserDocuments[]
+  contacts                       ContactData[]
+  leads                          Leads[]
+  createdAt                      DateTime          @default(now()) @map("created_at")
+  updatedAt                      DateTime          @default(now()) @updatedAt @map("updated_at")
+  userAnalytics                  UserAnalytics[]
+  dealerDetailsDealerAnalytics   DealerAnalytics[] @relation("DealerDetails")
+  customerDetailsDealerAnalytics DealerAnalytics[] @relation("CustomerDetails")
+  quotation                      Quotation[]       @relation("DealerDetail")
+  invoiceRecord                  InvoiceRecord[]   @relation("UserDetail")
+
+  @@map("users")
+}
+
+model OtpVerification {
+  id        String   @id @default(uuid())
+  mode      Mode
+  desc      String   @unique
+  otp       String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @updatedAt @map("updated_at")
+
+  @@map("otp_verification")
+}
+
+model CarProduct {
+  id                  String                @id @default(uuid())
+  fileType            String                @map("file_type")
+  amount              Int
+  discountedAmount    Int                   @map("discounted_amount")
+  currency            Currency              @default(INR)
+  productType         ProductType           @default(PRODUCT) @map("product_type")
+  thumbnail           String?
+  deleted             Boolean               @default(false)
+  car                 Car                   @relation(fields: [carId], references: [id])
+  carId               String                @db.Uuid
+  createdAt           DateTime              @default(now()) @map("created_at")
+  updatedAt           DateTime              @default(now()) @updatedAt @map("updated_at")
+  productsPurchased   ProductsPurchased[]
+  carProductDocuments CarProductDocuments[]
+  bundleItems         BundleItems[]         @relation("ProductAsBundleItem")
+  bundledItems        BundleItems[]         @relation("ProductAsBundle")
+
+  @@map("car_product")
+}
+
+model BundleItems {
+  id         String     @id @default(uuid())
+  bundleId   String
+  productId  String
+  bundleItem CarProduct @relation("ProductAsBundle", fields: [bundleId], references: [id])
+  carProduct CarProduct @relation("ProductAsBundleItem", fields: [productId], references: [id])
+  createdAt  DateTime   @default(now()) @map("created_at")
+  updatedAt  DateTime   @default(now()) @updatedAt @map("updated_at")
+
+  @@unique([bundleId, productId])
+  @@map("bundle_items")
+}
+
+model CarProductDocuments {
+  id           String       @id @default(uuid())
+  documentType DocumentType @map("document_type")
+  fileName     String       @map("file_name")
+  path         String
+  videoVimeoId String?      @map("video_vimeo_id")
+  carProductId String       @map("car_product_id")
+  carProduct   CarProduct   @relation(references: [id], fields: [carProductId])
+  createdAt    DateTime     @default(now()) @map("created_at")
+  updatedAt    DateTime     @default(now()) @updatedAt @map("updated_at")
+
+  @@map("car_product_documents")
+}
+
+model CarGallery {
+  id                  String                @id @default(uuid())
+  carId               String                @map("car_id") @db.Uuid
+  car                 Car                   @relation(fields: [carId], references: [id])
+  fileType            String                @map("file_type")
+  thumbnail           Boolean               @default(false)
+  createdAt           DateTime              @default(now()) @map("created_at")
+  updatedAt           DateTime              @default(now()) @updatedAt @map("updated_at")
+  carGalleryDocuments CarGalleryDocuments[]
+
+  @@map("car_gallery")
+}
+
+model CarGalleryDocuments {
+  id           String       @id @default(uuid())
+  documentType DocumentType @map("document_type")
+  videoVimeoId String?      @map("video_vimeo_id")
+  fileName     String       @map("file_name")
+  path         String
+  carGalleryId String       @map("car_gallery_id")
+  carGallery   CarGallery   @relation(references: [id], fields: [carGalleryId])
+  createdAt    DateTime     @default(now()) @map("created_at")
+  updatedAt    DateTime     @default(now()) @updatedAt @map("updated_at")
+
+  @@map("car_gallery_documents")
+}
+
+model Car {
+  id                 String              @id @default(uuid()) @db.Uuid
+  user               User                @relation(fields: [userId], references: [id])
+  userId             String              @map("user_id")
+  launchYear         Int                 @map("launch_year")
+  totalRun           Int                 @map("total_run")
+  noOfOwners         Int                 @map("no_of_owners")
+  companyName        String              @map("company_name")
+  model              String
+  variant            String
+  registrationNumber String              @unique @map("registration_number")
+  fuelType           FuelType            @map("fuel_type")
+  transmission       TransmissionType
+  carStatus          CarStatus           @default(PENDING) @map("car_status")
+  quotation          Quotation[]
+  products           CarProduct[]
+  leads              Leads[]
+  contacts           ContactData[]
+  createdAt          DateTime            @default(now()) @map("created_at")
+  updatedAt          DateTime            @default(now()) @updatedAt @map("updated_at")
+  carGallery         CarGallery[]
+  productsPurchased  ProductsPurchased[]
+  invoiceRecord      InvoiceRecord[]
+
+  @@map("car")
+}
+
+model ProductsPurchased {
+  id           String      @id @default(uuid())
+  carProductId String?     @map("car_product_id")
+  carProduct   CarProduct? @relation(fields: [carProductId], references: [id])
+  userId       String?     @map("user_id")
+  carId        String      @map("car_id") @db.Uuid
+  car          Car         @relation(fields: [carId], references: [id])
+  createdAt    DateTime    @default(now()) @map("created_at")
+  updatedAt    DateTime    @default(now()) @updatedAt @map("updated_at")
+
+  @@unique([carProductId, userId], name: "carProductId_userId", map: "carProductId_userId")
+  @@map("products_purchased")
+}
+
+model Quotation {
+  id               String            @id @default(uuid())
+  adminId          String            @map("admin_id")
+  adminDetail      Admin             @relation("AdminDetail", references: [id], fields: [adminId])
+  dealerId         String            @map("dealer_id")
+  dealerDetail     User              @relation("DealerDetail", fields: [dealerId], references: [id])
+  carId            String            @map("car_id") @db.Uuid
+  car              Car               @relation(fields: [carId], references: [id])
+  quotationStatus  QuotationStatus   @map("quotation_status")
+  invoiceRecord    InvoiceRecord?
+  quotationDetails QuotationDetails?
+  createdAt        DateTime          @default(now()) @map("created_at")
+  updatedAt        DateTime          @default(now()) @updatedAt @map("updated_at")
+
+  @@map("quotation")
+}
+
+model QuotationDetails {
+  id            String    @id @default(uuid())
+  noOfLeads     Int       @map("no_of_leads")
+  noOfLeadsLeft Int       @map("no_of_leads_left")
+  validityDays  Int       @map("validity_days")
+  expiryDate    DateTime? @map("expiry_date")
+  startDate     DateTime? @map("start_date")
+  amount        Int
+  currency      Currency  @default(INR)
+  quotationId   String    @unique @map("quotation_id")
+  quotation     Quotation @relation(fields: [quotationId], references: [id])
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @default(now()) @updatedAt @map("updated_at")
+
+  @@map("quotation_details")
+}
+
+model InvoiceRecord {
+  id                String              @id @default(uuid())
+  userId            String?             @map("user_id")
+  description       String?
+  userDetail        User?               @relation("UserDetail", references: [id], fields: [userId])
+  carId             String?             @map("car_id") @db.Uuid()
+  car               Car?                @relation(fields: [carId], references: [id])
+  quotationId       String?             @unique @map("quotation_id")
+  quotation         Quotation?          @relation(fields: [quotationId], references: [id])
+  razorpayOrderId   String              @unique @map("razorpay_order_id")
+  razorpayPaymentId String?             @unique @map("razorpay_payment_id")
+  invoiceStatus     RazorpayOrderStatus @default(CREATED) @map("invoice_status")
+  productsPurchased String[]            @map("products_purchased")
+  bundleId          String?             @map("bundle_id")
+  amount            Int
+  amountPaid        Int                 @map("amount_paid")
+  amountDue         Int                 @map("amount_due")
+  currency          Currency            @default(INR)
+  receipt           String?
+  createdAt         DateTime            @default(now()) @map("created_at")
+  updatedAt         DateTime            @default(now()) @updatedAt @map("updated_at")
+
+  @@map("invoice_record")
+}
+
+model PaymentLogs {
+  id                String   @id @default(uuid())
+  razorpayOrderId   String   @unique @map("razorpay_order_id")
+  razorpayPaymentId String?  @unique @map("razorpay_payment_id")
+  userId            String?  @map("user_id")
+  carId             String?  @map("car_id")
+  createdAt         DateTime @default(now()) @map("created_at")
+  updatedAt         DateTime @default(now()) @updatedAt @map("updated_at")
+
+  @@map("payment_logs")
+}
+
+model Leads {
+  id          String       @id @default(uuid())
+  car         Car          @relation(fields: [carId], references: [id])
+  carId       String       @map("car_id") @db.Uuid
+  user        User         @relation(fields: [userId], references: [id])
+  userId      String       @map("user_id")
+  contact     ContactData? @relation(fields: [contactId], references: [id])
+  contactId   String?      @map("contact_id")
+  leadType    LeadType     @default(LEAD) @map("lead_type")
+  leadStatus  LeadsStatus  @default(UNASSIGNED) @map("lead_status")
+  dealerLeads DealerLeads?
+  createdAt   DateTime     @default(now()) @map("created_at")
+  updatedAt   DateTime     @default(now()) @map("updated_at")
+
+  @@unique([carId, userId], name: "carId_userId", map: "carId_userId")
+  @@map("leads")
+}
+
+model DealerLeads {
+  id              String            @id @default(uuid())
+  dealerId        String            @map("dealer_id")
+  leadId          String            @unique @map("lead_id")
+  lead            Leads             @relation(fields: [leadId], references: [id])
+  note            String?
+  seen            Boolean           @default(false)
+  createdAt       DateTime          @default(now()) @map("created_at")
+  updatedAt       DateTime          @default(now()) @map("updated_at")
+  dealerAnalytics DealerAnalytics[]
+
+  @@map("dealer_leads")
+}
+
+model UserAnalytics {
+  id        String   @id @default(uuid())
+  ipAddress String?  @map("ip_address")
+  userAgent String?  @map("user_agent")
+  operation String?
+  arguments Json?
+  origin    String?
+  app       String?
+  role      Roles?
+  userId    String?  @map("user_id")
+  user      User?    @relation(fields: [userId], references: [id])
+  adminId   String?  @map("admin_id")
+  admin     Admin?   @relation(fields: [adminId], references: [id])
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @default(now()) @map("updated_at")
+
+  @@map("user_analytics")
+}
+
+model DealerAnalytics {
+  id           String      @id @default(uuid())
+  dealerId     String      @map("dealer_id")
+  dealer       User        @relation("DealerDetails", references: [id], fields: [dealerId])
+  customerId   String      @map("customer_id")
+  customer     User        @relation("CustomerDetails", references: [id], fields: [customerId])
+  action       String
+  createdAt    DateTime    @default(now()) @map("created_at")
+  updatedAt    DateTime    @default(now()) @map("updated_at")
+  dealerLeadId String      @map("dealer_lead_id")
+  dealerLeads  DealerLeads @relation(references: [id], fields: [dealerLeadId])
+
+  @@map("dealer_analytics")
+}

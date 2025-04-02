@@ -1,0 +1,39 @@
+.mantine-Input-input {
+  background-color: transparent;
+  border-radius: 4px;
+  min-height: 56px;
+  border: 1px solid #D3D3D3;
+  font-size: 16px;
+  color: #5b5b5b;
+  margin-top: 5px;
+}
+.mantine-Input-input::placeholder {
+  color: #808080;
+  font-size: 16px;
+}
+.mantine-Input-input:hover {
+  border-color: #ffcc01;
+}
+.mantine-Input-input:focus {
+  border: 2px solid #D3D3D3;
+  --tw-ring-color: transparent;
+}
+.mantine-Input-input[data-invalid]{
+  border-color: #D33503;
+}
+.mantine-Input-input[data-invalid]:focus{
+  border: 2px solid #D33503;
+  color: #D33503;
+}
+.mantine-Input-input[data-invalid]::placeholder {
+  color: #D33503;
+}
+.mantine-Input-input[data-invalid]:focus, 
+.mantine-Input-input[data-invalid]:hover {
+  border-color: #D33503;
+}
+.label {
+  color: #4B4C4E;
+  font-size: 16px;
+  line-height: 14px;
+}

@@ -1,0 +1,9 @@
+.clinician-name  .edit-btn {
+  display: none;
+}
+.clinician-name:hover  .edit-btn {
+  display: initial;
+}
+.clinician-name:hover > div {
+  margin-left: 0rem;
+}

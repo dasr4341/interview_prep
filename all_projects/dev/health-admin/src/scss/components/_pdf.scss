@@ -1,0 +1,119 @@
+@page {
+    margin: 0;
+    size: A4;
+}
+
+@media screen {
+  .pdf-footer {
+    display: none;
+  }
+  .pdf-header {
+      display: none;
+  }
+}
+
+@media print {
+  div, section, p, tbody, tr, td {
+    break-inside: auto;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-size: 12px;
+    margin: 40px auto;
+  }
+
+  .pdf-header,
+  .pdf-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 9;
+  }
+
+  .pdf-header {
+    background-color: #000;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding-left: 48px;
+    padding-top: 13px;
+  }
+
+  .header-img {
+    height: 24px;
+    align-items: 'center';
+  }
+
+  .pdf-footer {
+    bottom: 0;
+    padding-bottom: 17px;
+    background-color: #ffffff00;
+  }
+
+  .footer-text,
+  .footer-text span {
+    color: #161616;
+    letter-spacing: 1.6px;
+    font-size: 12px;
+  }
+
+  .pagenumber:before {
+    content: counter(page);
+  }
+
+  .pagecount:before {
+    content: counter(pages);
+  }
+
+  .divider {
+    border-top: 1px solid #7A7D9E;
+    border-radius: 2px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 7px;
+  }
+
+  .footer-logo {
+    margin-top: 5px;
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(1px 1px 8px rgb(213, 213, 213));
+  }
+
+  .pdf-body {
+    border: none;
+    border-radius: 0;
+    margin-top: 0 !important;
+  }
+
+  .bold-text {
+    margin-bottom: 15px;
+  }
+
+  .label-text,
+  .pdf-label {
+    margin-bottom: 5px !important;
+  }
+
+  .page-breaker {
+    page-break-inside: avoid;
+  }
+
+  .pdf-table-header {
+    height: 60px;
+  }
+
+  .pdf-table-footer {
+    height: 40px;
+  }
+
+  .pdf-to-download-radio-checkbox {
+    flex-wrap: wrap;
+
+    label {
+      margin-bottom: 5px !important;
+    }
+  }
+}

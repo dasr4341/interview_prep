@@ -1,0 +1,37 @@
+{
+  "extends": [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jest/recommended"
+  ],
+  "plugins": ["react", "@typescript-eslint", "jest"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "max-lines": ["error", {"max": 300, "skipComments": true, "skipBlankLines": true }],
+    "linebreak-style": "off",
+    "import/extensions": 0,
+    "import/no-extraneous-dependencies": 0,
+    "@typescript-eslint/comma-dangle": 0,
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0
+  }
+}

@@ -1,0 +1,21 @@
+.active {
+  border-bottom: 4px solid #3b7af7;
+  .text-red-600 {
+    color: rgba(220, 38, 38, var(--tw-text-opacity));
+  }
+}
+
+.active div {
+  color: black;
+}
+
+@media screen and (min-width: 1530px) {
+  .customWidth {
+    width: 40%;
+  }
+
+  .patientListWidth {
+    width: 33%;
+  }
+
+}

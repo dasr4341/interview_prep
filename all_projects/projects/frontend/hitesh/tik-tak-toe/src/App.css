@@ -1,0 +1,26 @@
+*{
+  /* background-color: rgb(14, 3, 3); */
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  
+}
+.box {
+  height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+.icon { 
+  width: 50px!important;
+  color: rgb(247, 104, 8);
+}

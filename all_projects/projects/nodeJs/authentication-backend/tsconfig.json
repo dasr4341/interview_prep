@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "target": "ESNext",
+        "sourceMap": true,
+        "outDir": "dist",
+        "rootDir": "src",
+    },
+    "ts-node": {"esm": true},
+    "include": ["src/**/*"]
+}

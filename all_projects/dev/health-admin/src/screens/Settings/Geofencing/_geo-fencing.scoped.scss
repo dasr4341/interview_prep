@@ -1,0 +1,17 @@
+.radio-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.mantine-Radio-radio {
+  width: 25px;
+  height: 25px;
+  border: 2px solid #3B7AF7;
+}
+.mantine-Radio-radio:checked {
+  background-color: #3B7AF7;
+}
+@media screen and (min-width: 1024px) {
+  .fieldWidth {
+    width: 500px;
+  }
+}

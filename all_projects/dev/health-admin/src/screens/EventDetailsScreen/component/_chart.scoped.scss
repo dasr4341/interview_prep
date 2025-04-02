@@ -1,0 +1,15 @@
+.chart_area {
+  overflow-x: auto;
+  .chart_content {
+    width: 450px;
+    @media screen and (min-width: 575px) {
+      width: 100%;
+    }
+  }
+  .bar_chart_content {
+    width: 450px;
+    @media screen and (min-width: 575px) {
+      width: 100%;
+    }
+  }
+}

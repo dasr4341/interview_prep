@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "module": "NodeNext",
+      "moduleResolution": "NodeNext",
+      "target": "ESNext",
+      "strict": true,
+      "sourceMap": true,
+      "outDir": "./build",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true
+    },
+    "exclude": [
+      "node_modules",
+      "build"
+    ],
+    "ts-node": {
+      "esm": true
+    },
+  }

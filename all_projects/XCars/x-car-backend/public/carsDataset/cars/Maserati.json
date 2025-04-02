@@ -1,0 +1,1923 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 22,
+  "make_name": "MASERATI",
+  "display_order": 0,
+  "make_display": "Maserati",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 55049,
+      "year": "2024",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 676,
+          "make_id": 22,
+          "model_name": "Levante",
+          "model_display": "Levante",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13231,
+              "model_id": 676,
+              "variant_name": "350 GranLusso",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranLusso",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 15268646
+            },
+            {
+              "variant_id": 13232,
+              "model_id": 676,
+              "variant_name": "350 GranSport",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranSport",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 14936448
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55048,
+      "year": "2023",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 676,
+          "make_id": 22,
+          "model_name": "Levante",
+          "model_display": "Levante",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13231,
+              "model_id": 676,
+              "variant_name": "350 GranLusso",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranLusso",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 15268646
+            },
+            {
+              "variant_id": 13232,
+              "model_id": 676,
+              "variant_name": "350 GranSport",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranSport",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 14936448
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55047,
+      "year": "2022",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 676,
+          "make_id": 22,
+          "model_name": "Levante",
+          "model_display": "Levante",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13231,
+              "model_id": 676,
+              "variant_name": "350 GranLusso",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranLusso",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 15268646
+            },
+            {
+              "variant_id": 13232,
+              "model_id": 676,
+              "variant_name": "350 GranSport",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranSport",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 14936448
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 55046,
+      "year": "2021",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 676,
+          "make_id": 22,
+          "model_name": "Levante",
+          "model_display": "Levante",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13231,
+              "model_id": 676,
+              "variant_name": "350 GranLusso",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranLusso",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 15268646
+            },
+            {
+              "variant_id": 13232,
+              "model_id": 676,
+              "variant_name": "350 GranSport",
+              "variant_name_short": null,
+              "variant_display_name": "350 GranSport",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 14936448
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 52156,
+      "year": "2020",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 12418,
+              "model_id": 155,
+              "variant_name": "GRAN LUSSO",
+              "variant_name_short": null,
+              "variant_display_name": "GRAN LUSSO [2019 - 2020]",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 17800000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 52155,
+      "year": "2019",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 12418,
+              "model_id": 155,
+              "variant_name": "GRAN LUSSO",
+              "variant_name_short": null,
+              "variant_display_name": "GRAN LUSSO [2019 - 2020]",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 17800000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 17510,
+      "year": "2018",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 919,
+              "model_id": 155,
+              "variant_name": "DIESEL",
+              "variant_name_short": "QUATTROPORTE DIESEL",
+              "variant_display_name": "DIESEL",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 921,
+              "model_id": 155,
+              "variant_name": "GTS",
+              "variant_name_short": "QUATTROPORTE GTS",
+              "variant_display_name": "GTS",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 922,
+              "model_id": 155,
+              "variant_name": "S",
+              "variant_name_short": "QUATTROPORTE S",
+              "variant_display_name": "S",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 925,
+              "model_id": 155,
+              "variant_name": "S Q4",
+              "variant_name_short": "QUATTROPORTE S Q4",
+              "variant_display_name": "S Q4",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 14956,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 391,
+          "make_id": 22,
+          "model_name": "GHIBLI",
+          "model_display": "GHIBLI",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 3911,
+              "model_id": 391,
+              "variant_name": "DIESEL MY16",
+              "variant_name_short": "",
+              "variant_display_name": "DIESEL MY16",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 919,
+              "model_id": 155,
+              "variant_name": "DIESEL",
+              "variant_name_short": "QUATTROPORTE DIESEL",
+              "variant_display_name": "DIESEL",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 921,
+              "model_id": 155,
+              "variant_name": "GTS",
+              "variant_name_short": "QUATTROPORTE GTS",
+              "variant_display_name": "GTS",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 922,
+              "model_id": 155,
+              "variant_name": "S",
+              "variant_name_short": "QUATTROPORTE S",
+              "variant_display_name": "S",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 925,
+              "model_id": 155,
+              "variant_name": "S Q4",
+              "variant_name_short": "QUATTROPORTE S Q4",
+              "variant_display_name": "S Q4",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 12635,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 391,
+          "make_id": 22,
+          "model_name": "GHIBLI",
+          "model_display": "GHIBLI",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 3911,
+              "model_id": 391,
+              "variant_name": "DIESEL MY16",
+              "variant_name_short": "",
+              "variant_display_name": "DIESEL MY16",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 919,
+              "model_id": 155,
+              "variant_name": "DIESEL",
+              "variant_name_short": "QUATTROPORTE DIESEL",
+              "variant_display_name": "DIESEL",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 921,
+              "model_id": 155,
+              "variant_name": "GTS",
+              "variant_name_short": "QUATTROPORTE GTS",
+              "variant_display_name": "GTS",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 922,
+              "model_id": 155,
+              "variant_name": "S",
+              "variant_name_short": "QUATTROPORTE S",
+              "variant_display_name": "S",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 925,
+              "model_id": 155,
+              "variant_name": "S Q4",
+              "variant_name_short": "QUATTROPORTE S Q4",
+              "variant_display_name": "S Q4",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 907,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 907,
+              "model_id": 153,
+              "variant_name": "4.7",
+              "variant_name_short": "4.7",
+              "variant_display_name": "4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 911,
+              "model_id": 154,
+              "variant_name": "4.2 AUTO",
+              "variant_name_short": "4.2 AUTO",
+              "variant_display_name": "4.2 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 916,
+              "model_id": 154,
+              "variant_name": "S 4.7 AUTO",
+              "variant_name_short": "S 4.7 AUTO",
+              "variant_display_name": "S 4.7 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 913,
+              "model_id": 154,
+              "variant_name": "SPORT",
+              "variant_name_short": "GRANTURISMO SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 919,
+              "model_id": 155,
+              "variant_name": "DIESEL",
+              "variant_name_short": "QUATTROPORTE DIESEL",
+              "variant_display_name": "DIESEL",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 920,
+              "model_id": 155,
+              "variant_name": "FL 4.2",
+              "variant_name_short": "QUATTROPORTE FL 4.2",
+              "variant_display_name": "FL 4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 917,
+              "model_id": 155,
+              "variant_name": "4.2",
+              "variant_name_short": "4.2",
+              "variant_display_name": "4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 918,
+              "model_id": 155,
+              "variant_name": "GT 4.7",
+              "variant_name_short": "GT 4.7",
+              "variant_display_name": "GT 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 922,
+              "model_id": 155,
+              "variant_name": "S",
+              "variant_name_short": "QUATTROPORTE S",
+              "variant_display_name": "S",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 926,
+              "model_id": 155,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 923,
+              "model_id": 155,
+              "variant_name": "S FL 4.7",
+              "variant_name_short": "QUATTROPORTE S FL 4.7",
+              "variant_display_name": "S FL 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 924,
+              "model_id": 155,
+              "variant_name": "S GTS 4.7",
+              "variant_name_short": "QUATTROPORTE S GTS 4.7",
+              "variant_display_name": "S GTS 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 925,
+              "model_id": 155,
+              "variant_name": "S Q4",
+              "variant_name_short": "QUATTROPORTE S Q4",
+              "variant_display_name": "S Q4",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 921,
+              "model_id": 155,
+              "variant_name": "GTS",
+              "variant_name_short": "QUATTROPORTE GTS",
+              "variant_display_name": "GTS",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 2420,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 907,
+              "model_id": 153,
+              "variant_name": "4.7",
+              "variant_name_short": "4.7",
+              "variant_display_name": "4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 911,
+              "model_id": 154,
+              "variant_name": "4.2 AUTO",
+              "variant_name_short": "4.2 AUTO",
+              "variant_display_name": "4.2 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 916,
+              "model_id": 154,
+              "variant_name": "S 4.7 AUTO",
+              "variant_name_short": "S 4.7 AUTO",
+              "variant_display_name": "S 4.7 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 913,
+              "model_id": 154,
+              "variant_name": "SPORT",
+              "variant_name_short": "GRANTURISMO SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 919,
+              "model_id": 155,
+              "variant_name": "DIESEL",
+              "variant_name_short": "QUATTROPORTE DIESEL",
+              "variant_display_name": "DIESEL",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 920,
+              "model_id": 155,
+              "variant_name": "FL 4.2",
+              "variant_name_short": "QUATTROPORTE FL 4.2",
+              "variant_display_name": "FL 4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 917,
+              "model_id": 155,
+              "variant_name": "4.2",
+              "variant_name_short": "4.2",
+              "variant_display_name": "4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 918,
+              "model_id": 155,
+              "variant_name": "GT 4.7",
+              "variant_name_short": "GT 4.7",
+              "variant_display_name": "GT 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 922,
+              "model_id": 155,
+              "variant_name": "S",
+              "variant_name_short": "QUATTROPORTE S",
+              "variant_display_name": "S",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 926,
+              "model_id": 155,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 923,
+              "model_id": 155,
+              "variant_name": "S FL 4.7",
+              "variant_name_short": "QUATTROPORTE S FL 4.7",
+              "variant_display_name": "S FL 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 924,
+              "model_id": 155,
+              "variant_name": "S GTS 4.7",
+              "variant_name_short": "QUATTROPORTE S GTS 4.7",
+              "variant_display_name": "S GTS 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 925,
+              "model_id": 155,
+              "variant_name": "S Q4",
+              "variant_name_short": "QUATTROPORTE S Q4",
+              "variant_display_name": "S Q4",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 921,
+              "model_id": 155,
+              "variant_name": "GTS",
+              "variant_name_short": "QUATTROPORTE GTS",
+              "variant_display_name": "GTS",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 3757,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 907,
+              "model_id": 153,
+              "variant_name": "4.7",
+              "variant_name_short": "4.7",
+              "variant_display_name": "4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 911,
+              "model_id": 154,
+              "variant_name": "4.2 AUTO",
+              "variant_name_short": "4.2 AUTO",
+              "variant_display_name": "4.2 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 916,
+              "model_id": 154,
+              "variant_name": "S 4.7 AUTO",
+              "variant_name_short": "S 4.7 AUTO",
+              "variant_display_name": "S 4.7 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 920,
+              "model_id": 155,
+              "variant_name": "FL 4.2",
+              "variant_name_short": "QUATTROPORTE FL 4.2",
+              "variant_display_name": "FL 4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 917,
+              "model_id": 155,
+              "variant_name": "4.2",
+              "variant_name_short": "4.2",
+              "variant_display_name": "4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 918,
+              "model_id": 155,
+              "variant_name": "GT 4.7",
+              "variant_name_short": "GT 4.7",
+              "variant_display_name": "GT 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 926,
+              "model_id": 155,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 923,
+              "model_id": 155,
+              "variant_name": "S FL 4.7",
+              "variant_name_short": "QUATTROPORTE S FL 4.7",
+              "variant_display_name": "S FL 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 924,
+              "model_id": 155,
+              "variant_name": "S GTS 4.7",
+              "variant_name_short": "QUATTROPORTE S GTS 4.7",
+              "variant_display_name": "S GTS 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 4875,
+      "year": "2012",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 907,
+              "model_id": 153,
+              "variant_name": "4.7",
+              "variant_name_short": "4.7",
+              "variant_display_name": "4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 911,
+              "model_id": 154,
+              "variant_name": "4.2 AUTO",
+              "variant_name_short": "4.2 AUTO",
+              "variant_display_name": "4.2 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 916,
+              "model_id": 154,
+              "variant_name": "S 4.7 AUTO",
+              "variant_name_short": "S 4.7 AUTO",
+              "variant_display_name": "S 4.7 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 920,
+              "model_id": 155,
+              "variant_name": "FL 4.2",
+              "variant_name_short": "QUATTROPORTE FL 4.2",
+              "variant_display_name": "FL 4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 917,
+              "model_id": 155,
+              "variant_name": "4.2",
+              "variant_name_short": "4.2",
+              "variant_display_name": "4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 918,
+              "model_id": 155,
+              "variant_name": "GT 4.7",
+              "variant_name_short": "GT 4.7",
+              "variant_display_name": "GT 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 926,
+              "model_id": 155,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 923,
+              "model_id": 155,
+              "variant_name": "S FL 4.7",
+              "variant_name_short": "QUATTROPORTE S FL 4.7",
+              "variant_display_name": "S FL 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 924,
+              "model_id": 155,
+              "variant_name": "S GTS 4.7",
+              "variant_name_short": "QUATTROPORTE S GTS 4.7",
+              "variant_display_name": "S GTS 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 5955,
+      "year": "2011",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 153,
+          "make_id": 22,
+          "model_name": "GRANCABRIO",
+          "model_display": "Grancabrio",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 907,
+              "model_id": 153,
+              "variant_name": "4.7",
+              "variant_name_short": "4.7",
+              "variant_display_name": "4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 909,
+              "model_id": 153,
+              "variant_name": "MC",
+              "variant_name_short": "MC",
+              "variant_display_name": "MC",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 910,
+              "model_id": 153,
+              "variant_name": "SPORT",
+              "variant_name_short": "SPORT",
+              "variant_display_name": "SPORT",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 154,
+          "make_id": 22,
+          "model_name": "GRANTURISMO",
+          "model_display": "Granturismo",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 911,
+              "model_id": 154,
+              "variant_name": "4.2 AUTO",
+              "variant_name_short": "4.2 AUTO",
+              "variant_display_name": "4.2 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 914,
+              "model_id": 154,
+              "variant_name": "MC STRADALE",
+              "variant_name_short": "MC STRADALE",
+              "variant_display_name": "MC STRADALE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 915,
+              "model_id": 154,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 916,
+              "model_id": 154,
+              "variant_name": "S 4.7 AUTO",
+              "variant_name_short": "S 4.7 AUTO",
+              "variant_display_name": "S 4.7 AUTO",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 155,
+          "make_id": 22,
+          "model_name": "QUATTROPORTE",
+          "model_display": "Quattroporte",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 920,
+              "model_id": 155,
+              "variant_name": "FL 4.2",
+              "variant_name_short": "QUATTROPORTE FL 4.2",
+              "variant_display_name": "FL 4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 917,
+              "model_id": 155,
+              "variant_name": "4.2",
+              "variant_name_short": "4.2",
+              "variant_display_name": "4.2",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 918,
+              "model_id": 155,
+              "variant_name": "GT 4.7",
+              "variant_name_short": "GT 4.7",
+              "variant_display_name": "GT 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 926,
+              "model_id": 155,
+              "variant_name": "S 4.7",
+              "variant_name_short": "S 4.7",
+              "variant_display_name": "S 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 923,
+              "model_id": 155,
+              "variant_name": "S FL 4.7",
+              "variant_name_short": "QUATTROPORTE S FL 4.7",
+              "variant_display_name": "S FL 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 924,
+              "model_id": 155,
+              "variant_name": "S GTS 4.7",
+              "variant_name_short": "QUATTROPORTE S GTS 4.7",
+              "variant_display_name": "S GTS 4.7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

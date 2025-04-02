@@ -1,0 +1,56 @@
+
+google -
+
+docker build -t gcr.io/western-stone-386906/shopping-cart-backend .
+gcloud docker -- push gcr.io/western-stone-386906/shopping-cart-backend
+gcloud container clusters create shopping-cart-backend
+
+// -----------------------------------
+
+aws ec2 - 
+
+docker build . -t ec2-app
+docker run -p 3000:3000 ec2-app
+
+docker tag ec2-app rahulitobuzz/ec2-app
+docker push rahulitobuzz/ec2-app
+
+chmod 400 ec2-app-pair.pem
+ssh -i ec2-app-pair.pem ec2-user@ec2-16-171-4-94.eu-north-1.compute.amazonaws.com
+
+docker run -p 5000:5000 rahulitobuzz/ec2-app
+
+//
+docker push rahulitobuzz/ec2-app:tagname
+
+
+
+//old compose --->
+
+ mongo_db: 
+   container_name: db_container
+   image: mongo:latest
+   restart: always
+   volumes: 
+    - mongo_db:/data/db
+  
+  # Node api service
+  api:
+   build: .
+   ports: 
+    - 4000:3000
+   environment: 
+    SERVER_PORT: 3011
+    SERVER_HOST: 'http://mongo_db'
+    DB_USERNAME: ''
+    DB_PASSWORD: ''
+    DB_HOST: 'mongo_db'
+    DB_PORT: '27017'
+    DB_URI: 'mongodb://mongo_db:27017/'
+   depends_on: 
+    - mongo_db
+
+volumes:
+  mongo_db: {}
+
+

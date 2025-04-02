@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "target": "ES5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node"]
+  },
+  "include": ["**/*.ts"]
+}

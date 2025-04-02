@@ -1,0 +1,105 @@
+.stage-num {
+  position: relative;
+  padding-left: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.column {
+  @apply flex flex-col md:border-l md:border-gray-600 first:border-0 first:border-l-0 md:pl-6 first:pl-0 pr-5 md:pr-3;
+}
+
+.chart-column-w {
+  width: 100%;
+  @media screen and (min-width: 568px) and (max-width: 767px) {
+    width: 50%;
+    &:nth-child(2n) {
+      border-right: 0;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 26.33%;
+    &:nth-child(3n) {
+      border-right: 0;
+    }
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1199px) {
+    width: 42%;
+    &:nth-child(2n) {
+      border-right: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1499px) {
+    width: 29.33%;
+    &:nth-child(3n) {
+      border-right: 0;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    width: 18%;
+    &:nth-child(5n) {
+      border-right: 0;
+    }
+  }
+}
+
+.blue-col {
+  &::before {
+    background-color: #3b7af7;
+  }
+}
+
+.black-col {
+  &::before {
+    background-color: #23265b;
+  }
+}
+
+.yellow-col {
+  &::before {
+    background-color: #ffcc00;
+  }
+}
+
+.red-col {
+  &::before {
+    background-color: #ed6513;
+  }
+}
+
+.gray-col {
+  &::before {
+    background-color: #c4c4c4;
+  }
+}
+
+.green-col {
+  &::before {
+    background-color: #64d269;
+  }
+}
+
+.purple-col {
+  &::before {
+    background-color: #7320c5;
+  }
+}
+
+.teal-col {
+  &::before {
+    background-color: #0e88a3;
+  }
+}
+
+.pink-col {
+  &::before {
+    background-color: #ac2cae;
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "trailing",
+  "editor.rulers": [140],
+  "editor.suggest.selectionMode": "always",
+  "explorer.compactFolders": false,
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+
+  "indentRainbow.includedLanguages": ["yaml", "dockercompose"],
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "tsx"
+  }
+}

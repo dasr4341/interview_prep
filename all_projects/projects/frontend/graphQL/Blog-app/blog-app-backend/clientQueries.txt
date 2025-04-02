@@ -1,0 +1,80 @@
+// ------------ getAllUser ------------
+
+query{
+	getAllUser{
+    _id
+		name
+  }
+}
+// ------------ getAllPost -------------
+query{
+  getAllPost{
+    _id
+    img
+    title
+    body
+  }
+}
+// ------------- createPost --------------
+
+mutation createPost($postData:createPostInput!){
+	post:createPost(postData:$postData){
+    title
+  }
+}
+ ###### variables ###########
+{
+  "postData": 
+    {
+      "title": "Chicken Biryani",
+      "img": "https://www.authenticroyal.com/wp-content/uploads/2021/06/LTFA-FY21_Biryani_Web_1280x1600_MyUniversalKitchen-1.jpg",
+      "body": "Biryani is a mixed rice dish originating among the Muslims of the Indian subcontinent. It is made with Indian spices,    rice, and usually some type of meat or in some cases without any meat, and sometimes, in addition, eggs and potatoes."
+    }
+}
+
+// ---------- signUpUser -----------------
+
+mutation ($signUpData: signUpUserInput!){
+	user:signUpUser(signUpUserData: $signUpData){
+		name
+  }
+}
+   ##### variables ##########
+{
+  "signUpData": {
+    "name": "navin",
+    "email": "svddaadsad@sd.com",
+    "phone": "12356789800",
+    "password": "12345"
+  }
+}
+
+// --------------    delete post   -------------------
+mutation{
+  deletePost(postId: "67")
+} 
+
+
+
+
+// ----------- signInUser -----------------
+mutation ($signInUserData: signInUserInput!){
+	signInUser(signInUserData: $signInUserData)
+  {
+    token
+  }
+}
+   ######### variables ###########
+{
+  "signInUserData": {
+    "email": "dasr@sd.com",
+    "password": "12345"
+  }
+}
+// -------------- 
+
+
+
+
+
+

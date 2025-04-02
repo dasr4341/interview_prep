@@ -1,0 +1,136 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 6,
+  "make_name": "BUGATTI",
+  "display_order": 0,
+  "make_display": "Bugatti",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 199,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 48,
+          "make_id": 6,
+          "model_name": "VEYRON",
+          "model_display": "Veyron",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 199,
+              "model_id": 48,
+              "variant_name": "16.4 GRAND SPORT",
+              "variant_name_short": "16.4 GRAND SPORT",
+              "variant_display_name": "16.4 GRAND SPORT",
+              "transportation_category": "Category_4",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 1710,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 48,
+          "make_id": 6,
+          "model_name": "VEYRON",
+          "model_display": "Veyron",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 199,
+              "model_id": 48,
+              "variant_name": "16.4 GRAND SPORT",
+              "variant_name_short": "16.4 GRAND SPORT",
+              "variant_display_name": "16.4 GRAND SPORT",
+              "transportation_category": "Category_4",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 3203,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 48,
+          "make_id": 6,
+          "model_name": "VEYRON",
+          "model_display": "Veyron",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 199,
+              "model_id": 48,
+              "variant_name": "16.4 GRAND SPORT",
+              "variant_name_short": "16.4 GRAND SPORT",
+              "variant_display_name": "16.4 GRAND SPORT",
+              "transportation_category": "Category_4",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 4396,
+      "year": "2012",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 48,
+          "make_id": 6,
+          "model_name": "VEYRON",
+          "model_display": "Veyron",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 199,
+              "model_id": 48,
+              "variant_name": "16.4 GRAND SPORT",
+              "variant_name_short": "16.4 GRAND SPORT",
+              "variant_display_name": "16.4 GRAND SPORT",
+              "transportation_category": "Category_4",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

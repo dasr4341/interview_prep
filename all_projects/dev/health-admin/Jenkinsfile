@@ -1,0 +1,108 @@
+def build(API_ROOT_URL, FITBIT_CLIENT_ID) {
+  sh './scripts/update-build.sh'
+  sh 'REACT_APP_PRETAA_API_URL=${API_ROOT_URL} REACT_APP_FITBIT_CLIENTID=${FITBIT_CLIENT_ID} REACT_APP_agGridLicenseKey=${REACT_APP_agGridLicenseKey} yarn build:ci'
+}
+
+pipeline {
+  agent any
+    environment {
+      NETLIFY_AUTH_TOKEN =  credentials('NETLIFY_AUTH_TOKEN')
+      NETLIFY_SITE_ID = 'b4bebe79-622c-4a52-b6a1-b90f6b42f48e'
+      REACT_APP_agGridLicenseKey = credentials('REACT_APP_agGridLicenseKey')
+    }
+
+    tools { nodejs 'nodejs-16-20' }
+
+    stages {
+      stage('Checkout') {
+          steps {
+            checkout scm
+            sshagent(credentials: ['prosenjit-manna-bitbucket']) {
+              sh 'git submodule update --init'
+            }
+            script {
+              sh 'yarn'
+            }
+          }
+      }
+
+      stage('features branch : build & deploy to preview site') {
+        when {
+          expression {
+            return env.BRANCH_NAME =~ /^features\//
+          }
+        }
+        environment {
+            API_ROOT_URL = 'https://pretaa-health-dev.x-studio.io'
+            FITBIT_CLIENT_ID = '238V5D'
+        }
+
+        steps {
+          script {
+            build(API_ROOT_URL, FITBIT_CLIENT_ID)
+            sh 'npm run deploy:netlify -- --auth=${NETLIFY_AUTH_TOKEN} --site=${NETLIFY_SITE_ID} --dir="build"'
+          }
+        }
+      }
+
+      stage('Branch dev : build & Deploy to AWS S3') {
+        when {
+          branch 'dev'
+        }
+
+        environment {
+          S3_BUCKET_NAME =  's3://staging.pretaa.com'
+          API_ROOT_URL = 'https://pretaa-health-dev.x-studio.io'
+          FITBIT_CLIENT_ID = '238V5D'
+        }
+
+        steps {
+          script {
+            build(API_ROOT_URL, FITBIT_CLIENT_ID)
+
+            withAWS(region: 'ap-south-1', credentials: 'Pretaa-health-aws-key-v1',) {
+              s3Upload(bucket: 'staging.pretaa.com', workingDir: 'build', includePathPattern: '**/*', excludePathPattern: '')
+              cfInvalidate(distribution:'ERON1N5QZT5BZ', paths:['/*'])
+            }
+
+            // Later we will remove netlify site
+            sh 'npm run deploy:netlify -- --auth=${NETLIFY_AUTH_TOKEN} --site=${NETLIFY_SITE_ID} --dir="build" --prod'
+          }
+        }
+      }
+
+      stage('Branch Client Dev : build & Deploy to AWS S3') {
+          environment {
+            S3_BUCKET_NAME =  's3://dev.pretaa.com'
+            API_ROOT_URL = 'https://health-api-dev.pretaa.com'
+            FITBIT_CLIENT_ID = '23R3VC'
+          }
+
+          when {
+            branch 'client-dev'
+          }
+
+          steps {
+            script {
+              build(API_ROOT_URL, FITBIT_CLIENT_ID)
+
+              withAWS(region: 'us-east-1', credentials: 'Pretaa-health-aws-key-v1',) {
+                s3Upload(bucket: '${S3_BUCKET_NAME}', workingDir: 'build', includePathPattern: '**/*', excludePathPattern: '')
+              }
+            }
+          }
+      }
+    }
+
+  post {
+    cleanup {
+      deleteDir()
+      dir("${workspace}@tmp") {
+        deleteDir()
+      }
+      dir("${workspace}@script") {
+        deleteDir()
+      }
+    }
+  }
+}

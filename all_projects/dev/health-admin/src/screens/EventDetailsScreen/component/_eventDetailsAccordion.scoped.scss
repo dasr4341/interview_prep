@@ -1,0 +1,10 @@
+.simple-daily-report {
+  .pdf-download-button {
+    visibility: hidden;
+  }
+  &:hover {
+    .pdf-download-button {
+      visibility: visible;
+    }
+  }
+}

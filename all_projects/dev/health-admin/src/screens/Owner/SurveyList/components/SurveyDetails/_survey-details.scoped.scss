@@ -1,0 +1,15 @@
+.edit-input-field[type=text] {
+  border:none!important;
+  outline: 0px;
+  text-transform: capitalize;
+}
+
+.edit-input-field[type=text]:focus {
+  border:none!important;
+  outline: 0px;
+  box-shadow: none!important;
+}
+
+.edit-input-field[type=text]:disabled {
+ cursor: not-allowed;
+} 

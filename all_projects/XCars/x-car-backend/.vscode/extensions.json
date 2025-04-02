@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "abhijoybasak.nestjs-files",
+        "streetsidesoftware.code-spell-checker",
+        "mikestead.dotenv",
+        "henry-li.vscode-import-formatter",
+        "dbaeumer.vscode-eslint",
+        "prisma.prisma",
+        "sonarsource.sonarlint-vscode"
+    ]
+}

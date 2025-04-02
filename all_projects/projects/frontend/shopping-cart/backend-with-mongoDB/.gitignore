@@ -1,0 +1,4 @@
+node_modules
+mongo_db
+latest-docker-compose.pem
+build

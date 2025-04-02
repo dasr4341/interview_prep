@@ -1,0 +1,17 @@
+.btn-sidebar {
+  @apply flex;
+  @apply items-center;
+  @apply p-2;
+  @apply transition-colors;
+  @apply duration-200;
+  @apply rounded-lg;
+  @apply bg-white;
+  @apply text-gray-600;
+}
+
+.img-span {
+  @apply text-lgx;
+  @apply font-sans;
+  @apply font-normal;
+  @apply text-center;
+}

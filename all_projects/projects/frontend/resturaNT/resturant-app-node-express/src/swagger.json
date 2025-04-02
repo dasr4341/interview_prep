@@ -1,0 +1,1062 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Restaurant Management",
+    "description": "Restaurant management system api",
+    "license": {
+      "name": "",
+      "url": ""
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001/",
+      "description": "Local Dev server"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "scheme": "bearer",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "User",
+      "description": "API for user in the system"
+    },
+    {
+      "name": "Category",
+      "description": "API for category in the system"
+    },
+    {
+      "name": "Item",
+      "description": "API for item in the system"
+    },
+    {
+      "name": "Order",
+      "description": "API for ordering in the system"
+    },
+    {
+      "name": "Details",
+      "description": "API for ordering in the system"
+    }
+  ],
+  "consumes": ["application/json", "multipart/form-data"],
+  "produces": ["application/json"],
+  "paths": {
+    "/api/user/signup": {
+      "post": {
+        "security": [],
+        "tags": ["User"],
+        "summary": "User SignUp",
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/signup"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/user/login": {
+      "post": {
+        "security": [],
+        "tags": ["User"],
+        "summary": "User LogIn",
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/login"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/user/reset-password": {
+      "post": {
+        "tags": ["User"],
+        "summary": "User Reset Password",
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/reset-password"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/user/profile": {
+      "get": {
+        "tags": ["User"],
+        "summary": "User Get Profile",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      },
+      "put": {
+        "tags": ["User"],
+        "summary": "User Update Profile",
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/updateProfile"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/user/forget-password": {
+      "post": {
+        "security": [],
+        "tags": ["User"],
+        "summary": "User Forget Password",
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/forget-password"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/user/newPassword": {
+      "post": {
+        "security": [],
+        "tags": ["User"],
+        "summary": "User New Password",
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/newPassword"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/user/auth-state": {
+      "post": {
+        "security": [],
+        "tags": ["User"],
+        "summary": "User check auth state",
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/auth-state"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/category": {
+      "get": {
+        "tags": ["Category"],
+        "summary": "Get all categories in system",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "offset",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "limit",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Category"
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Category"],
+        "summary": "Create a new category/subcategory in system",
+        "requestBody": {
+          "description": "Category Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/Category"
+              }
+            }
+          }
+        },
+        "produces": ["application/json"],
+        "responses": {
+          "201": {
+            "description": "CREATED",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          },
+          "400": {
+            "description": "Failed. Bad post data."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/category/sub/all": {
+      "get": {
+        "tags": ["Category"],
+        "summary": "Get all subcategories in system",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "offset",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "limit",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Category"
+            }
+          },
+          "400": {
+            "description": "Failed"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/category/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of the category that we want to match",
+          "type": "integer"
+        }
+      ],
+      "get": {
+        "tags": ["Category"],
+        "summary": "Get category with given ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "category with id",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Category"
+            }
+          },
+          "404": {
+            "description": "Failed."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update category with given ID",
+        "tags": ["Category"],
+        "requestBody": {
+          "description": "User Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/CategoryUpdate"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "User with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Category"
+            }
+          },
+          "400": {
+            "description": "Failed. Bad post data."
+          },
+          "404": {
+            "description": "Failed. User not found."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete user with given ID",
+        "tags": ["Category"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Delete user with id",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          },
+          "404": {
+            "description": "Failed. User not found."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/item": {
+      "get": {
+        "tags": ["Item"],
+        "summary": "Get all items in system",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "offset",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "pageSize",
+            "in": "query",
+            "description": "limit",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ItemResponse"
+            }
+          },
+          "400": {
+            "description": "Failed"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Item"],
+        "summary": "Create a new item in system",
+        "requestBody": {
+          "description": "Item Object",
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/definitions/Item"
+              }
+            }
+          }
+        },
+        "produces": ["application/json"],
+        "consumes": ["multipart/form-data"],
+        "responses": {
+          "201": {
+            "description": "CREATED",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          },
+          "400": {
+            "description": "Failed. Bad post data."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/item/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of the item that we want to match",
+          "type": "integer"
+        }
+      ],
+      "get": {
+        "tags": ["Item"],
+        "summary": "Get item with given ID",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "item with id",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ItemResponse"
+            }
+          },
+          "404": {
+            "description": "Failed. User not found."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update item with given ID",
+        "tags": ["Item"],
+        "requestBody": {
+          "description": "Item Object",
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "$ref": "#/definitions/ItemUpdate"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "description": "User with new values of properties",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          }
+        ],
+        "consumes": ["multipart/form-data"],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/ItemResponse"
+            }
+          },
+          "400": {
+            "description": "Failed. Bad post data."
+          },
+          "404": {
+            "description": "Failed. Item not found."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete item with given ID",
+        "tags": ["Item"],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "description": "Delete item with id",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/id"
+            }
+          },
+          "404": {
+            "description": "Failed. Item not found."
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/api/order": {
+      "get": {
+        "tags": ["Order"],
+        "summary": "Get all orders",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      },
+      "post": {
+        "tags": ["Order"],
+        "summary": "Create Order",
+        "requestBody": {
+          "description": "Order Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/create-order"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "CREATED"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/order/status/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of the order that we want to match",
+          "type": "integer"
+        }
+      ],
+      "put": {
+        "summary": "Update order status with given ID",
+        "tags": ["Order"],
+        "requestBody": {
+          "description": "Order Status Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/setOrderStatus"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/details/noOfItems/{id}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of the order item that we want to match",
+          "type": "integer"
+        }
+      ],
+      "put": {
+        "summary": "Update no of items with given ID",
+        "tags": ["Details"],
+        "requestBody": {
+          "description": "Details Object",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/definitions/setNoOfItems"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    },
+    "/api/details/{id}/{orderId}": {
+      "parameters": [
+        {
+          "name": "id",
+          "in": "path",
+          "required": true,
+          "description": "ID of the order item that we want to match",
+          "type": "integer"
+        },
+        {
+          "name": "orderId",
+          "in": "path",
+          "required": true,
+          "description": "ID of the order that we want to Delete",
+          "type": "integer"
+        }
+      ],
+      "delete": {
+        "summary": "Delete Order Item and delete the corresponding with the given order item ",
+        "tags": ["Details"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "BAD REQUEST"
+          },
+          "500": {
+            "description": "INTERNAL SERVER ERROR"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Category": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "parent_id": {
+          "type": "integer"
+        }
+      }
+    },
+    "CategoryUpdate": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "status": {
+          "type": "boolean"
+        },
+        "parent_id": {
+          "type": "integer"
+        }
+      }
+    },
+    "Item": {
+      "type": "object",
+      "properties": {
+        "img": {
+          "type": "string",
+          "format": "base64"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "subcategory_id": {
+          "type": "integer"
+        }
+      }
+    },
+    "ItemUpdate": {
+      "type": "object",
+      "content": "multipart/form-data",
+      "properties": {
+        "name": {
+          "type": "string",
+          "format": "base64"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "subcategory_id": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      }
+    },
+    "ItemResponse": {
+      "type": "object",
+      "properties": {
+        "img": {
+          "type": "String"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "price": {
+          "type": "integer"
+        },
+        "subcategory_id": {
+          "type": "integer"
+        },
+        "status": {
+          "type": "boolean"
+        }
+      }
+    },
+    "signup": {
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    },
+    "login": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      }
+    },
+    "reset-password": {
+      "type": "object",
+      "properties": {
+        "oldPassword": {
+          "type": "string"
+        },
+        "newPassword": {
+          "type": "string"
+        }
+      }
+    },
+    "updateProfile": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        }
+      }
+    },
+    "forget-password": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "forgetPasswordToken": {
+          "type": "string"
+        }
+      }
+    },
+    "newPassword": {
+      "type": "object",
+      "properties": {
+        "forgetPasswordToken": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "newPassword": {
+          "type": "string"
+        },
+        "confirmPassword": {
+          "type": "string"
+        }
+      }
+    },
+    "auth-state": {
+      "type": "object",
+      "properties": {
+        "authToken": {
+          "type": "string"
+        }
+      }
+    },
+    "create-order": {
+      "type": "object",
+      "properties": {
+        "order": {
+          "type": "object",
+          "properties": {
+            "userId": {
+              "type": "number"
+            },
+            "status": {
+              "type": "string"
+            },
+            "grandTotal": {
+              "type": "number"
+            }
+          }
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "itemId": {
+                "type": "number"
+              },
+              "noOfItems": {
+                "type": "number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "setNoOfItems": {
+      "type": "object",
+      "properties": {
+        "noOfItems": {
+          "type": "number"
+        }
+      }
+    },
+    "setOrderStatus": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        color: #333333;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        text-align: center;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+      }
+      .header h1 {
+        margin: 0;
+      }
+      .details {
+        margin: 20px 0;
+      }
+      .details table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .details th,
+      .details td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>X-Cars - Payment Invoice</h1>
+      </div>
+      <p>Hello {{buyerName}},</p>
+      <p>Get car details here: {{carDetailsLink}}</p>
+      <p>Razor pay invoice link: {{invoiceLink}}</p>
+      <p>
+        Thank you for your purchase with X-Cars! Here is your invoice for the
+        recent car purchase:
+      </p>
+
+      <div class="details">
+        <table>
+          <tr>
+            <th>Invoice Number:</th>
+            <td>{{invoiceNumber}}</td>
+          </tr>
+          <tr>
+            <th>Car Detail:</th>
+            <td>{{carInfo}}</td>
+          </tr>
+          <tr>
+            <th>Purchase Date:</th>
+            <td>{{date}}</td>
+          </tr>
+          <tr>
+            <th>Total Price:</th>
+            <td>{{price}}</td>
+          </tr>
+        </table>
+      </div>
+
+      <p>
+        If you have any questions about your purchase, feel free to reach out to
+        us.
+      </p>
+
+      <div class="footer">
+        <p>X-Cars Team</p>
+        <p>Email: support@xcars.com | Phone: (555) 123-4567</p>
+        <p>Thank you for choosing X-Cars!</p>
+      </div>
+    </div>
+  </body>
+</html>

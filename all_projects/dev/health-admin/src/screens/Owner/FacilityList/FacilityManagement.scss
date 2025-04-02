@@ -1,0 +1,35 @@
+.heading-area {
+  .header-left {
+    button {
+      margin-top: 10px;
+      @media screen and (min-width: 480px) {
+        margin-left: 10px;
+        margin-top: 0;
+      }
+      @media screen and (min-width: 992px) {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+      @media screen and (min-width: 1199px) {
+        margin-left: 10px;
+        margin-top: 0;
+      }
+    }
+  }
+  .header-right {
+    button {
+      @media screen and (min-width: 575px) {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+div.ag-theme-alpine div.ag-row {
+  font-size: 16px !important;
+}
+.ag-cell-focus,.ag-cell-no-focus{
+  border-color:transparent !important;
+}
+.rowFontColor {
+  color: #3B7AF7;
+}

@@ -1,0 +1,1 @@
+basically all the basic thing i had learn , i react 

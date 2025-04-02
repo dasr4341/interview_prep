@@ -1,0 +1,28 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 44,
+  "make_name": "SUBARU",
+  "display_order": 0,
+  "make_display": "Subaru",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 20088,
+      "year": "2008",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 399,
+          "make_id": 44,
+          "model_name": "LEGACY",
+          "model_display": "LEGACY",
+          "body_type": "SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    }
+  ]
+}

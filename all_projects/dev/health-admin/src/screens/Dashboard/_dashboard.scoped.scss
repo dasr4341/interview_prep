@@ -1,0 +1,13 @@
+.dashboard-content {
+  overflow-y: auto;
+  height: calc(100vh - 68px);
+}
+
+.dashboard-wrapper, .dashboard-content {
+  // 68px is nav height and nav height appearing 1024px
+
+  @media (min-width: 1024px) {
+    min-height: 100vh;
+  }
+}
+

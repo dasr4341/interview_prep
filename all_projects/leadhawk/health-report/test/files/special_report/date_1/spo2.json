@@ -1,0 +1,130 @@
+[
+  {
+    "dateTime": "2023-11-11",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-12",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-13",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-14",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-15",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-16",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-17",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-18",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-19",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-20",
+    "value": {
+      "avg": 94.9,
+      "min": 90.5,
+      "max": 98
+    }
+  },
+  {
+    "dateTime": "2023-11-21",
+    "value": {
+      "avg": 95.4,
+      "min": 92.5,
+      "max": 99.5
+    }
+  },
+  {
+    "dateTime": "2023-11-22",
+    "value": {
+      "avg": 95,
+      "min": 93,
+      "max": 97.4
+    }
+  },
+  {
+    "dateTime": "2023-11-23",
+    "value": {
+      "avg": 94,
+      "min": 91,
+      "max": 96.9
+    }
+  },
+  {
+    "dateTime": "2023-11-24",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-25",
+    "value": {
+      "min": null,
+      "avg": null,
+      "max": null
+    }
+  },
+  {
+    "dateTime": "2023-11-26",
+    "value": {
+      "avg": 92.3,
+      "min": 88.6,
+      "max": 98.5
+    }
+  }
+]

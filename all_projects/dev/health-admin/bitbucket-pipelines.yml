@@ -1,0 +1,17 @@
+image: atlassian/default-image:3
+
+pipelines:
+  branches:
+    dev:
+      - step:
+          name: sonar_qube
+          image: sonarsource/sonar-scanner-cli:latest
+          script:
+            - sonar-scanner -Dsonar.login=$SONAR_CLOUD
+
+    main:
+      - step:
+          name: sonar_qube
+          image: sonarsource/sonar-scanner-cli:latest
+          script:
+            - sonar-scanner -Dsonar.login=$SONAR_CLOUD            

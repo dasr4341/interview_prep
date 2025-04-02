@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./admin",
+    "rootDir": "./admin",
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "node", "@cypress/grep"]
+  },
+  "include": ["**/*.ts"]
+}

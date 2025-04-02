@@ -1,0 +1,398 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 33,
+  "make_name": "SSANGYONG",
+  "display_order": 0,
+  "make_display": "Ssangyong",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 17746,
+      "year": "2018",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 214,
+          "make_id": 33,
+          "model_name": "REXTON",
+          "model_display": "Rexton",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "1",
+          "variants": [
+            {
+              "variant_id": 1198,
+              "model_id": 214,
+              "variant_name": "RX 6",
+              "variant_name_short": "RX 6",
+              "variant_display_name": "RX 6",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1199,
+              "model_id": 214,
+              "variant_name": "RX5",
+              "variant_name_short": "RX5",
+              "variant_display_name": "RX5",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1200,
+              "model_id": 214,
+              "variant_name": "RX7",
+              "variant_name_short": "RX7",
+              "variant_display_name": "RX7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 15115,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 214,
+          "make_id": 33,
+          "model_name": "REXTON",
+          "model_display": "Rexton",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "1",
+          "variants": [
+            {
+              "variant_id": 1198,
+              "model_id": 214,
+              "variant_name": "RX 6",
+              "variant_name_short": "RX 6",
+              "variant_display_name": "RX 6",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1199,
+              "model_id": 214,
+              "variant_name": "RX5",
+              "variant_name_short": "RX5",
+              "variant_display_name": "RX5",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1200,
+              "model_id": 214,
+              "variant_name": "RX7",
+              "variant_name_short": "RX7",
+              "variant_display_name": "RX7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 12435,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 214,
+          "make_id": 33,
+          "model_name": "REXTON",
+          "model_display": "Rexton",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "1",
+          "variants": [
+            {
+              "variant_id": 1198,
+              "model_id": 214,
+              "variant_name": "RX 6",
+              "variant_name_short": "RX 6",
+              "variant_display_name": "RX 6",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1199,
+              "model_id": 214,
+              "variant_name": "RX5",
+              "variant_name_short": "RX5",
+              "variant_display_name": "RX5",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1200,
+              "model_id": 214,
+              "variant_name": "RX7",
+              "variant_name_short": "RX7",
+              "variant_display_name": "RX7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 1198,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 214,
+          "make_id": 33,
+          "model_name": "REXTON",
+          "model_display": "Rexton",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "1",
+          "variants": [
+            {
+              "variant_id": 1198,
+              "model_id": 214,
+              "variant_name": "RX 6",
+              "variant_name_short": "RX 6",
+              "variant_display_name": "RX 6",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1199,
+              "model_id": 214,
+              "variant_name": "RX5",
+              "variant_name_short": "RX5",
+              "variant_display_name": "RX5",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1200,
+              "model_id": 214,
+              "variant_name": "RX7",
+              "variant_name_short": "RX7",
+              "variant_display_name": "RX7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 2711,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 214,
+          "make_id": 33,
+          "model_name": "REXTON",
+          "model_display": "Rexton",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "1",
+          "variants": [
+            {
+              "variant_id": 1198,
+              "model_id": 214,
+              "variant_name": "RX 6",
+              "variant_name_short": "RX 6",
+              "variant_display_name": "RX 6",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1199,
+              "model_id": 214,
+              "variant_name": "RX5",
+              "variant_name_short": "RX5",
+              "variant_display_name": "RX5",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1200,
+              "model_id": 214,
+              "variant_name": "RX7",
+              "variant_name_short": "RX7",
+              "variant_display_name": "RX7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 19499,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 214,
+          "make_id": 33,
+          "model_name": "REXTON",
+          "model_display": "Rexton",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "1",
+          "variants": [
+            {
+              "variant_id": 1198,
+              "model_id": 214,
+              "variant_name": "RX 6",
+              "variant_name_short": "RX 6",
+              "variant_display_name": "RX 6",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1199,
+              "model_id": 214,
+              "variant_name": "RX5",
+              "variant_name_short": "RX5",
+              "variant_display_name": "RX5",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1200,
+              "model_id": 214,
+              "variant_name": "RX7",
+              "variant_name_short": "RX7",
+              "variant_display_name": "RX7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 5081,
+      "year": "2012",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 214,
+          "make_id": 33,
+          "model_name": "REXTON",
+          "model_display": "Rexton",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "1",
+          "variants": [
+            {
+              "variant_id": 1199,
+              "model_id": 214,
+              "variant_name": "RX5",
+              "variant_name_short": "RX5",
+              "variant_display_name": "RX5",
+              "transportation_category": "Category_5",
+              "transmission_type": "MT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            },
+            {
+              "variant_id": 1200,
+              "model_id": 214,
+              "variant_name": "RX7",
+              "variant_name_short": "RX7",
+              "variant_display_name": "RX7",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Diesel",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

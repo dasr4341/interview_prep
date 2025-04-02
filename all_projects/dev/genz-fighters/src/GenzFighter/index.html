@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GenZ Fighters</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.3.3/dist/aframe-environment-component.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="../../assets/aframe-physics-system.min.js"></script>
+    <script src="https://unpkg.com/aframe-haptics-component/dist/aframe-haptics-component.min.js"></script>
+    <script defer type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <section class="a-enter-ar">
+      <button class="a-enter-ar-button"></button>
+    </section>
+
+    <a-scene physics="gravity: -2">
+      <a-assets>
+        <!-- ------------------------------------- -->
+        <!-- ENEMY -->
+        <!-- ------------------------------------- -->
+        <a-asset-item
+          id="villain"
+          src="../../assets/Enemy/Character/Dragon/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="kid-buu"
+          src="../../assets/Enemy/Character/kidBuu/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="goku"
+          src="../../assets/Enemy/Character/Goku/scene.gltf"
+        ></a-asset-item>
+        <!-- ------------------------------------- -->
+        <!-- ENEMY -->
+        <!-- ------------------------------------- -->
+
+        <a-asset-item id="apple" src="../../assets/apple.glb"></a-asset-item>
+        <a-asset-item id="pear" src="../../assets/pear.glb"></a-asset-item>
+
+        <!-- VIRUS -->
+        <a-asset-item
+          id="virus-green"
+          src="../../assets/Enemy/Bullet/big-fire/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="virus-red"
+          src="../../assets/Enemy/Bullet/medium-fire/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="virus-blue"
+          src="../../assets/Enemy/Bullet/small-fire/scene.gltf"
+        ></a-asset-item>
+
+        <!-- ------------------------------------- -->
+        <!-- GUNS -->
+        <!-- ------------------------------------- -->
+        <a-asset-item
+          id="gun0-glb"
+          src="../../assets/Guns/GunModel1/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="gun1-glb"
+          src="../../assets/Guns/GunModel2/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="gun2-gltf"
+          src="../../assets/Guns/GunModel3/scene.gltf"
+        ></a-asset-item>
+
+        <a-asset-item
+          id="saber-gltf"
+          src="../../assets/Sword/scene.gltf"
+        ></a-asset-item>
+        <!-- ------------------------------------- -->
+        <!-- GUNS -->
+        <!-- ------------------------------------- -->
+
+        <!-- BULLET -->
+        <a-asset-item
+          id="gun0-bullet-asset"
+          src="../../assets/Guns/GunModel1/Bullet/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="gun1-bullet-asset"
+          src="../../assets/Guns/GunModel2/Bullet/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="gun2-bullet-asset"
+          src="../../assets/Guns/GunModel3/Bullet/scene.gltf"
+        ></a-asset-item>
+
+        <!-- loading gun -->
+        <a-asset-item
+          id="gun-loading-gltf"
+          src="../../assets/Guns/GunLoading/scene.gltf"
+        ></a-asset-item>
+
+        <!-- Explosion -->
+        <a-asset-item
+          id="explosion-gltf"
+          src="./../assets/Enemy/Explosion/Type1/scene.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="enemy-explosion-gltf"
+          src="../../assets/Enemy/Explosion/Type1/scene.gltf"
+        ></a-asset-item>
+
+        <!-- Audio -->
+        <audio id="thunk" src="../../assets/music/thunk.wav"></audio>
+        <audio id="bgMusic" src="../../assets/music/bgLatest.mp3"></audio>
+        <audio
+          id="gun0-fire-sound-asset"
+          preload="auto"
+          src="../../assets/Guns/GunModel1/FireSound/fire.mp3"
+        ></audio>
+        <audio
+          id="gun1-fire-sound-asset"
+          preload="auto"
+          src="../../assets/Guns/GunModel2/FireSound/fire.mp3"
+        ></audio>
+        <audio
+          id="gun2-fire-sound-asset"
+          preload="auto"
+          src="../../assets/Guns/GunModel3/FireSound/fire.mp3"
+        ></audio>
+        <audio
+          id="gun-loading-sound-asset"
+          preload="auto"
+          src="../../assets/Guns/GunLoading/Sound/grabbingSound.mp3"
+        ></audio>
+        <audio
+          id="gun-dropping-sound-asset"
+          preload="auto"
+          src="../../assets/Guns/GunDropping/Sound/dropping.mp3"
+        ></audio>
+        <audio
+          id="sword-hit-sound-asset"
+          preload="auto"
+          src="../../assets/Sword/Sound/swordHitSound.mp3"
+        ></audio>
+        <audio
+          id="enemy-fire-sound-asset"
+          preload="auto"
+          src="../../assets/Enemy/FireingSound/sound.mp3"
+        ></audio>
+      </a-assets>
+
+      <!-- -------------------------------------------------- -->
+      <!-- FIRE SOUND  -->
+      <!-- -------------------------------------------------- -->
+      <a-entity
+        id="gun0-fire-sound"
+        sound="src: #gun0-fire-sound-asset"
+      ></a-entity>
+      <a-entity
+        id="gun1-fire-sound"
+        sound="src: #gun1-fire-sound-asset"
+      ></a-entity>
+      <a-entity
+        id="gun2-fire-sound"
+        sound="src: #gun2-fire-sound-asset"
+      ></a-entity>
+      <a-entity
+        id="gun-loading-sound"
+        sound="src: #gun-loading-sound-asset"
+      ></a-entity>
+      <a-entity
+        id="gun-dropping-sound"
+        sound="src: #gun-dropping-sound-asset"
+      ></a-entity>
+      <a-entity
+        id="sword-hit-sound"
+        sound="src: #sword-hit-sound-asset"
+      ></a-entity>
+      <a-entity
+        id="enemy-fire-sound"
+        sound="src: #enemy-fire-sound-asset"
+      ></a-entity>
+      <!-- -------------------------------------------------- -->
+      <!-- FIRE SOUND Ends  -->
+      <!-- -------------------------------------------------- -->
+
+      <!-- ENV -->
+      <a-entity
+        hide-on-enter-ar
+        environment="preset: goldmine; groundColor: #445; skyColor: #9f18a1; "
+      ></a-entity>
+
+      <!-- -------------------------------------------------- -->
+      <!-- GUNS -->
+      <!-- -------------------------------------------------- -->
+      <a-entity position="0.5 0.4 -1">
+        <a-entity
+          id="gun0"
+          gltf-model="#gun0-glb"
+          rotation="0 180 0"
+          scale="0.001 0.001 0.001"
+          dynamic-body="shape: box; mass: 0"
+          class="collidable"
+          data-isgun="true"
+          data-gunindex="0"
+          visible="false"
+        >
+        </a-entity>
+        <a-entity
+          id="gun-loading"
+          scale=" 1 1 1"
+          gltf-model="#gun-loading-gltf"
+          animation-mixer
+          visible="false"
+        ></a-entity>
+      </a-entity>
+
+      <a-entity
+        id="gun1"
+        gltf-model="#gun1-glb"
+        position="-0.5 1 -1"
+        rotation="0 90 0"
+        scale="0.2 0.2 0.2"
+        dynamic-body="shape: box; mass: 0"
+        class="collidable"
+        data-isgun="true"
+        data-gunindex="1"
+        visible="false"
+      ></a-entity>
+
+      <a-entity
+        id="gun2"
+        gltf-model="#gun2-gltf"
+        position="0.5 2 -0.8"
+        rotation="0 90 0"
+        scale="0.7 0.7 0.7"
+        dynamic-body="shape: box; mass: 0"
+        class="collidable"
+        data-gunindex="2"
+        data-isgun="true"
+        visible="false"
+      ></a-entity>
+      <!-- -------------------------------------------------- -->
+      <!-- GUNS END -->
+      <!-- -------------------------------------------------- -->
+
+      <!-- ground -->
+      <a-box
+        id="ground"
+        width="40"
+        depth="40"
+        height="0.1"
+        position="0 0 0"
+        color="green"
+        static-body="shape: box"
+        visible="false"
+      ></a-box>
+
+      <!-- enemy object -->
+      <a-entity id="mybox" position="-1 1 -10" movement generator>
+        <a-entity position="0 1.5 -2" id="villain-body">
+          <a-text id="dragonHealth" value="" position="1.5 2 3.5" ></a-text>
+          <a-entity
+            gltf-model="#villain"
+            scale="0.01 0.01 0.01"
+            animation-mixer
+          ></a-entity>
+          <a-cylinder
+            data-villainbodyshielddragon="true"
+            radius="2"
+            height="5"
+            color="#4CC3D9"
+            static-body="shape: box;"
+            class="collidable"
+            position="2 0.5 1"
+            visible="false"
+          ></a-cylinder>
+        </a-entity>
+
+        <!-- -------------------------------------------------- -->
+        <!-- GOKU -->
+        <!-- -------------------------------------------------- -->
+        <a-entity position="-1 -1 -1" id="villain-body-goku">
+          <a-text id="gokuHealth" value="" position="0 2.5 3.5" ></a-text>
+          <a-entity
+            gltf-model="#goku"
+            rotation="0 45 0"
+            animation-mixer
+          ></a-entity>
+          <a-cylinder
+            data-villainbodyshieldgoku="true"
+            radius="1"
+            height="5"
+            color="green"
+            static-body="shape: box;"
+            class="collidable"
+            visible="false"
+          ></a-cylinder>
+        </a-entity>
+        <!-- -------------------------------------------------- -->
+        <!-- GOKU ENDs -->
+        <!-- -------------------------------------------------- -->
+
+        <!-- -------------------------------------------------- -->
+        <!-- KID BUU -->
+        <!-- -------------------------------------------------- -->
+        <a-entity position="2 1.5 -1" id="villain-body-kid-buu">
+          <a-text id="kidbuHealth" value="" position="0 2 2" ></a-text>
+          <a-entity
+            gltf-model="#kid-buu"
+            scale="1 1 1"
+            animation-mixer
+          ></a-entity>
+          <a-cylinder
+            data-villainbodyshieldkidbuu="true"
+            radius="1"
+            height="5"
+            color="red"
+            static-body="shape: box;"
+            class="collidable"
+            visible="false"
+          ></a-cylinder>
+        </a-entity>
+        <!-- -------------------------------------------------- -->
+        <!-- KID BUU ENDs -->
+        <!-- -------------------------------------------------- -->
+
+        <!-- enemy died animation -->
+        <a-entity
+          id="enemy-explosion"
+          gltf-model="#enemy-explosion-gltf"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          animation-mixer
+          visible="false"
+        ></a-entity>
+        <a-entity
+          id="kidbuu-explosion"
+          gltf-model="#enemy-explosion-gltf"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          animation-mixer
+          visible="false"
+        ></a-entity>
+        <a-entity
+          id="goku-explosion"
+          gltf-model="#explosion-gltf"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          animation-mixer
+          visible="false"
+        ></a-entity>
+      </a-entity>
+
+      <!-------------------------------------------------------->
+
+      <!-------------------------------------------------------->
+      <!-- camera controls -->
+      <!-------------------------------------------------------->
+      <a-entity id="cameraRig">
+        <a-sound
+          src="#bgMusic"
+          autoplay="true"
+          position="0 2 5"
+          loop="true"
+        ></a-sound>
+
+        <a-entity camera position="0 1.6 0" wasd-controls look-controls>
+          <a-text id="debugger" value="debugText" position="-0.8 0 -2"></a-text>
+          <a-entity position="0 2 -3">
+            <!-------------------------------------------------------->
+            <!-- score -->
+            <!-------------------------------------------------------->
+            <a-text
+              id="villain-health"
+              value="Computer: 600"
+              position="-4.5 0 -5"
+              visible="false"
+            ></a-text>
+            <a-text
+              id="score"
+              value="Defeat the army"
+              position="-0.5 0 -5"
+            ></a-text>
+            <a-text
+              id="player-health"
+              value="You: 100"
+              position="3 0 -5"
+            ></a-text>
+            <!-------------------------------------------------------->
+            <!-- score Ends -->
+            <!-------------------------------------------------------->
+          </a-entity>
+
+          <!-- User Body -->
+          <a-cylinder
+            id="sam"
+            haptics=""
+            user-body
+            position="0 0 0"
+            radius="0.5"
+            height="2"
+            color="#FFC65D"
+            class="collidable"
+            static-body="shape:box; mass: 2"
+            data-isuserbody="true"
+            visible="true"
+          ></a-cylinder>
+        </a-entity>
+
+        <a-light type="ambient" color="#fffff" position="0 6 -1"></a-light>
+
+        <a-entity
+          gltf-model=""
+          id="leftController"
+          oculus-touch-controls="hand: left"
+          collider-check-left
+          raycaster="objects: .collidable; showLine: false; far:3"
+          visible="true"
+        >
+          <a-entity
+            id="saber"
+            gltf-model="#saber-gltf"
+            rotation="0 180 0"
+            scale="0.2 0.2 0.2"
+            dynamic-body="shape: box; mass: 0"
+            class="collidable"
+            data-issword="true"
+            visible="true"
+          ></a-entity>
+        </a-entity>
+
+        <a-entity
+          id="rightController"
+          oculus-touch-controls="hand: right"
+          collider-check-right
+          raycaster="objects: .collidable; showLine: true; far:0.5"
+        >
+          <!-- picked guns -->
+          <a-entity
+            id="gun0-picked"
+            gltf-model="#gun0-glb"
+            rotation="5 180 0"
+            scale="0.001 0.001 0.001"
+            dynamic-body="shape: box; mass: 0"
+            class="collidable"
+            data-isgun="true"
+            data-gunindex="0"
+            visible="false"
+          >
+          </a-entity>
+          <a-entity
+            id="gun1-picked"
+            gltf-model="#gun1-glb"
+            rotation="20 90 0"
+            scale="0.2 0.2 0.2"
+            dynamic-body="shape: box; mass: 0"
+            class="collidable"
+            data-isgun="true"
+            data-gunindex="1"
+            visible="false"
+          ></a-entity>
+          <a-entity
+            id="gun2-picked"
+            gltf-model="#gun2-gltf"
+            rotation="0 90 0"
+            scale="0.7 0.7 0.7"
+            dynamic-body="shape: box; mass: 0"
+            class="collidable"
+            data-gunindex="2"
+            data-isgun="true"
+            visible="false"
+          ></a-entity>
+          <!-- picked guns  -->
+        </a-entity>
+      </a-entity>
+      <!-------------------------------------------------------->
+      <!-- camera controls Ends -->
+      <!-------------------------------------------------------->
+    </a-scene>
+  </body>
+</html>

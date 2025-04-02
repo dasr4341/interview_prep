@@ -1,0 +1,13 @@
+.popup-content {
+  &.time-range-popover-content {
+    margin-left: 16px !important;
+    margin-top: -20px ;
+  }
+  &.time-range-popover-content div {
+    top: 32px !important;
+  }
+  .range-select {
+    min-width: 145px;
+    max-height: 40px;
+  }
+}

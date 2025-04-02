@@ -1,0 +1,174 @@
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="text"] {
+  &.input {
+    @apply border-gray-300;
+    @apply px-3;
+    @apply py-3;
+    @apply rounded-lg;
+    &.input-error{
+      @apply border-red-800;
+      @apply text-red-800;
+    }
+  }
+}
+
+// To Disable Arrow Buttons of Input Type Number
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.textarea {
+  @apply border-gray-300;
+  @apply px-3;
+  @apply py-2;
+  @apply rounded-lg;
+}
+
+.form-label {
+  @apply text-base;
+  @apply text-pt-gray-600;
+}
+
+.form-radio {
+  @apply w-5;
+  @apply h-5;
+  @apply border-primary-light;
+  @apply bg-gray-50;
+  @apply mr-3;
+  @apply focus:outline-none;
+
+  &:checked {
+    @apply bg-gray-50;
+    @apply border-primary-light;
+    @apply hover:bg-gray-50;
+    @apply hover:border-primary-light;
+
+    & + label {
+      @apply relative;
+
+      &::before {
+        content: '';
+        @apply absolute;
+        @apply -ml-7;
+        @apply mt-2;
+        @apply w-3;
+        @apply h-3;
+        @apply rounded-full;
+        @apply bg-primary-light;
+      }
+    }
+
+    &:focus {
+      @apply bg-gray-50;
+      @apply border-primary-light;
+      @apply hover:bg-gray-50;
+      @apply hover:border-primary-light;
+
+      & + label {
+        @apply relative;
+
+        &::before {
+          content: '';
+          @apply absolute;
+          @apply -ml-7;
+          @apply mt-2;
+          @apply w-3;
+          @apply h-3;
+          @apply rounded-full;
+          @apply bg-primary-light;
+        }
+      }
+    }
+  }
+}
+
+.input-email__template {
+  @apply border-none;
+  @apply text-sm;
+  @apply text-black;
+  @apply p-1;
+
+  &:focus {
+    @apply ring-0;
+    @apply border-0;
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 41px;
+  height: 25px;
+
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+    &.round {
+      border-radius: 38px;
+
+      &::before {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(14px);
+  -ms-transform: translateX(14px);
+  transform: translateX(14px);
+}
+
+.date-field {
+  background-image: url('../../assets/icons/icon_calendar.svg');
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+.ref-date {
+  .react-datepicker-popper {
+    .react-datepicker__triangle {
+      margin-left: -17px !important;
+    }
+  }
+}

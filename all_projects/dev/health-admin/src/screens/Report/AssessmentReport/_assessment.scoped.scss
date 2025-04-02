@@ -1,0 +1,44 @@
+.row-header {
+  padding-bottom: 20px;
+}
+table {
+  background-color: white;
+}
+tr {
+  width: 100%;
+  box-shadow: inset 0px -1px 0px rgba(197, 197, 216, 0.5);
+}
+.header-table {
+  box-shadow: none;
+}
+.row-element {
+  padding: 24px 16px;
+  background-color: white;
+  @media screen and (min-width: 640px) {
+    padding: 24px 20px;
+  }
+}
+td {
+  box-shadow: inset 0px -1px 0px rgba(197, 197, 216, 0.5);
+}
+.nab-item {
+  word-break: keep-all;
+  border-bottom: 4px solid #ffffff;
+}
+.active {
+  border-bottom: 4px solid #3b7af7;
+  .active-icon {
+    background-color: #f3dd4a;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.active div {
+  color: black !important;
+}
+.max-w-200 {
+  max-width: 200px;
+}
+.font-size {
+  font-size: 20px;
+}

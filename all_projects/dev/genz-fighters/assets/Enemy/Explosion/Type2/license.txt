@@ -1,0 +1,11 @@
+Model Information:
+* title:	Alien Comet No II
+* source:	https://sketchfab.com/3d-models/alien-comet-no-ii-da142e718e1a4183aa08018289fc2808
+* author:	smice (https://sketchfab.com/smice)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Alien Comet No II" (https://sketchfab.com/3d-models/alien-comet-no-ii-da142e718e1a4183aa08018289fc2808) by smice (https://sketchfab.com/smice) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

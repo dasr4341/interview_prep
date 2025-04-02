@@ -1,0 +1,124 @@
+{
+  "logo": "https://fastly-production.24c.in/cars24/brand/",
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 62,
+  "make_name": "BYD",
+  "display_order": 0,
+  "make_display": "BYD",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 54419,
+      "year": "2024",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 669,
+          "make_id": 62,
+          "model_name": "ATTO 3",
+          "model_display": "ATTO 3",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        },
+        {
+          "status": "Active",
+          "model_id": 658,
+          "make_id": 62,
+          "model_name": "E6",
+          "model_display": "E6",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        },
+        {
+          "status": "Active",
+          "model_id": 675,
+          "make_id": 62,
+          "model_name": "Seal",
+          "model_display": "Seal",
+          "body_type": "Luxury SUV",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52547,
+      "year": "2023",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 669,
+          "make_id": 62,
+          "model_name": "ATTO 3",
+          "model_display": "ATTO 3",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        },
+        {
+          "status": "Active",
+          "model_id": 658,
+          "make_id": 62,
+          "model_name": "E6",
+          "model_display": "E6",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52546,
+      "year": "2022",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 669,
+          "make_id": 62,
+          "model_name": "ATTO 3",
+          "model_display": "ATTO 3",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        },
+        {
+          "status": "Active",
+          "model_id": 658,
+          "make_id": 62,
+          "model_name": "E6",
+          "model_display": "E6",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 54418,
+      "year": "2021",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 658,
+          "make_id": 62,
+          "model_name": "E6",
+          "model_display": "E6",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    }
+  ]
+}

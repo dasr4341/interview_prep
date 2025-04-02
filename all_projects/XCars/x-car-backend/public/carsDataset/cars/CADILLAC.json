@@ -1,0 +1,28 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 55,
+  "make_name": "CADILLAC",
+  "display_order": 0,
+  "make_display": "CADILLAC",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 24322,
+      "year": "1990",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 540,
+          "make_id": 55,
+          "model_name": "Deville",
+          "model_display": "Deville",
+          "body_type": "Sedan",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    }
+  ]
+}

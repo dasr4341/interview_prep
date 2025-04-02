@@ -1,0 +1,20 @@
+export type SesMailInputType = {
+  recipientEmail: string;
+  emailTemplate: string;
+  subject: string;
+  otp?: string;
+  url?: string;
+  name?: string;
+  message?: string;
+  date?: string;
+  email?: string;
+  phone?: string;
+  carInfo?: string;
+  carModel?: string;
+  carYear?: string;
+  price?: string;
+  carDetailsLink?: string;
+  invoiceLink?: string;
+  dealerName?: string;
+  invoiceNumber?: string;
+};

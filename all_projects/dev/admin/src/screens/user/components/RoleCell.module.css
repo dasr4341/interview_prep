@@ -1,0 +1,9 @@
+.customSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("../../../assets/icons/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 50%;
+}

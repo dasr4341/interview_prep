@@ -1,0 +1,1366 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 9,
+  "make_name": "FERRARI",
+  "display_order": 0,
+  "make_display": "Ferrari",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 57512,
+      "year": "2024",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 694,
+          "make_id": 9,
+          "model_name": "296 GTB",
+          "model_display": "296 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13506,
+              "model_id": 694,
+              "variant_name": "3.0 Petrol",
+              "variant_name_short": null,
+              "variant_display_name": "3.0 Petrol",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 54000000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 692,
+          "make_id": 9,
+          "model_name": "F8-Tributo",
+          "model_display": "F8-Tributo",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13503,
+              "model_id": 692,
+              "variant_name": "Berlinetta",
+              "variant_name_short": null,
+              "variant_display_name": "Berlinetta",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 40200000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 693,
+          "make_id": 9,
+          "model_name": "Roma",
+          "model_display": "Roma",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13504,
+              "model_id": 693,
+              "variant_name": "Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 37600000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 691,
+          "make_id": 9,
+          "model_name": "SF90 Stradale",
+          "model_display": "SF90 Stradale",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13502,
+              "model_id": 691,
+              "variant_name": "V8 Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "V8 Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 75000000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 57511,
+      "year": "2023",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 694,
+          "make_id": 9,
+          "model_name": "296 GTB",
+          "model_display": "296 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13506,
+              "model_id": 694,
+              "variant_name": "3.0 Petrol",
+              "variant_name_short": null,
+              "variant_display_name": "3.0 Petrol",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 54000000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 692,
+          "make_id": 9,
+          "model_name": "F8-Tributo",
+          "model_display": "F8-Tributo",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13503,
+              "model_id": 692,
+              "variant_name": "Berlinetta",
+              "variant_name_short": null,
+              "variant_display_name": "Berlinetta",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 40200000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 693,
+          "make_id": 9,
+          "model_name": "Roma",
+          "model_display": "Roma",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13504,
+              "model_id": 693,
+              "variant_name": "Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 37600000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 691,
+          "make_id": 9,
+          "model_name": "SF90 Stradale",
+          "model_display": "SF90 Stradale",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13502,
+              "model_id": 691,
+              "variant_name": "V8 Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "V8 Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 75000000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 57510,
+      "year": "2022",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 694,
+          "make_id": 9,
+          "model_name": "296 GTB",
+          "model_display": "296 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13506,
+              "model_id": 694,
+              "variant_name": "3.0 Petrol",
+              "variant_name_short": null,
+              "variant_display_name": "3.0 Petrol",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 54000000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 692,
+          "make_id": 9,
+          "model_name": "F8-Tributo",
+          "model_display": "F8-Tributo",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13503,
+              "model_id": 692,
+              "variant_name": "Berlinetta",
+              "variant_name_short": null,
+              "variant_display_name": "Berlinetta",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 40200000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 693,
+          "make_id": 9,
+          "model_name": "Roma",
+          "model_display": "Roma",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13504,
+              "model_id": 693,
+              "variant_name": "Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 37600000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 691,
+          "make_id": 9,
+          "model_name": "SF90 Stradale",
+          "model_display": "SF90 Stradale",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13502,
+              "model_id": 691,
+              "variant_name": "V8 Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "V8 Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 75000000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 57509,
+      "year": "2021",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 692,
+          "make_id": 9,
+          "model_name": "F8-Tributo",
+          "model_display": "F8-Tributo",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13503,
+              "model_id": 692,
+              "variant_name": "Berlinetta",
+              "variant_name_short": null,
+              "variant_display_name": "Berlinetta",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 40200000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 693,
+          "make_id": 9,
+          "model_name": "Roma",
+          "model_display": "Roma",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13504,
+              "model_id": 693,
+              "variant_name": "Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 37600000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 691,
+          "make_id": 9,
+          "model_name": "SF90 Stradale",
+          "model_display": "SF90 Stradale",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13502,
+              "model_id": 691,
+              "variant_name": "V8 Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "V8 Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 75000000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 57508,
+      "year": "2020",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 695,
+          "make_id": 9,
+          "model_name": "812",
+          "model_display": "812",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13507,
+              "model_id": 695,
+              "variant_name": "Superfast",
+              "variant_name_short": null,
+              "variant_display_name": "Superfast [2018 - 2020]",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 52000000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 692,
+          "make_id": 9,
+          "model_name": "F8-Tributo",
+          "model_display": "F8-Tributo",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13503,
+              "model_id": 692,
+              "variant_name": "Berlinetta",
+              "variant_name_short": null,
+              "variant_display_name": "Berlinetta",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 40200000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 691,
+          "make_id": 9,
+          "model_name": "SF90 Stradale",
+          "model_display": "SF90 Stradale",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13502,
+              "model_id": 691,
+              "variant_name": "V8 Coupe",
+              "variant_name_short": null,
+              "variant_display_name": "V8 Coupe",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 75000000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 57693,
+      "year": "2019",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 695,
+          "make_id": 9,
+          "model_name": "812",
+          "model_display": "812",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13507,
+              "model_id": 695,
+              "variant_name": "Superfast",
+              "variant_name_short": null,
+              "variant_display_name": "Superfast [2018 - 2020]",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 52000000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 16882,
+      "year": "2018",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 695,
+          "make_id": 9,
+          "model_name": "812",
+          "model_display": "812",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 13507,
+              "model_id": 695,
+              "variant_name": "Superfast",
+              "variant_name_short": null,
+              "variant_display_name": "Superfast [2018 - 2020]",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": "18",
+              "ex_showroom_price": 52000000
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 64,
+          "make_id": 9,
+          "model_name": "CALIFORNIA",
+          "model_display": "California",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 285,
+              "model_id": 64,
+              "variant_name": "CONVERTIBLE",
+              "variant_name_short": "CONVERTIBLE",
+              "variant_display_name": "CONVERTIBLE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 14701,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 64,
+          "make_id": 9,
+          "model_name": "CALIFORNIA",
+          "model_display": "California",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 285,
+              "model_id": 64,
+              "variant_name": "CONVERTIBLE",
+              "variant_name_short": "CONVERTIBLE",
+              "variant_display_name": "CONVERTIBLE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 65,
+          "make_id": 9,
+          "model_name": "F12 BERLINETTA",
+          "model_display": "F12 Berlinetta",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 286,
+              "model_id": 65,
+              "variant_name": "V12",
+              "variant_name_short": "F12BERLINETTA",
+              "variant_display_name": "V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 13046,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 64,
+          "make_id": 9,
+          "model_name": "CALIFORNIA",
+          "model_display": "California",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 285,
+              "model_id": 64,
+              "variant_name": "CONVERTIBLE",
+              "variant_name_short": "CONVERTIBLE",
+              "variant_display_name": "CONVERTIBLE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 65,
+          "make_id": 9,
+          "model_name": "F12 BERLINETTA",
+          "model_display": "F12 Berlinetta",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 286,
+              "model_id": 65,
+              "variant_name": "V12",
+              "variant_name_short": "F12BERLINETTA",
+              "variant_display_name": "V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 66,
+          "make_id": 9,
+          "model_name": "FF",
+          "model_display": "FF",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 287,
+              "model_id": 66,
+              "variant_name": "6.3L V12",
+              "variant_name_short": "6.3L V12",
+              "variant_display_name": "6.3L V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 283,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 62,
+          "make_id": 9,
+          "model_name": "458 SPIDER",
+          "model_display": "458 Spider",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 283,
+              "model_id": 62,
+              "variant_name": "458 SPIDER",
+              "variant_name_short": "458 SPIDER",
+              "variant_display_name": "458 SPIDER",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 64,
+          "make_id": 9,
+          "model_name": "CALIFORNIA",
+          "model_display": "California",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 285,
+              "model_id": 64,
+              "variant_name": "CONVERTIBLE",
+              "variant_name_short": "CONVERTIBLE",
+              "variant_display_name": "CONVERTIBLE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 65,
+          "make_id": 9,
+          "model_name": "F12 BERLINETTA",
+          "model_display": "F12 Berlinetta",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 286,
+              "model_id": 65,
+              "variant_name": "V12",
+              "variant_name_short": "F12BERLINETTA",
+              "variant_display_name": "V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 66,
+          "make_id": 9,
+          "model_name": "FF",
+          "model_display": "FF",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 287,
+              "model_id": 66,
+              "variant_name": "6.3L V12",
+              "variant_name_short": "6.3L V12",
+              "variant_display_name": "6.3L V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 1794,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 62,
+          "make_id": 9,
+          "model_name": "458 SPIDER",
+          "model_display": "458 Spider",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 283,
+              "model_id": 62,
+              "variant_name": "458 SPIDER",
+              "variant_name_short": "458 SPIDER",
+              "variant_display_name": "458 SPIDER",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 64,
+          "make_id": 9,
+          "model_name": "CALIFORNIA",
+          "model_display": "California",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 285,
+              "model_id": 64,
+              "variant_name": "CONVERTIBLE",
+              "variant_name_short": "CONVERTIBLE",
+              "variant_display_name": "CONVERTIBLE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 65,
+          "make_id": 9,
+          "model_name": "F12 BERLINETTA",
+          "model_display": "F12 Berlinetta",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 286,
+              "model_id": 65,
+              "variant_name": "V12",
+              "variant_name_short": "F12BERLINETTA",
+              "variant_display_name": "V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 66,
+          "make_id": 9,
+          "model_name": "FF",
+          "model_display": "FF",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 287,
+              "model_id": 66,
+              "variant_name": "6.3L V12",
+              "variant_name_short": "6.3L V12",
+              "variant_display_name": "6.3L V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 3283,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 61,
+          "make_id": 9,
+          "model_name": "458",
+          "model_display": "458",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 282,
+              "model_id": 61,
+              "variant_name": "ITALIA COUPE",
+              "variant_name_short": "ITALIA COUPE",
+              "variant_display_name": "ITALIA COUPE",
+              "transportation_category": "Category_3",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 62,
+          "make_id": 9,
+          "model_name": "458 SPIDER",
+          "model_display": "458 Spider",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 283,
+              "model_id": 62,
+              "variant_name": "458 SPIDER",
+              "variant_name_short": "458 SPIDER",
+              "variant_display_name": "458 SPIDER",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 64,
+          "make_id": 9,
+          "model_name": "CALIFORNIA",
+          "model_display": "California",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 285,
+              "model_id": 64,
+              "variant_name": "CONVERTIBLE",
+              "variant_name_short": "CONVERTIBLE",
+              "variant_display_name": "CONVERTIBLE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 65,
+          "make_id": 9,
+          "model_name": "F12 BERLINETTA",
+          "model_display": "F12 Berlinetta",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 286,
+              "model_id": 65,
+              "variant_name": "V12",
+              "variant_name_short": "F12BERLINETTA",
+              "variant_display_name": "V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 66,
+          "make_id": 9,
+          "model_name": "FF",
+          "model_display": "FF",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 287,
+              "model_id": 66,
+              "variant_name": "6.3L V12",
+              "variant_name_short": "6.3L V12",
+              "variant_display_name": "6.3L V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 4458,
+      "year": "2012",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 61,
+          "make_id": 9,
+          "model_name": "458",
+          "model_display": "458",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 282,
+              "model_id": 61,
+              "variant_name": "ITALIA COUPE",
+              "variant_name_short": "ITALIA COUPE",
+              "variant_display_name": "ITALIA COUPE",
+              "transportation_category": "Category_3",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 62,
+          "make_id": 9,
+          "model_name": "458 SPIDER",
+          "model_display": "458 Spider",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 283,
+              "model_id": 62,
+              "variant_name": "458 SPIDER",
+              "variant_name_short": "458 SPIDER",
+              "variant_display_name": "458 SPIDER",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 63,
+          "make_id": 9,
+          "model_name": "599 GTB",
+          "model_display": "599 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 284,
+              "model_id": 63,
+              "variant_name": "FIORANO COUPE",
+              "variant_name_short": "FIORANO COUPE",
+              "variant_display_name": "FIORANO COUPE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 64,
+          "make_id": 9,
+          "model_name": "CALIFORNIA",
+          "model_display": "California",
+          "body_type": "Luxury Sedan",
+          "is_popular": "no",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 285,
+              "model_id": 64,
+              "variant_name": "CONVERTIBLE",
+              "variant_name_short": "CONVERTIBLE",
+              "variant_display_name": "CONVERTIBLE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 66,
+          "make_id": 9,
+          "model_name": "FF",
+          "model_display": "FF",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 287,
+              "model_id": 66,
+              "variant_name": "6.3L V12",
+              "variant_name_short": "6.3L V12",
+              "variant_display_name": "6.3L V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 16095,
+      "year": "2011",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 62,
+          "make_id": 9,
+          "model_name": "458 SPIDER",
+          "model_display": "458 Spider",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 283,
+              "model_id": 62,
+              "variant_name": "458 SPIDER",
+              "variant_name_short": "458 SPIDER",
+              "variant_display_name": "458 SPIDER",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 63,
+          "make_id": 9,
+          "model_name": "599 GTB",
+          "model_display": "599 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 284,
+              "model_id": 63,
+              "variant_name": "FIORANO COUPE",
+              "variant_name_short": "FIORANO COUPE",
+              "variant_display_name": "FIORANO COUPE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        },
+        {
+          "status": "Active",
+          "model_id": 66,
+          "make_id": 9,
+          "model_name": "FF",
+          "model_display": "FF",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 287,
+              "model_id": 66,
+              "variant_name": "6.3L V12",
+              "variant_name_short": "6.3L V12",
+              "variant_display_name": "6.3L V12",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 16101,
+      "year": "2010",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 63,
+          "make_id": 9,
+          "model_name": "599 GTB",
+          "model_display": "599 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": "",
+          "variants": [
+            {
+              "variant_id": 284,
+              "model_id": 63,
+              "variant_name": "FIORANO COUPE",
+              "variant_name_short": "FIORANO COUPE",
+              "variant_display_name": "FIORANO COUPE",
+              "transportation_category": "Category_5",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 16100,
+      "year": "2009",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 63,
+          "make_id": 9,
+          "model_name": "599 GTB",
+          "model_display": "599 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 16099,
+      "year": "2008",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 63,
+          "make_id": 9,
+          "model_name": "599 GTB",
+          "model_display": "599 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 16098,
+      "year": "2007",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 63,
+          "make_id": 9,
+          "model_name": "599 GTB",
+          "model_display": "599 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    },
+    {
+      "year_id": 16097,
+      "year": "2006",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 63,
+          "make_id": 9,
+          "model_name": "599 GTB",
+          "model_display": "599 GTB",
+          "body_type": "Luxury Sedan",
+          "is_popular": "yes",
+          "feed_img": ""
+        }
+      ]
+    }
+  ]
+}

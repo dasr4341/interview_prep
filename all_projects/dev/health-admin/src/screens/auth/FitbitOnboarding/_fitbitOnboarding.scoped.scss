@@ -1,0 +1,12 @@
+.heading-text-size {
+  font-size: 32px;
+}
+.text-color {
+  color: #161616;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 828px;
+  }
+}

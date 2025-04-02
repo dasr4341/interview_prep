@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  font-family: 'Rubik', sans-serif;
+  // background-color: transparent;
+}
+
+body {
+  color: black !important;
+  background: white !important;
+}
+
+:root {
+  --theme: #ea580c;
+  --background: #ffffff;
+  --foreground: #ffffff;
+  --grayColor: #ffffff;
+}
+
+input:placeholder-shown {
+  text-overflow: ellipsis;
+}
+
+.player-wrapper {
+  position: relative;
+  padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

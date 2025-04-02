@@ -1,0 +1,35 @@
+div.ag-theme-alpine div.ag-row {
+  // font-size: 16px !important;
+  color: #515151 !important;
+  letter-spacing: -0.509091px !important;
+}
+.ag-cell-focus,
+.ag-cell-no-focus {
+  border-color: transparent !important;
+}
+.rowFontColor {
+  color: #000;
+  font-weight: 500;
+}
+.ag-cell-last-left-pinned {
+  border-right: none;
+}
+
+.clinician-name .edit-btn {
+  display: none;
+}
+.clinician-name:hover .edit-btn {
+  display: initial;
+}
+.clinician-name:hover > div {
+  margin-left: 0rem;
+}
+.clinician-name:hover .patineName {
+  width: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.gridWrap {
+  margin-bottom: 25px;
+}

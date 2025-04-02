@@ -1,0 +1,20 @@
+.mantine-Input-input {
+  background-color: transparent;
+  border-radius: 10px;
+  min-height: 40px;
+  border: 1px solid #D3D3D3;
+  padding: 0 35px;
+}
+.mantine-Input-input:hover {
+  border-color: #212121;
+}
+.mantine-Input-input:focus{
+  border: 2px solid #D8D8D8;
+  --tw-ring-color: transparent;
+}
+.search-icon {
+  margin-left: 12px;
+}
+.cross-btn{
+  margin-right: 12px;
+}

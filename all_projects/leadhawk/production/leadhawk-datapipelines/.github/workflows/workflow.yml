@@ -1,0 +1,104 @@
+name: Leadhwak CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AWS_DEFAULT_REGION: ${{ vars.region }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build:github
+
+      - name: Make envfile
+        run: |
+          touch .env
+          echo "PUPPETEER_EXECUTABLE_PATH=/usr/bin/google-chrome" >> .env
+          echo "FORMDS_SEARCH_LIMIT=30" >> .env
+          echo "FORMDS_SINGLE_PAGE_RECORD=30" >> .env
+          echo "FORMDS_MAX_SEARCH_LIMIT=5" >> .env
+          echo "INDEED_SEARCH_LIMIT=20" >> .env
+          echo "INDEED_SINGLE_PAGE_JOB_NO=18" >> .env
+          echo "FORM_DS_URL=https://formds.com/filings/newest" >> .env
+          echo "INDEED_URL=https://www.indeed.com" >> .env
+          echo "GOOGLE_URL=https://www.google.com/" >> .env
+          echo "CONNECTION_URL=${{ secrets.CONNECTION_URL }}" >> .env
+          echo "AWS_DEFAULT_REGION=us-east-1" >> .env
+          echo "JOB_POSTING_CLASS=com.leadHawk.adminService.model.JobPostings" >> .env
+          echo "FUNDING_CLASS=com.LeadHawk.model.NewFunding" >> .env
+          echo "BUSINESSWIRE_URL=https://feed.businesswire.com/rss/home/" >> .env
+          echo "PRNEWSWIRE_URL=https://www.prnewswire.com/rss/news-releases-list.rss" >> .env
+          echo "LINKEDIN_LOGIN_URL=https://www.linkedin.com/login" >> .env
+          echo "LINKEDIN_URL=https://www.linkedin.com/" >> .env
+          echo "LINKEDIN_USER_JOB_POST_URL=https://www.linkedin.com/search/results/content" >> .env
+          echo "LINKEDIN_JOB_POST_LIMIT=30" >> .env
+          echo "LINKEDIN_JOB_POST_PAGE_LIMIT=25" >> .env
+          echo "NEW_HIRES_SCROLL_LIMIT=6" >> .env
+          echo "NODE_ENV=production" >> .env
+          echo "LLM_SERVER_BASE_URL=http://data-extractor:3001" >> .env
+          echo "LEADHAWK_FILTER_SERVICE=${{ vars.LEADHAWK_FILTER_SERVICE }}" >> .env
+          echo "OPENAI_API_KEY=${{ secrets.OPEN_API_KEY }}" >> .env
+          echo "PORT=5000" >> .env
+          echo "OXYLAB_USER=${{ secrets.OXYLAB_USER }}" >> .env
+          echo "OXYLAB_PASSWORD=${{ secrets.OXYLAB_PASSWORD }}" >> .env
+          echo "GOOGLE_JSON=${{ secrets.GOOGLE_JSON }}" >> .env
+          echo "GOOGLE_SEARCH_URL=${{ vars.GOOGLE_SEARCH_URL }}" >> .env
+          cat .env
+
+          cd data_extractor
+          touch .env
+          echo "OPENAI_API_KEY=${{ secrets.OPEN_API_KEY }}" >> .env
+          echo "OPENAI_MODEL_NAME=gpt-3.5-turbo-instruct" >> .env
+          echo "GPT_TIMEOUT=30" >> .env
+          echo "GPT_MAX_RETRIES=10" >> .env
+          echo "GPT_MODEL_TEMPERATURE=0.0" >> .env
+          echo "GPT_SEED=1234" >> .env
+          echo "GPT_MAX_TOKENS=2048" >> .env
+          echo "BATCH_SIZE=10" >> .env
+          echo "SEMAPHORE_VALUE=10" >> .env
+          echo "BASE_DELAY=1 " >> .env
+          echo "APPLICATION_HOST=0.0.0.0" >> .env
+          echo "APPLICATION_PORT=3001" >> .env
+          echo "WORKERS=10" >> .env
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ vars.region }}
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Build and push Docker image
+        env:
+          ECR_REGISTRY: ${{ vars.ECR_REGISTRY }}
+          ECR_REPOSITORY: ${{ vars.ECR_REPOSITORY }}
+          ECR_REPOSITORY_DATA_EXTRACTOR: ${{ vars.ECR_REPOSITORY_DATA_EXTRACTOR }}
+          IMAGE_TAG: ${{ github.sha }}
+        run: |
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:latest .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          cd data_extractor
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY_DATA_EXTRACTOR:latest .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY_DATA_EXTRACTOR:latest

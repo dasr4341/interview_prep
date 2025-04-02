@@ -1,0 +1,27 @@
+.active {
+  border-bottom: 4px solid #3b7af7;
+}
+
+.active div {
+  color: black !important;
+}
+
+@media screen and (min-width: 1530px) {
+  .customWidth {
+    width: 40%;
+  }
+
+  .patientListWidth {
+    width: 33%;
+  }
+
+}
+@media screen and (min-width: 1680px) {
+  .customWidth {
+    width: 33.33%;
+  }
+
+  .patientListWidth {
+    width: 25%;
+  }
+}

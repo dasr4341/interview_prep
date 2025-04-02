@@ -1,0 +1,54 @@
+// Global Styles
+@import './node_modules/placeholder-loading/src/scss/placeholder-loading';
+
+// Global Components
+@import './fonts';
+@import './components/button';
+@import './components/link';
+@import './components/forms';
+@import './components/modal';
+@import './components/typography.scss';
+@import './components/icons';
+@import './components/timepicker';
+@import './components/height';
+@import './components/email-content';
+@import './components/date-range-picker';
+
+
+@import './utilities';
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+iframe {
+  display: none;
+}
+
+body {
+  @apply font-sans;
+}
+
+.okta-sign-in-header.auth-header {
+  display: none;
+}
+.auth-container.main-container {
+  div.o-form-content.o-form-theme {
+    > h2 {
+      display: none;
+    }
+    .o-form-label-top .okta-form-label.o-form-label,
+    .o-form-input-name-remember .custom-checkbox label,
+    .okta-form-input-error,
+    .o-form-input-error,
+    .o-form-explain {
+      text-align: left;
+    }
+  }
+}
+#okta-sign-in,
+#okta-sign-in.auth-container.main-container {
+  font-family: inherit;
+}

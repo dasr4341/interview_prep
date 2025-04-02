@@ -1,0 +1,26 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "attach",
+      "name": "Cypress E2E debug",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}/e2e"
+    },
+    {
+      "name": "Pretaa health Admin",
+      "type": "chrome",
+      "request": "launch",
+      "url": "//localhost:3000",
+      "webRoot": "${workspaceRoot}/src",
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
+    }
+  ]
+}
+

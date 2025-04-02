@@ -1,0 +1,309 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 52,
+  "make_name": "BAJAJ",
+  "display_order": 1,
+  "make_display": "BAJAJ",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 55331,
+      "year": "2024",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52091,
+      "year": "2023",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52090,
+      "year": "2022",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 5874,
+              "model_id": 492,
+              "variant_name": "PETROL",
+              "variant_name_short": "PETROL",
+              "variant_display_name": "PETROL",
+              "transportation_category": "Category_1",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 52089,
+      "year": "2021",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52088,
+      "year": "2020",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 23266,
+      "year": "2019",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 5874,
+              "model_id": 492,
+              "variant_name": "PETROL",
+              "variant_name_short": "PETROL",
+              "variant_display_name": "PETROL",
+              "transportation_category": "Category_1",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 52087,
+      "year": "2018",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": [
+            {
+              "variant_id": 5874,
+              "model_id": 492,
+              "variant_name": "PETROL",
+              "variant_name_short": "PETROL",
+              "variant_display_name": "PETROL",
+              "transportation_category": "Category_1",
+              "transmission_type": "AT",
+              "fuel_type": "Petrol",
+              "status": "Active",
+              "tax_value": null,
+              "ex_showroom_price": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "year_id": 52086,
+      "year": "2017",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52085,
+      "year": "2016",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52084,
+      "year": "2015",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52083,
+      "year": "2014",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52082,
+      "year": "2013",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52081,
+      "year": "2012",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 52080,
+      "year": "2011",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    },
+    {
+      "year_id": 27161,
+      "year": "2010",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 492,
+          "make_id": 52,
+          "model_name": "QUTE",
+          "model_display": "QUTE",
+          "body_type": "Hatchback",
+          "is_popular": "yes",
+          "feed_img": "0",
+          "variants": []
+        }
+      ]
+    }
+  ]
+}

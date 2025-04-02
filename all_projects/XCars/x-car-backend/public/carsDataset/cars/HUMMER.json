@@ -1,0 +1,60 @@
+{
+  "logo": null,
+  "status": "Active",
+  "luxuryCar": null,
+  "make_id": 58,
+  "make_name": "HUMMER",
+  "display_order": 0,
+  "make_display": "HUMMER",
+  "is_popular": "no",
+  "years": [
+    {
+      "year_id": 42913,
+      "year": "2008",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 583,
+          "make_id": 58,
+          "model_name": "H 3",
+          "model_display": "H 3",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 25235,
+      "year": "2007",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 583,
+          "make_id": 58,
+          "model_name": "H 3",
+          "model_display": "H 3",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    },
+    {
+      "year_id": 52001,
+      "year": "2006",
+      "models": [
+        {
+          "status": "Active",
+          "model_id": 654,
+          "make_id": 58,
+          "model_name": "H2",
+          "model_display": "H2",
+          "body_type": "Luxury SUV",
+          "is_popular": "no",
+          "feed_img": "0"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+.active {
+  color: #3B7AF7;
+  padding: 2px auto;
+  border-bottom: 2px solid #3B7AF7;
+}
+
+.preview-form-label {
+  font-size: 20px;
+  line-height: 28px;
+}
+.stat-sub-header {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .stat-sub-header {
+      font-size: 19px;
+    }
+}

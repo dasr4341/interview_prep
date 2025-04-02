@@ -1,0 +1,17 @@
+.text-label {
+  position: relative;
+  padding-left: 16px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 9px;
+    height: 9px;
+  }
+}
+
+.unit {
+  top: 0;
+}

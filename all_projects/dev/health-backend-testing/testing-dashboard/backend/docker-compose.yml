@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  db:
+      image: postgres:15.4
+      volumes:
+        - ./tmp/db:/var/lib/postgresql/data
+      environment:
+        - POSTGRES_PASSWORD=postgresPasswword
+        - POSTGRES_USER=nodeProdUser
+        - POSTGRES_DB=node_pretaa_testing
+      ports:
+        - '5444:5432'

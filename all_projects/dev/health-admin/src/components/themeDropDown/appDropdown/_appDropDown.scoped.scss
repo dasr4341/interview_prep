@@ -1,0 +1,37 @@
+.app-drop-down-field {
+  outline: 0px !important;
+  border: 0px !important;
+  text-transform: capitalize;
+  
+  text-shadow: 0 0 0 black;
+}
+.patient-search:focus {
+  outline: 0px !important;
+  border: 0px !important;
+  outline-offset: 0px;
+  border-color: transparent !important;
+}
+
+.filter-border {
+  border: 1px solid #c5c5d8;
+  border-radius: 6px;
+}
+
+.filter-border-b {
+  border-bottom: 1px solid #c5c5d8;
+  border-radius: 2px;
+}
+
+.app-drop-down {
+  z-index: 10000;
+}
+.hide-cursor {
+  appearance: none;
+  color: transparent;
+}
+
+.text-over-flow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

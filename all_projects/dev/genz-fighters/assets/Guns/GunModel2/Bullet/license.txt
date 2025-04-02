@@ -1,0 +1,11 @@
+Model Information:
+* title:	GeometryNodes SciFi Sphere
+* source:	https://sketchfab.com/3d-models/geometrynodes-scifi-sphere-4d2538e7e1834daab9842e0d8c020bff
+* author:	nthmn.exe (https://sketchfab.com/nthmn.exe)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "GeometryNodes SciFi Sphere" (https://sketchfab.com/3d-models/geometrynodes-scifi-sphere-4d2538e7e1834daab9842e0d8c020bff) by nthmn.exe (https://sketchfab.com/nthmn.exe) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -1,0 +1,12 @@
+$width : 160px;
+$width-lg : 32px;
+
+table, .table-container-custom {
+  width: ($width * 4) + $width-lg;
+}
+
+@media screen  and (min-width: 736px) {
+  table, .table-container-custom > div > table {
+    width: 100%!important;
+  }
+}

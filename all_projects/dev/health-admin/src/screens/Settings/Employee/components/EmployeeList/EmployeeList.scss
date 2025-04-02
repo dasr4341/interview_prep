@@ -1,0 +1,29 @@
+div.ag-theme-alpine div.ag-row {
+  font-size: 16px !important;
+  color: #515151 !important;
+  letter-spacing: -0.509091px !important;
+}
+.ag-cell-focus,.ag-cell-no-focus{
+  border-color:transparent !important;
+}
+.rowFontColor {
+  color: #000;
+  font-weight: 500;
+}
+
+.staff-name-container .edit-btn {
+  display: none;
+}
+.staff-name-container:hover .edit-btn {
+  display: initial;
+}
+.staff-name-container:hover > div {
+  margin-left: 0rem;
+}
+
+.staff-name-container:hover .staffName {
+  width: 70px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

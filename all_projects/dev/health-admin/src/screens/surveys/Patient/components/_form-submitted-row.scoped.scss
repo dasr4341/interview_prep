@@ -1,0 +1,28 @@
+.pdf-loading-screen {
+  z-index: 1000;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(146, 189, 189, 0.611);
+  border-radius: 12px;
+}
+
+.pdf-loading-screen > div {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.905);
+  padding: 20px 40px;
+  border-radius: 12px;
+}
+
+.signature-image {
+  max-height: 100px;
+}

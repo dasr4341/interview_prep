@@ -1,0 +1,11 @@
+.margin-top-8 {
+  margin-top: 8px !important;
+}
+
+.sentence-case::first-letter {
+  text-transform: capitalize;
+}
+
+.fixed-error-message {
+  z-index: 1000;
+}

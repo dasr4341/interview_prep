@@ -1,0 +1,10 @@
+.active-card {
+  border-color: #3B7AF7;
+  border-width: 3px;              
+  border-radius: 30px;
+}
+
+.inactive-card {
+  border-radius: 30px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}

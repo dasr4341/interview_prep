@@ -1,0 +1,22 @@
+/* *{
+    background-color: rgb(215, 37, 37);
+} 
+h1,h2,p,span,button{
+    color: white;
+} */
+.product-Image{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+.items{
+    background-color: rgb(211, 227, 240);
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px;
+}

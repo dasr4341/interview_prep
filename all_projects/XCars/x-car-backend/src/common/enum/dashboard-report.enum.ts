@@ -1,0 +1,6 @@
+export enum DashboardReportType {
+  VISITORS = 'VISITORS',
+  SOLD_CARS = 'SOLD_CARS',
+  CAR_LISTING = 'CAR_LISTING',
+  LEADS_LISTING = 'LEADS_LISTING',
+}

@@ -1,0 +1,21 @@
+image: node:14
+
+clone:
+  depth: full
+
+pipelines:
+  pull-requests:
+    '**':
+      - step:
+          name: SonarQube analysis
+          image: sonarsource/sonar-scanner-cli:latest
+          caches:
+            - sonar
+            - node
+          script:
+            - sonar-scanner  -Dsonar.login=$SONAR_TOKEN
+
+definitions:
+  caches:
+    sonar: /opt/sonar-scanner/.sonar
+

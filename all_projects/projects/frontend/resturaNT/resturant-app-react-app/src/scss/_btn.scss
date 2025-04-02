@@ -1,0 +1,23 @@
+.btn-black {
+  @apply bg-black;
+  @apply focus:ring-black;
+  @apply focus:ring-gray-500;
+  @apply focus:ring-offset-gray-200;
+  @apply text-white;
+}
+
+.btn-purple {
+  @apply bg-purple-600;
+  @apply hover:bg-purple-700;
+  @apply focus:ring-purple-500;
+  @apply focus:ring-offset-purple-200;
+  @apply text-white;
+}
+
+.btn-red {
+  @apply bg-red-600;
+  @apply hover:bg-red-700;
+  @apply focus:ring-red-500;
+  @apply focus:ring-offset-red-200;
+  @apply text-white;
+}

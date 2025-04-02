@@ -1,0 +1,8 @@
+$width : 150px;
+$width-lg : 32px;
+
+@media screen and (max-width: 620px) {
+  .container-table {
+    width: ($width * 4) + $width-lg;
+  }
+}

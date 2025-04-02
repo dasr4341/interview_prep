@@ -1,0 +1,36 @@
+.two-step-auth{
+  .two-factor-auth-text{
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .description{
+    @apply text-base;
+    letter-spacing: -0.6px;
+  }
+  .mb-31{
+    margin-bottom: 31px;
+  }
+  .two-factor-auth-disable{
+    font-size: 14px;
+    line-height: 16px;
+    color: #515151;
+  }
+  .otp-description{
+    font-size: 15px;
+    line-height: 20px;
+    color: #515151;
+    margin-top: 44px;
+  }
+  .mt-37{
+    margin-top: 37px;
+  }
+  .mb-45{
+    margin-bottom: 45px;
+  }
+  .mb-41{
+    margin-bottom: 41px;
+  }
+}
+.two-step-auth-header{
+  padding: 97px 0 97px 0;
+}

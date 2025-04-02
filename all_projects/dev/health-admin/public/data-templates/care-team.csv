@@ -1,0 +1,5 @@
+email,firstName,lastName,phone,primaryCaseManager,primaryNurse,primaryPhysician,primaryTherapist,primaryAlumniCoordinator
+email@example.com,Cacilie,Gillis,+86 (577) 545-2193,True,False,True,True,True
+email@example.com,Elisabet,Keig,+420 (900) 863-8892,True,False,False,False,False
+email@example.com,Martie,Southworth,(213) 373-4253,False,False,True,False,False
+email@example.com,Jake,Dyott,+1 (256) 977-9298,True,True,False,True,False

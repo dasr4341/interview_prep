@@ -1,0 +1,8 @@
+.notes-not-found {
+  height: calc(100vh - 186px);
+}
+
+.note-list-border [data-test-id="virtuoso-item-list"] > [data-index]:last-child div{
+  border-bottom-left-radius : 12px;
+  border-bottom-right-radius : 12px;
+}

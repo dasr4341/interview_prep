@@ -1,0 +1,83 @@
+.editor-wrapper {
+  margin-bottom: 50px;
+  margin-top: -1px;
+}
+.quill {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0%;
+}
+.ql-editor.ql-blank::before {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #828282;
+}
+
+.ql-mention-list-container {
+  width: 270px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px 0 rgba(30, 30, 30, 0.08);
+  z-index: 9001;
+  overflow: auto;
+}
+
+.ql-mention-loading {
+  line-height: 44px;
+  padding: 0 20px;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+.ql-mention-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.ql-mention-list-item {
+  cursor: pointer;
+  line-height: 44px;
+  font-size: 16px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+.ql-mention-list-item.disabled {
+  cursor: auto;
+  background: #d6d9db;
+  line-height: 25px;
+  padding: 5px 0px 5px 10px;
+}
+
+.ql-mention-list-item.selected {
+  background-color: #d3e1eb;
+  text-decoration: none;
+}
+
+.mention {
+  height: 24px;
+  width: 65px;
+  border-radius: 6px;
+  background-color: #d3e1eb;
+  padding: 3px 0;
+  margin-right: 2px;
+  user-select: all;
+}
+
+.mention > span {
+  margin: 0 3px;
+}
+
+.ql-container {
+  font-size: 16px;
+}
+.ql-editor {
+  word-break: break-all;
+}
+
