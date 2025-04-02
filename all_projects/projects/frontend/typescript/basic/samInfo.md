@@ -1,0 +1,1 @@
+here i done some changes in tsconfig.json -> tsc --init

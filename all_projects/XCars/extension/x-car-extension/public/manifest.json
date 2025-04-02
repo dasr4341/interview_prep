@@ -1,0 +1,23 @@
+{
+    "name": "X cars",
+    "description": "Gets out some more details for your car",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_icon": "images/icon.png"
+    },
+    "background": {
+        "service_worker": "serviceWorker.js",
+        "type": "module"
+    },
+    "permissions": ["activeTab", "scripting", "webNavigation"],
+    "host_permissions":["http://*/*", "https://*/*"],
+    "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+            "https://www.olx.in/*"
+          ]
+    }
+  ]
+  }
